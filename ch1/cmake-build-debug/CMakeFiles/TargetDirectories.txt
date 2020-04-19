@@ -1,0 +1,4 @@
+/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/word_counter.dir
+/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/BritishEn_to_AmericanEn.dir

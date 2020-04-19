@@ -1,6 +1,6 @@
-#line 2 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.c"
+#line 2 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 
-#line 4 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.c"
+#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -352,8 +352,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 7
-#define YY_END_OF_BUFFER 8
+#define YY_NUM_RULES 4
+#define YY_END_OF_BUFFER 5
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -361,30 +361,27 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[40] =
+static const flex_int16_t yy_accept[9] =
     {   0,
-        0,    0,    8,    7,    6,    7,    7,    7,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    4,    3,    1,    0,
-        0,    0,    2,    0,    0,    0,    0,    5,    0
+        0,    0,    5,    3,    2,    1,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
     {   0,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    2,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    3,    1,    4,    1,
+        1,    1,    1,    1,    3,    3,    3,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
+        1,    1,    1,    1,    1,    1,    3,    3,    3,    3,
 
-        5,    6,    1,    1,    7,    1,    1,    8,    9,   10,
-       11,    1,    1,   12,   13,   14,   15,   16,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
+        3,    3,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -401,48 +398,29 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[17] =
+static const YY_CHAR yy_meta[4] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1
+        1,    1,    2
     } ;
 
-static const flex_int16_t yy_base[41] =
+static const flex_int16_t yy_base[10] =
     {   0,
-        0,   12,   44,   45,   45,    0,   35,   33,   36,    2,
-       37,   36,   22,   26,   23,   19,   22,   28,   17,   26,
-       19,   15,   16,   15,   14,    9,   45,   45,   45,    7,
-       10,   18,   45,    6,   12,    1,    0,   45,   45,    0
+        0,    0,    5,    6,    6,    0,    0,    6,    2
     } ;
 
-static const flex_int16_t yy_def[41] =
+static const flex_int16_t yy_def[10] =
     {   0,
-       40,   40,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,    0,   39
+        8,    1,    8,    8,    8,    9,    9,    0,    8
     } ;
 
-static const flex_int16_t yy_nxt[62] =
+static const flex_int16_t yy_nxt[10] =
     {   0,
-        4,    5,   39,    6,   38,    7,   39,    9,   39,   14,
-       10,   15,    8,    5,   39,    6,   37,    7,   36,   35,
-       34,   33,   32,   31,    8,   30,   29,   28,   27,   26,
-       25,   24,   23,   22,   21,   20,   19,   18,   17,   16,
-       13,   12,   11,   39,    3,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39
+        4,    5,    6,    7,    8,    3,    8,    8,    8
     } ;
 
-static const flex_int16_t yy_chk[62] =
+static const flex_int16_t yy_chk[10] =
     {   0,
-       40,    1,    0,    1,   37,    1,    0,    6,    0,   10,
-        6,   10,    1,    2,    0,    2,   36,    2,   35,   34,
-       32,   31,   30,   26,    2,   25,   24,   23,   22,   21,
-       20,   19,   18,   17,   16,   15,   14,   13,   12,   11,
-        9,    8,    7,    3,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39
+        1,    1,    1,    9,    3,    8,    8,    8,    8
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -459,8 +437,17 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
-#line 464 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.c"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+/*
+一个字数统计（word_counter）程序，程序读入一个文件然后报告这个文件的行数、单词树和字符数。
+*/
+#line 7 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+
+int chars = 0; // 定义变量，用于计数有多少个字符
+int words = 0; // 定义变量，用于计数有多少个单词
+int lines = 0; // 定义变量，用于计数有多少行
+#line 450 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
+#line 451 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 
 #define INITIAL 0
 
@@ -677,9 +664,10 @@ YY_DECL
 		}
 
 	{
-#line 1 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
+#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 
-#line 683 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.c"
+
+#line 671 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -706,13 +694,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 40 )
+				if ( yy_current_state >= 9 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 45 );
+		while ( yy_base[yy_current_state] != 6 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -738,40 +726,29 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 2 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
-{ printf("color"); }
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+{
+            words++;
+            chars += strlen(yytext); // yytext变量总是指向本次匹配的输入文本字符串
+            } // 当满足正则表达式：[a-zA-Z]+，表示成功识别到了一个单词。words++并且chars增加单词的字符长度
 	YY_BREAK
 case 2:
+/* rule 2 can match eol */
 YY_RULE_SETUP
-#line 3 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
-{ printf("flavor"); }
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+{chars++; lines++; } // 当满足正则表达式：\n，表示识别到了换行符。chars++并且lines++
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 4 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
-{ printf("smart"); }
+#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+{chars++; } // 当满足正则表达式：.，表示识别到了任意一个单词。chars++
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 5 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
-{ printf("elegant"); }
-	YY_BREAK
-case 5:
-YY_RULE_SETUP
-#line 6 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
-{ printf("liberal"); }
-	YY_BREAK
-case 6:
-YY_RULE_SETUP
-#line 7 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
-{ printf("%s", yytext); }
-	YY_BREAK
-case 7:
-YY_RULE_SETUP
-#line 8 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 ECHO;
 	YY_BREAK
-#line 775 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.c"
+#line 752 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1068,7 +1045,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 40 )
+			if ( yy_current_state >= 9 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1096,11 +1073,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 40 )
+		if ( yy_current_state >= 9 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 39);
+	yy_is_jam = (yy_current_state == 8);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1776,5 +1753,21 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 8 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/BritishEn_to_AmericanEn.l"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 
+
+int main(int argc, char **argv)
+{
+    yylex(); // 该函数是词法分析器的主要函数，调用它将进行词法分析
+    printf("chars=%8d\n",chars); // 打印有多少个字符
+    printf("words=%8d\n",words); // 打印有多少个单词
+    printf("lines=%8d\n",lines); // 打印有多少行
+    return 0;
+}
+
+/*
+注意：
+    Q：上面的例子可以发现，第三条规则会匹配所有的字符，
+    难道它不会也匹配第一个模式所能匹配的单词字母吗？
+    A：如果两个模式都匹配的话，flex会选择在程序里面首先出现的那个模式。
+*/

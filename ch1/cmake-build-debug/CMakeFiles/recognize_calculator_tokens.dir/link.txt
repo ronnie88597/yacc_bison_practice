@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/recognize_calculator_tokens.dir/recognize_calculator_tokens.c.o  -o recognize_calculator_tokens -lfl 

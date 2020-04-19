@@ -15,7 +15,7 @@ int lines = 0; // 定义变量，用于计数有多少行
 
 [a-zA-Z]+   {
             words++;
-            chars += strlen(yytext);
+            chars += strlen(yytext); // yytext变量总是指向本次匹配的输入文本字符串
             } // 当满足正则表达式：[a-zA-Z]+，表示成功识别到了一个单词。words++并且chars增加单词的字符长度
 \n          {chars++; lines++; } // 当满足正则表达式：\n，表示识别到了换行符。chars++并且lines++
 .           {chars++; } // 当满足正则表达式：.，表示识别到了任意一个单词。chars++

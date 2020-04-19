@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.c" "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/word_counter.dir/word_counter.c.o"
+  "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/word_counter.c" "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/word_counter.dir/word_counter.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

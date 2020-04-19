@@ -1,6 +1,6 @@
-#line 2 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.c"
+#line 2 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c"
 
-#line 4 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.c"
+#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -352,8 +352,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 4
-#define YY_END_OF_BUFFER 5
+#define YY_NUM_RULES 10
+#define YY_END_OF_BUFFER 11
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -361,27 +361,28 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[9] =
+static const flex_int16_t yy_accept[15] =
     {   0,
-        0,    0,    5,    3,    2,    1,    1,    0
+        0,    0,   11,    9,    8,    7,    3,    1,    2,    4,
+        6,    5,    6,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
+        1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    2,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    4,    5,    1,    6,    1,    7,    8,    8,    8,
+        8,    8,    8,    8,    8,    8,    8,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        1,    1,    1,    1,    1,    1,    3,    3,    3,    3,
 
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    9,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -398,29 +399,35 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[4] =
+static const YY_CHAR yy_meta[10] =
     {   0,
-        1,    1,    2
+        1,    1,    1,    1,    1,    1,    1,    1,    1
     } ;
 
-static const flex_int16_t yy_base[10] =
+static const flex_int16_t yy_base[15] =
     {   0,
-        0,    0,    5,    6,    6,    0,    0,    6,    2
+        0,    0,   12,   13,   13,   13,   13,   13,   13,   13,
+        3,   13,    2,   13
     } ;
 
-static const flex_int16_t yy_def[10] =
+static const flex_int16_t yy_def[15] =
     {   0,
-        8,    1,    8,    8,    8,    9,    9,    0,    8
+       14,    1,   14,   14,   14,   14,   14,   14,   14,   14,
+       14,   14,   14,    0
     } ;
 
-static const flex_int16_t yy_nxt[10] =
+static const flex_int16_t yy_nxt[23] =
     {   0,
-        4,    5,    6,    7,    8,    3,    8,    8,    8
+        4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
+       13,   14,    3,   14,   14,   14,   14,   14,   14,   14,
+       14,   14
     } ;
 
-static const flex_int16_t yy_chk[10] =
+static const flex_int16_t yy_chk[23] =
     {   0,
-        1,    1,    1,    9,    3,    8,    8,    8,    8
+        1,    1,    1,    1,    1,    1,    1,    1,    1,   13,
+       11,    3,   14,   14,   14,   14,   14,   14,   14,   14,
+       14,   14
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -437,14 +444,14 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.l"
-#line 3 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.l"
-
-int chars = 0; // 定义变量，用于计数有多少个字符
-int words = 0; // 定义变量，用于计数有多少个单词
-int lines = 0; // 定义变量，用于计数有多少行
-#line 447 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.c"
-#line 448 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.c"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+/*
+用于将输入的计算表达式识别为token流，然后输入
+*/
+/*
+前5个匹配模式，使用了双引号，flex将使用引号内的文本而不会将其解释为正则表达式。
+*/
+#line 455 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c"
 
 #define INITIAL 0
 
@@ -661,10 +668,9 @@ YY_DECL
 		}
 
 	{
-#line 10 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.l"
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 
-
-#line 668 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.c"
+#line 674 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -691,13 +697,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 9 )
+				if ( yy_current_state >= 15 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 6 );
+		while ( yy_base[yy_current_state] != 13 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -723,29 +729,56 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 12 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.l"
-{
-            words++;
-            chars += strlen(yytext);
-            } // 当满足正则表达式：[a-zA-Z]+，表示成功识别到了一个单词。words++并且chars增加单词的字符长度
+#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{ printf("PLUS\n"); } // 当匹配上了+，将打印PLUS
 	YY_BREAK
 case 2:
-/* rule 2 can match eol */
 YY_RULE_SETUP
-#line 16 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.l"
-{chars++; lines++; } // 当满足正则表达式：\n，表示识别到了换行符。chars++并且lines++
+#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{ printf("MINUS\n"); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 17 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.l"
-{chars++; } // 当满足正则表达式：.，表示识别到了任意一个单词。chars++
+#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{ printf("TIMES\n"); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 18 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.l"
+#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{ printf("DIVIDE\n"); }
+	YY_BREAK
+case 5:
+YY_RULE_SETUP
+#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{ printf("ABS\n"); }
+	YY_BREAK
+case 6:
+YY_RULE_SETUP
+#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{ printf("NUMBER %s\n", yytext); } // yytext变量总是指向本次匹配的输入文本字符串
+	YY_BREAK
+case 7:
+/* rule 7 can match eol */
+YY_RULE_SETUP
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{ printf("NEWLINE\n"); }
+	YY_BREAK
+case 8:
+YY_RULE_SETUP
+#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{}
+	YY_BREAK
+case 9:
+YY_RULE_SETUP
+#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
+{ printf("Mystery character %s\n", yytext); } // yytext变量总是指向本次匹配的输入文本字符串
+	YY_BREAK
+case 10:
+YY_RULE_SETUP
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 ECHO;
 	YY_BREAK
-#line 749 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.c"
+#line 782 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1042,7 +1075,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 9 )
+			if ( yy_current_state >= 15 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1070,11 +1103,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 9 )
+		if ( yy_current_state >= 15 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 8);
+	yy_is_jam = (yy_current_state == 14);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1750,17 +1783,5 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 18 "/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.l"
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 
-
-int main(int argc, char **argv)
-{
-    yylex(); // 该函数是词法分析器的主要函数，调用它将进行词法分析
-    printf("chars=%8d\n",chars); // 打印有多少个字符
-    printf("words=%8d\n",words); // 打印有多少个单词
-    printf("lines=%8d\n",lines); // 打印有多少行
-    return 0;
-}
-
-/*
-*/

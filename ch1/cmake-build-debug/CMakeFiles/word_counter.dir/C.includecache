@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cmp/work_dir/source_code/MinusC_compiler/yacc_bison_practice/ch1/word_counter.c
+/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/word_counter.c
 stdio.h
 -
 string.h

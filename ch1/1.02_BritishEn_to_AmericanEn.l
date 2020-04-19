@@ -1,3 +1,4 @@
+/*将英式英语转为美式英语*/
 %%
 "colour"        { printf("color");      } // 当匹配到了colour单词，将打印处color
 "flavour"       { printf("flavor");     } // 当匹配到了flavour单词，将打印处flavor

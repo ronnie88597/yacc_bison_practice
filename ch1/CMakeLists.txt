@@ -38,3 +38,13 @@ add_executable(1.04_NextToken_with_Flex 1.04_main.c)
 target_link_libraries(1.04_NextToken_with_Flex PUBLIC
     -lfl)
 
+
+execute_process(COMMAND
+        bison -o ${PROJECT_SOURCE_DIR}/1.05_first_calculator_with_bison.c ${PROJECT_SOURCE_DIR}/1.05_first_calculator_with_bison.y)
+
+add_executable(1.05_first_calculator_with_bison 1.05_first_calculator_with_bison.c)
+
+target_link_libraries(1.05_first_calculator_with_bison PUBLIC
+        -lfl)
+
+

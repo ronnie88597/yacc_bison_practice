@@ -1,4 +1,25 @@
-/home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/cmp/work_dir/source_code/yacc_bison_practice/ch1
+/home/test/Downloads/clion-2020.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/test/yacc_bison_practice/ch1
+/home/test/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y:19.21-22: error: invalid characters: ‘$$’
+ exp: factor default $$ = $1
+                     ^^
+/home/test/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y:19.24: error: syntax error, unexpected =
+ exp: factor default $$ = $1
+                        ^
+/home/test/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y:19.26: error: invalid character: ‘$’
+ exp: factor default $$ = $1
+                          ^
 -- Configuring done
--- Generating done
--- Build files have been written to: /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug
+CMake Error at CMakeLists.txt:45 (add_executable):
+  Cannot find source file:
+
+    1.05_first_calculator_with_bison.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:45 (add_executable):
+  No SOURCES given to target: 1.05_first_calculator_with_bison
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

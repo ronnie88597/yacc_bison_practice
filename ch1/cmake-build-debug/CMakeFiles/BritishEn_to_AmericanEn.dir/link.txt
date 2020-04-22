@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/BritishEn_to_AmericanEn.dir/BritishEn_to_AmericanEn.c.o  -o BritishEn_to_AmericanEn -lfl 

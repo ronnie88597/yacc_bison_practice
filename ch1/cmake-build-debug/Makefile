@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/test/Downloads/clion-2020.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/test/Downloads/clion-2020.1/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/test/yacc_bison_practice/ch1
+CMAKE_SOURCE_DIR = /home/cmp/work_dir/source_code/yacc_bison_practice/ch1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/test/yacc_bison_practice/ch1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/test/yacc_bison_practice/ch1/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/test/Downloads/clion-2020.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/test/Downloads/clion-2020.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/test/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles /home/test/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/test/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -161,6 +161,19 @@ depend:
 1.04_NextToken_with_Flex/fast:
 	$(MAKE) -f CMakeFiles/1.04_NextToken_with_Flex.dir/build.make CMakeFiles/1.04_NextToken_with_Flex.dir/build
 .PHONY : 1.04_NextToken_with_Flex/fast
+
+#=============================================================================
+# Target rules for targets named 1.06
+
+# Build rule for target.
+1.06: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1.06
+.PHONY : 1.06
+
+# fast build rule for target.
+1.06/fast:
+	$(MAKE) -f 1.06/CMakeFiles/1.06.dir/build.make 1.06/CMakeFiles/1.06.dir/build
+.PHONY : 1.06/fast
 
 1.01_word_counter.o: 1.01_word_counter.c.o
 
@@ -282,6 +295,7 @@ help:
 	@echo "... 1.03_recognize_calculator_tokens"
 	@echo "... 1.02_BritishEn_to_AmericanEn"
 	@echo "... 1.04_NextToken_with_Flex"
+	@echo "... 1.06"
 	@echo "... 1.01_word_counter.o"
 	@echo "... 1.01_word_counter.i"
 	@echo "... 1.01_word_counter.s"

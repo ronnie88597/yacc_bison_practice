@@ -31,7 +31,7 @@ target_link_libraries(1.03_recognize_calculator_tokens PUBLIC
 
 
 execute_process(COMMAND
-    flex -o ${PROJECT_SOURCE_DIR}/1.04_NextToken_with_Flex.h ${PROJECT_SOURCE_DIR}/1.04_NextToken_with_Flex.l)
+    flex -v --debug -o ${PROJECT_SOURCE_DIR}/1.04_NextToken_with_Flex.h ${PROJECT_SOURCE_DIR}/1.04_NextToken_with_Flex.l)
 
 add_executable(1.04_NextToken_with_Flex 1.04_main.c)
 
@@ -40,11 +40,11 @@ target_link_libraries(1.04_NextToken_with_Flex PUBLIC
 
 
 execute_process(COMMAND
-        bison -o ${PROJECT_SOURCE_DIR}/1.05_first_calculator_with_bison.c ${PROJECT_SOURCE_DIR}/1.05_first_calculator_with_bison.y)
+        bison -v --debug -o ${PROJECT_SOURCE_DIR}/1.05_first_calculator_with_bison.c ${PROJECT_SOURCE_DIR}/1.05_first_calculator_with_bison.y)
 
-add_executable(1.05_first_calculator_with_bison 1.05_first_calculator_with_bison.c)
+#add_executable(1.05_first_calculator_with_bison 1.05_first_calculator_with_bison.c)
+#
+#target_link_libraries(1.05_first_calculator_with_bison PUBLIC
+#        -lfl)
 
-target_link_libraries(1.05_first_calculator_with_bison PUBLIC
-        -lfl)
-
-
+add_subdirectory(1.06)

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/test/Downloads/clion-2020.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/test/Downloads/clion-2020.1/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/test/yacc_bison_practice/ch1
+CMAKE_SOURCE_DIR = /home/cmp/work_dir/source_code/yacc_bison_practice/ch1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/test/yacc_bison_practice/ch1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/1.03_recognize_calculator_tokens.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/1.03_recognize_calculator_tokens.dir/flags.make
 
 CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o: CMakeFiles/1.03_recognize_calculator_tokens.dir/flags.make
 CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o: ../1.03_recognize_calculator_tokens.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/test/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o   -c /home/test/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c
 
 CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/test/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c > CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c > CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.i
 
 CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/test/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c -o CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c -o CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.s
 
 # Object files for target 1.03_recognize_calculator_tokens
 1_03_recognize_calculator_tokens_OBJECTS = \
@@ -80,7 +80,7 @@ CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens
 1.03_recognize_calculator_tokens: CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o
 1.03_recognize_calculator_tokens: CMakeFiles/1.03_recognize_calculator_tokens.dir/build.make
 1.03_recognize_calculator_tokens: CMakeFiles/1.03_recognize_calculator_tokens.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/test/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable 1.03_recognize_calculator_tokens"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable 1.03_recognize_calculator_tokens"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/1.03_recognize_calculator_tokens.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -93,6 +93,6 @@ CMakeFiles/1.03_recognize_calculator_tokens.dir/clean:
 .PHONY : CMakeFiles/1.03_recognize_calculator_tokens.dir/clean
 
 CMakeFiles/1.03_recognize_calculator_tokens.dir/depend:
-	cd /home/test/yacc_bison_practice/ch1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/test/yacc_bison_practice/ch1 /home/test/yacc_bison_practice/ch1 /home/test/yacc_bison_practice/ch1/cmake-build-debug /home/test/yacc_bison_practice/ch1/cmake-build-debug /home/test/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/1.03_recognize_calculator_tokens.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cmp/work_dir/source_code/yacc_bison_practice/ch1 /home/cmp/work_dir/source_code/yacc_bison_practice/ch1 /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/cmake-build-debug/CMakeFiles/1.03_recognize_calculator_tokens.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/1.03_recognize_calculator_tokens.dir/depend
 

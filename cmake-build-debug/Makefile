@@ -176,6 +176,19 @@ depend:
 .PHONY : 1.06/fast
 
 #=============================================================================
+# Target rules for targets named 2.02_use_yyin_to_read_data_from_file
+
+# Build rule for target.
+2.02_use_yyin_to_read_data_from_file: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2.02_use_yyin_to_read_data_from_file
+.PHONY : 2.02_use_yyin_to_read_data_from_file
+
+# fast build rule for target.
+2.02_use_yyin_to_read_data_from_file/fast:
+	$(MAKE) -f ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build.make ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build
+.PHONY : 2.02_use_yyin_to_read_data_from_file/fast
+
+#=============================================================================
 # Target rules for targets named 2.01_usual_lang_lex_re
 
 # Build rule for target.
@@ -201,6 +214,7 @@ help:
 	@echo "... 1.02_BritishEn_to_AmericanEn"
 	@echo "... 1.04_NextToken_with_Flex"
 	@echo "... 1.06"
+	@echo "... 2.02_use_yyin_to_read_data_from_file"
 	@echo "... 2.01_usual_lang_lex_re"
 .PHONY : help
 

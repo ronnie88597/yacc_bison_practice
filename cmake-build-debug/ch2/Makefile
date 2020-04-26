@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/rule:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/rule
+.PHONY : ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/rule
+
+# Convenience name for target.
+2.02_use_yyin_to_read_data_from_file: ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/rule
+
+.PHONY : 2.02_use_yyin_to_read_data_from_file
+
+# fast build rule for target.
+2.02_use_yyin_to_read_data_from_file/fast:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build.make ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build
+.PHONY : 2.02_use_yyin_to_read_data_from_file/fast
+
+# Convenience name for target.
 ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/rule:
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/rule
 .PHONY : ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/rule
@@ -152,6 +167,33 @@ ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/rule:
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/build.make ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.s
 .PHONY : 2.01_usual_lang_lex_re.c.s
 
+2.02_use_yyin_to_read_data_from_file.o: 2.02_use_yyin_to_read_data_from_file.c.o
+
+.PHONY : 2.02_use_yyin_to_read_data_from_file.o
+
+# target to build an object file
+2.02_use_yyin_to_read_data_from_file.c.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build.make ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o
+.PHONY : 2.02_use_yyin_to_read_data_from_file.c.o
+
+2.02_use_yyin_to_read_data_from_file.i: 2.02_use_yyin_to_read_data_from_file.c.i
+
+.PHONY : 2.02_use_yyin_to_read_data_from_file.i
+
+# target to preprocess a source file
+2.02_use_yyin_to_read_data_from_file.c.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build.make ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.i
+.PHONY : 2.02_use_yyin_to_read_data_from_file.c.i
+
+2.02_use_yyin_to_read_data_from_file.s: 2.02_use_yyin_to_read_data_from_file.c.s
+
+.PHONY : 2.02_use_yyin_to_read_data_from_file.s
+
+# target to generate assembly for a file
+2.02_use_yyin_to_read_data_from_file.c.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build.make ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.s
+.PHONY : 2.02_use_yyin_to_read_data_from_file.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,11 +201,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... 2.02_use_yyin_to_read_data_from_file"
 	@echo "... edit_cache"
 	@echo "... 2.01_usual_lang_lex_re"
 	@echo "... 2.01_usual_lang_lex_re.o"
 	@echo "... 2.01_usual_lang_lex_re.i"
 	@echo "... 2.01_usual_lang_lex_re.s"
+	@echo "... 2.02_use_yyin_to_read_data_from_file.o"
+	@echo "... 2.02_use_yyin_to_read_data_from_file.i"
+	@echo "... 2.02_use_yyin_to_read_data_from_file.s"
 .PHONY : help
 
 

@@ -118,6 +118,7 @@ ch1/1.06/clean: ch1/1.06/CMakeFiles/1.06.dir/clean
 # Directory level rules for directory ch2
 
 # Recursive "all" directory target.
+ch2/all: ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/all
 ch2/all: ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/all
 
 .PHONY : ch2/all
@@ -128,6 +129,7 @@ ch2/preinstall:
 .PHONY : ch2/preinstall
 
 # Recursive "clean" directory target.
+ch2/clean: ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/clean
 ch2/clean: ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/clean
 
 .PHONY : ch2/clean
@@ -266,6 +268,33 @@ ch1/1.06/CMakeFiles/1.06.dir/rule: cmake_check_build_system
 ch1/1.06/CMakeFiles/1.06.dir/clean:
 	$(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/clean
 .PHONY : ch1/1.06/CMakeFiles/1.06.dir/clean
+
+#=============================================================================
+# Target rules for target ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir
+
+# All Build rule for target.
+ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/all:
+	$(MAKE) -f ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build.make ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/depend
+	$(MAKE) -f ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build.make ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target 2.02_use_yyin_to_read_data_from_file"
+.PHONY : ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/all
+
+# Build rule for subdir invocation for target.
+ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles 0
+.PHONY : ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/rule
+
+# Convenience name for target.
+2.02_use_yyin_to_read_data_from_file: ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/rule
+
+.PHONY : 2.02_use_yyin_to_read_data_from_file
+
+# clean rule for target.
+ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/clean:
+	$(MAKE) -f ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/build.make ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/clean
+.PHONY : ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/clean
 
 #=============================================================================
 # Target rules for target ch2/CMakeFiles/2.01_usual_lang_lex_re.dir

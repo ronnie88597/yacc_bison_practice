@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o  -o 2.02_use_yyin_to_read_data_from_file 

@@ -850,12 +850,12 @@ YY_RULE_SETUP
 case 17:
 YY_RULE_SETUP
 #line 53 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
-{ return UNDEFINE; } // 识别并忽略空格
+{ } // 忽略空格
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
 #line 54 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
-{ printf("Mystery character %s\n", yytext); return UNDEFINE; }    // 未识别的字符串
+{ printf("Mystery character %s\n", yytext); }    // 忽略未定义字符串
 	YY_BREAK
 case 19:
 YY_RULE_SETUP

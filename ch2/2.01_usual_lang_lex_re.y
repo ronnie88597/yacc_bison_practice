@@ -50,8 +50,8 @@ enum TokenType
 
 
 \n                                                          { printf("NEWLINE\n"); return UNDEFINE; }        // 识别换行符号
-[ \t]                                                       { return UNDEFINE; } // 识别并忽略空格
-.                                                           { printf("Mystery character %s\n", yytext); return UNDEFINE; }    // 未识别的字符串
+[ \t]                                                       { } // 忽略空格
+.                                                           { printf("Mystery character %s\n", yytext); }    // 忽略未定义字符串
 %%
 
 /*

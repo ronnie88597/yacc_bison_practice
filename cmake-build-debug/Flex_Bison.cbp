@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Flex_Bison"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ch1\;CMake Files\ch1\1.06\;CMake Files\ch2\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.01_word_counter">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 1.01_word_counter"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.01_word_counter/fast">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 1.01_word_counter/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.03_recognize_calculator_tokens">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.03_recognize_calculator_tokens" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 1.03_recognize_calculator_tokens"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.03_recognize_calculator_tokens/fast">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.03_recognize_calculator_tokens" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 1.03_recognize_calculator_tokens/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.02_BritishEn_to_AmericanEn">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.02_BritishEn_to_AmericanEn" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 1.02_BritishEn_to_AmericanEn"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.02_BritishEn_to_AmericanEn/fast">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.02_BritishEn_to_AmericanEn" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 1.02_BritishEn_to_AmericanEn/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.04_NextToken_with_Flex">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.04_NextToken_with_Flex" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 1.04_NextToken_with_Flex"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.04_NextToken_with_Flex/fast">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.04_NextToken_with_Flex" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 1.04_NextToken_with_Flex/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.06">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/Makefile&quot;  VERBOSE=1 1.06"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.06/fast">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/Makefile&quot;  VERBOSE=1 1.06/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.01_usual_lang_lex_re">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.01_usual_lang_lex_re" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 2.01_usual_lang_lex_re"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.01_usual_lang_lex_re/fast">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.01_usual_lang_lex_re" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 2.01_usual_lang_lex_re/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c">
+			<Option target="1.01_word_counter"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c">
+			<Option target="1.02_BritishEn_to_AmericanEn"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c">
+			<Option target="1.03_recognize_calculator_tokens"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_main.c">
+			<Option target="1.04_NextToken_with_Flex"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c">
+			<Option target="2.01_usual_lang_lex_re"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.c">
+			<Option target="1.06"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06.c">
+			<Option target="1.06"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ch1\"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ch1\1.06\"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ch2\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

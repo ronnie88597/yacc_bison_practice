@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.o  -o 1.03_recognize_calculator_tokens  -lfl 

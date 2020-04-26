@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.o  -o 1.02_BritishEn_to_AmericanEn  -lfl 

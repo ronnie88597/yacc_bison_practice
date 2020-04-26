@@ -23,7 +23,7 @@ target_link_libraries(1.03_recognize_calculator_tokens PUBLIC
 
 
 execute_process(COMMAND
-    flex -v --debug -o ${CMAKE_CURRENT_SOURCE_DIR}/1.04_NextToken_with_Flex.h ${CMAKE_CURRENT_SOURCE_DIR}/1.04_NextToken_with_Flex.y)
+    flex -o ${CMAKE_CURRENT_SOURCE_DIR}/1.04_NextToken_with_Flex.h ${CMAKE_CURRENT_SOURCE_DIR}/1.04_NextToken_with_Flex.y)
 add_executable(1.04_NextToken_with_Flex 1.04_main.c)
 target_link_libraries(1.04_NextToken_with_Flex PUBLIC
     -lfl)

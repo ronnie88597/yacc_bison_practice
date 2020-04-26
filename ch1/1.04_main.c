@@ -92,8 +92,16 @@ void printToken(int token) {
       printf("QUOTATION %s\n", yytext);
       break;
     }
-    case DOUBLE_QUOTATIONS     : {
-      printf("DOUBLE_QUOTATIONS %s\n", yytext);
+    case STRING     : {
+      printf("STRING %s\n", yytext);
+      break;
+    }
+    case ANNOTATION     : {
+      printf("ANNOTATION %s\n", yytext);
+      break;
+    }
+    case MULTI_LINE_ANNOTATION     : {
+      printf("MULTI_LINE_ANNOTATION %s\n", yytext);
       break;
     }
 

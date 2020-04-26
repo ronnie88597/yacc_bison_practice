@@ -1,5 +1,6 @@
 /*
-利用Bison实现四则运算的语法解析器
+// file: 1.05_first_calculator_with_bison.y
+// 利用Bison实现四则运算的语法解析器
 */
 
 %{

@@ -1,4 +1,5 @@
 /*
+// file: 1.04_NextToken_with_Flex.y
 在词法分析的时候，经常我们需要一个NextToken的函数，这个函数每一次调用返回下一个识别了的Token
 本例子就是结合Flex来实现NextToken函数的基本功能，来识别C语言中的token
 该词法分析器仅支持标准C98的关键字识别，新的标准增加的关键字并不支持

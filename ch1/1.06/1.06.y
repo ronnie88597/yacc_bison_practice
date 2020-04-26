@@ -1,5 +1,8 @@
-// 词法解析器部分
+/*
+// file: 1.06.y
 // 使用Flex和Bison手写词法分析器和语法分析器，实现一个简单的计算
+*/
+
 %{
 # include "1.05_first_calculator_with_bison.tab.h" // 此处需要将语法分析器生成的头文件包含进来，这样Flex和bison就可以联合工作了
 %}

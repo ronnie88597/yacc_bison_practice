@@ -437,17 +437,16 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
-/*
-一个字数统计（word_counter）程序，程序读入一个文件然后报告这个文件的行数、单词树和字符数。
-*/
-#line 7 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
-
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+/* file: 1.01_word_counter.y */
+/* 一个字数统计（word_counter）程序，程序读入一个文件然后报告这个文件的行数、单词树和字符数。*/
+/* %{  和 %}之间的代码会被原样照抄到生成的C文件的开头部分。*/
+#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
 int chars = 0; // 定义变量，用于计数有多少个字符
 int words = 0; // 定义变量，用于计数有多少个单词
 int lines = 0; // 定义变量，用于计数有多少行
+#line 449 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 #line 450 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
-#line 451 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 
 #define INITIAL 0
 
@@ -664,10 +663,9 @@ YY_DECL
 		}
 
 	{
-#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
 
-
-#line 671 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
+#line 669 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -726,7 +724,7 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
 {
             words++;
             chars += strlen(yytext); // yytext变量总是指向本次匹配的输入文本字符串
@@ -735,20 +733,20 @@ YY_RULE_SETUP
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
 {chars++; lines++; } // 当满足正则表达式：\n，表示识别到了换行符。chars++并且lines++
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
 {chars++; } // 当满足正则表达式：.，表示识别到了任意一个单词。chars++
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
 ECHO;
 	YY_BREAK
-#line 752 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
+#line 750 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1753,7 +1751,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
 
 
 int main(int argc, char **argv)

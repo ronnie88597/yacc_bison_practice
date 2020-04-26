@@ -62,7 +62,7 @@
 
 
 /* Copy the first part of user declarations.  */
-#line 5 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:339  */
+#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:339  */
 
 #include <stdio.h>
 
@@ -422,8 +422,8 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    20,    20,    21,    24,    25,    26,    29,    30,    31,
-      34,    35
+       0,    21,    21,    22,    25,    26,    27,    30,    31,    32,
+      35,    36
 };
 #endif
 
@@ -1196,37 +1196,37 @@ yyreduce:
   switch (yyn)
     {
         case 3:
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
     { printf("- %d\n", (yyvsp[-1])); }
 #line 1202 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
     break;
 
   case 5:
-#line 25 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
+#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[-2]) + (yyvsp[0]); }
 #line 1208 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
     break;
 
   case 6:
-#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
+#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[-2]) - (yyvsp[0]); }
 #line 1214 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
     break;
 
   case 8:
-#line 30 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
+#line 31 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[-2]) * (yyvsp[0]); }
 #line 1220 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
     break;
 
   case 9:
-#line 31 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
+#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[-2]) / (yyvsp[0]); }
 #line 1226 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
     break;
 
   case 11:
-#line 35 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
+#line 36 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[0]) >= 0? (yyvsp[0]) : - (yyvsp[0]); }
 #line 1232 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
     break;
@@ -1460,13 +1460,13 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 37 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1906  */
+#line 38 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1906  */
 
 main(int argc, char **argv)
 {
-yyparse();
+  yyparse();
 }
 yyerror(char *s)
 {
-fprintf(stderr, "error: %s\n", s);
+  fprintf(stderr, "error: %s\n", s);
 }

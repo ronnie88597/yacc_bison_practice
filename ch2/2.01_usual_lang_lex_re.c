@@ -1,6 +1,6 @@
-#line 2 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c"
+#line 2 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c"
+#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -352,8 +352,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 7
-#define YY_END_OF_BUFFER 8
+#define YY_NUM_RULES 6
+#define YY_END_OF_BUFFER 7
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -361,30 +361,29 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[40] =
+static const flex_int16_t yy_accept[26] =
     {   0,
-        0,    0,    8,    7,    6,    7,    7,    7,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    4,    3,    1,    0,
-        0,    0,    2,    0,    0,    0,    0,    5,    0
+        0,    0,    7,    6,    6,    6,    6,    6,    1,    2,
+        0,    4,    0,    1,    3,    0,    3,    0,    2,    0,
+        5,    3,    0,    3,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
     {   0,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    2,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    3,    1,    4,    1,
+        1,    1,    1,    3,    1,    1,    1,    1,    1,    1,
+        1,    1,    4,    1,    4,    5,    6,    7,    7,    7,
+        7,    7,    7,    7,    7,    7,    7,    1,    1,    1,
+        1,    1,    1,    1,    8,    8,    8,    8,    9,    8,
+        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
+        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
+        1,    1,    1,    1,   10,    1,    8,    8,    8,    8,
 
-        5,    6,    1,    1,    7,    1,    1,    8,    9,   10,
-       11,    1,    1,   12,   13,   14,   15,   16,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
+        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
+        8,    8,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -401,48 +400,41 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[17] =
+static const YY_CHAR yy_meta[11] =
+    {   0,
+        1,    1,    1,    1,    1,    1,    2,    2,    2,    1
+    } ;
+
+static const flex_int16_t yy_base[29] =
+    {   0,
+        0,    0,   35,   36,   31,    6,   26,   26,    9,    0,
+       28,   36,   23,    0,   12,   22,   16,   18,    0,   18,
+       36,    0,   10,    8,   36,   25,   10,   27
+    } ;
+
+static const flex_int16_t yy_def[29] =
+    {   0,
+       25,    1,   25,   25,   26,   25,   25,   25,   25,   27,
+       26,   25,   25,    9,   25,   28,   15,   25,   27,   28,
+       25,   17,   25,   25,    0,   25,   25,   25
+    } ;
+
+static const flex_int16_t yy_nxt[47] =
+    {   0,
+        4,    4,    5,    6,    7,    8,    9,   10,   10,   10,
+       13,   19,   14,   17,   24,   14,   24,   18,   15,   21,
+       18,   23,   22,   21,   24,   11,   11,   20,   20,   15,
+       12,   16,   15,   12,   25,    3,   25,   25,   25,   25,
+       25,   25,   25,   25,   25,   25
+    } ;
+
+static const flex_int16_t yy_chk[47] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1
-    } ;
-
-static const flex_int16_t yy_base[41] =
-    {   0,
-        0,   12,   44,   45,   45,    0,   35,   33,   36,    2,
-       37,   36,   22,   26,   23,   19,   22,   28,   17,   26,
-       19,   15,   16,   15,   14,    9,   45,   45,   45,    7,
-       10,   18,   45,    6,   12,    1,    0,   45,   45,    0
-    } ;
-
-static const flex_int16_t yy_def[41] =
-    {   0,
-       40,   40,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,    0,   39
-    } ;
-
-static const flex_int16_t yy_nxt[62] =
-    {   0,
-        4,    5,   39,    6,   38,    7,   39,    9,   39,   14,
-       10,   15,    8,    5,   39,    6,   37,    7,   36,   35,
-       34,   33,   32,   31,    8,   30,   29,   28,   27,   26,
-       25,   24,   23,   22,   21,   20,   19,   18,   17,   16,
-       13,   12,   11,   39,    3,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39
-    } ;
-
-static const flex_int16_t yy_chk[62] =
-    {   0,
-       40,    1,    0,    1,   37,    1,    0,    6,    0,   10,
-        6,   10,    1,    2,    0,    2,   36,    2,   35,   34,
-       32,   31,   30,   26,    2,   25,   24,   23,   22,   21,
-       20,   19,   18,   17,   16,   15,   14,   13,   12,   11,
-        9,    8,    7,    3,   39,   39,   39,   39,   39,   39,
-       39,   39,   39,   39,   39,   39,   39,   39,   39,   39,
-       39
+        6,   27,    6,    9,   24,    9,   23,    9,   15,   20,
+       15,   18,   17,   16,   18,   26,   26,   28,   28,   13,
+       11,    8,    7,    5,    3,   25,   25,   25,   25,   25,
+       25,   25,   25,   25,   25,   25
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -459,12 +451,21 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
 /*
-// file: 1.02_BritishEn_to_AmericanEn.y
-// 将英式英语转为美式英语
+// 【汇总】Flex实现词法分析器时常见的用于定义匹配模式的RE
 */
-#line 468 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c"
+#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#include <stdio.h>
+enum TokenType
+{
+    INTEGER             = 1001, // 整数，123
+    DECIMAL             = 1002, // 小数，123.554
+    IDENTIFIER          = 1003, // 变量，adfa
+    STRING              = 1004,
+};
+#line 468 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
+#line 469 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 
 #define INITIAL 0
 
@@ -681,9 +682,9 @@ YY_DECL
 		}
 
 	{
-#line 5 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
 
-#line 687 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c"
+#line 688 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -710,13 +711,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 40 )
+				if ( yy_current_state >= 26 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 45 );
+		while ( yy_base[yy_current_state] != 36 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -742,40 +743,37 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
-{ printf("color");      } // 当匹配到了colour单词，将打印处color
+#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("INTEGER"); return INTEGER; }       // 识别整数
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 7 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
-{ printf("flavor");     } // 当匹配到了flavour单词，将打印处flavor
+#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("IDENTIFIER"); return IDENTIFIER; } // 识别标识符
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 8 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
-{ printf("smart");      } // 当匹配到了clever单词，将打印处smart
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("DECIMAL"); return DECIMAL; }       // 识别小数，支持小数的科学计数法识别
 	YY_BREAK
 case 4:
+/* rule 4 can match eol */
 YY_RULE_SETUP
-#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
-{ printf("elegant");    } // 当匹配到了smart单词，将打印处elegant
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("STRING"); return STRING; }         // 识别字符串
 	YY_BREAK
 case 5:
+/* rule 5 can match eol */
 YY_RULE_SETUP
-#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
-{ printf("liberal");    } // 当匹配到了conservative单词，将打印处liberal
+#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("###"); return 999; }               // 识别字符串
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
-{ printf("%s", yytext); } // 当匹配到其他任意字符，将原样输出
-	YY_BREAK
-case 7:
-YY_RULE_SETUP
-#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
 ECHO;
 	YY_BREAK
-#line 779 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c"
+#line 777 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1072,7 +1070,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 40 )
+			if ( yy_current_state >= 26 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1100,11 +1098,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 40 )
+		if ( yy_current_state >= 26 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 39);
+	yy_is_jam = (yy_current_state == 25);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1780,5 +1778,13 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
 
+
+/*
+// 细心的朋友已经发现，对于整数字符串（如："123"），能够同时匹配以上的第1个规则和第3个规则。
+// 下面一起来认识以下Flex是如何处理"相同的输入可能被多种不同的模式匹配"这种情况的：
+//    1. Flex将匹配尽可能多的的字符串
+//    2. 如果根据1处理后，仍然存在多个模式的话，Flex将选择更早定义的模式来匹配
+//
+*/

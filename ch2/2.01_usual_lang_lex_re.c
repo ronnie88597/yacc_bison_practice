@@ -352,8 +352,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 6
-#define YY_END_OF_BUFFER 7
+#define YY_NUM_RULES 19
+#define YY_END_OF_BUFFER 20
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -361,29 +361,31 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[26] =
+static const flex_int16_t yy_accept[45] =
     {   0,
-        0,    0,    7,    6,    6,    6,    6,    6,    1,    2,
-        0,    4,    0,    1,    3,    0,    3,    0,    2,    0,
-        5,    3,    0,    3,    0
+        0,    0,   20,   18,   17,   16,    9,   18,    2,    4,
+        1,    1,   18,    1,   10,   18,   18,   11,    4,    4,
+        0,   13,    7,    3,    0,   10,   12,    0,    0,   12,
+        0,    6,    5,   11,    8,    0,    0,    0,   14,   12,
+        0,   12,   15,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
+        1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    3,    1,    1,    1,    1,    1,    1,
-        1,    1,    4,    1,    4,    5,    6,    7,    7,    7,
-        7,    7,    7,    7,    7,    7,    7,    1,    1,    1,
-        1,    1,    1,    1,    8,    8,    8,    8,    9,    8,
-        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
-        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
-        1,    1,    1,    1,   10,    1,    8,    8,    8,    8,
+        1,    2,    4,    5,    1,    1,    6,    7,    1,    1,
+        1,    8,    9,    1,    9,   10,   11,   12,   12,   12,
+       12,   12,   12,   12,   12,   12,   12,    1,    1,   13,
+        1,   14,    1,    1,   15,   15,   15,   15,   16,   15,
+       15,   15,   15,   15,   15,   15,   15,   15,   15,   15,
+       15,   15,   15,   15,   15,   15,   15,   15,   15,   15,
+        1,    1,    1,   17,   15,    1,   15,   15,   15,   15,
 
-        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
-        8,    8,    8,    8,    8,    8,    8,    8,    8,    8,
-        8,    8,    1,    1,    1,    1,    1,    1,    1,    1,
+       15,   15,   15,   15,   15,   15,   15,   15,   15,   15,
+       15,   15,   15,   15,   15,   15,   15,   15,   15,   15,
+       15,   15,    1,   18,    1,   17,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -400,41 +402,52 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[11] =
+static const YY_CHAR yy_meta[19] =
     {   0,
-        1,    1,    1,    1,    1,    1,    2,    2,    2,    1
+        1,    1,    2,    1,    1,    1,    1,    1,    1,    1,
+        1,    3,    1,    1,    3,    3,    1,    1
     } ;
 
-static const flex_int16_t yy_base[29] =
+static const flex_int16_t yy_base[49] =
     {   0,
-        0,    0,   35,   36,   31,    6,   26,   26,    9,    0,
-       28,   36,   23,    0,   12,   22,   16,   18,    0,   18,
-       36,    0,   10,    8,   36,   25,   10,   27
+        0,    0,   61,   62,   62,   62,   62,   55,   62,   52,
+       50,    9,   45,   12,   14,   43,   41,    0,   62,   36,
+       48,   62,   62,   62,   40,    0,   13,   43,   47,   15,
+       23,   62,   62,    0,   62,   41,   25,   45,   62,   22,
+       31,   25,   20,   62,   38,   19,   41,   44
     } ;
 
-static const flex_int16_t yy_def[29] =
+static const flex_int16_t yy_def[49] =
     {   0,
-       25,    1,   25,   25,   26,   25,   25,   25,   25,   27,
-       26,   25,   25,    9,   25,   28,   15,   25,   27,   28,
-       25,   17,   25,   25,    0,   25,   25,   25
+       44,    1,   44,   44,   44,   44,   44,   45,   44,   44,
+       44,   44,   44,   44,   44,   44,   44,   46,   44,   44,
+       45,   44,   44,   44,   44,   15,   44,   47,   48,   44,
+       44,   44,   44,   46,   44,   47,   47,   48,   44,   44,
+       44,   44,   47,    0,   44,   44,   44,   44
     } ;
 
-static const flex_int16_t yy_nxt[47] =
+static const flex_int16_t yy_nxt[81] =
     {   0,
-        4,    4,    5,    6,    7,    8,    9,   10,   10,   10,
-       13,   19,   14,   17,   24,   14,   24,   18,   15,   21,
-       18,   23,   22,   21,   24,   11,   11,   20,   20,   15,
-       12,   16,   15,   12,   25,    3,   25,   25,   25,   25,
-       25,   25,   25,   25,   25,   25
+        4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
+       14,   15,   16,   17,   18,   18,   19,   20,   25,   28,
+       26,   34,   29,   30,   27,   26,   40,   37,   31,   31,
+       31,   41,   37,   40,   42,   43,   42,   31,   21,   21,
+       21,   36,   42,   36,   38,   38,   38,   39,   37,   39,
+       37,   27,   22,   35,   33,   32,   27,   24,   23,   22,
+       44,    3,   44,   44,   44,   44,   44,   44,   44,   44,
+       44,   44,   44,   44,   44,   44,   44,   44,   44,   44
     } ;
 
-static const flex_int16_t yy_chk[47] =
+static const flex_int16_t yy_chk[81] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        6,   27,    6,    9,   24,    9,   23,    9,   15,   20,
-       15,   18,   17,   16,   18,   26,   26,   28,   28,   13,
-       11,    8,    7,    5,    3,   25,   25,   25,   25,   25,
-       25,   25,   25,   25,   25,   25
+        1,    1,    1,    1,    1,    1,    1,    1,   12,   14,
+       12,   46,   14,   15,   27,   15,   30,   43,   27,   15,
+       30,   31,   37,   40,   31,   37,   42,   40,   45,   45,
+       45,   47,   41,   47,   48,   48,   48,   38,   36,   29,
+       28,   25,   21,   20,   17,   16,   13,   11,   10,    8,
+        3,   44,   44,   44,   44,   44,   44,   44,   44,   44,
+       44,   44,   44,   44,   44,   44,   44,   44,   44,   44
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -459,13 +472,23 @@ char *yytext;
 #include <stdio.h>
 enum TokenType
 {
-    INTEGER             = 1001, // 整数，123
-    DECIMAL             = 1002, // 小数，123.554
-    IDENTIFIER          = 1003, // 变量，adfa
-    STRING              = 1004,
+    UNDEFINE                 = 1000,
+    ANNOTATION               = 1001, // 注释
+    INTEGER                  = 1002, // 整数，123
+    DECIMAL                  = 1003, // 小数，123.554
+    IDENTIFIER               = 1004, // 变量，adfa
+    STRING                   = 1005, // 字符串
+    ARITHMETIC_OPT           = 1006, // 四则运算符
+    BITWISE_OPT              = 1007, // 位运算符
+    MOD                      = 1008, // 取模运符 %
+    POW                      = 1009, // 乘方运符 **
+
+    BOOL_OPT                 = 1010, // 布尔运符 && || !
+
+    MULTI_LINE_ANNOTATION    = 1011, // 多行注释 /**/
 };
-#line 468 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
-#line 469 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
+#line 491 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
+#line 492 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 
 #define INITIAL 0
 
@@ -682,9 +705,9 @@ YY_DECL
 		}
 
 	{
-#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
 
-#line 688 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
+#line 711 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -711,13 +734,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 26 )
+				if ( yy_current_state >= 45 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 36 );
+		while ( yy_base[yy_current_state] != 62 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -743,37 +766,103 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
-{ printf("INTEGER"); return INTEGER; }       // 识别整数
+#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("ARITHMETIC_OPT\n"); return ARITHMETIC_OPT;} // 四则运算符 +-*/
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
-{ printf("IDENTIFIER"); return IDENTIFIER; } // 识别标识符
+#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("MOD\n"); return MOD;} // 取模运符 %
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
-{ printf("DECIMAL"); return DECIMAL; }       // 识别小数，支持小数的科学计数法识别
+#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("POW\n"); return POW;} // 乘方运符 **
 	YY_BREAK
 case 4:
-/* rule 4 can match eol */
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
-{ printf("STRING"); return STRING; }         // 识别字符串
+#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 ~|&^
 	YY_BREAK
 case 5:
-/* rule 5 can match eol */
 YY_RULE_SETUP
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
-{ printf("###"); return 999; }               // 识别字符串
+#line 33 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 >>
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 34 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 <<
+	YY_BREAK
+case 7:
+YY_RULE_SETUP
+#line 37 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 &&
+	YY_BREAK
+case 8:
+YY_RULE_SETUP
+#line 38 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 ||
+	YY_BREAK
+case 9:
+YY_RULE_SETUP
+#line 39 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 !
+	YY_BREAK
+case 10:
+YY_RULE_SETUP
+#line 42 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("INTEGER\n"); return INTEGER; }         // 识别整数
+	YY_BREAK
+case 11:
+YY_RULE_SETUP
+#line 43 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("IDENTIFIER\n"); return IDENTIFIER; }   // 识别标识符
+	YY_BREAK
+case 12:
+YY_RULE_SETUP
+#line 44 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("DECIMAL\n"); return DECIMAL; }         // 识别小数，支持小数的科学计数法识别
+	YY_BREAK
+case 13:
+/* rule 13 can match eol */
+YY_RULE_SETUP
+#line 45 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("STRING\n"); return STRING; }           // 识别字符串
+	YY_BREAK
+case 14:
+/* rule 14 can match eol */
+YY_RULE_SETUP
+#line 48 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("ANNOTATION\n"); return ANNOTATION; }   // 识别单行注释
+	YY_BREAK
+case 15:
+YY_RULE_SETUP
+#line 49 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("MULTI_LINE_ANNOTATION\n"); return MULTI_LINE_ANNOTATION; }   // 识别多行注释
+	YY_BREAK
+case 16:
+/* rule 16 can match eol */
+YY_RULE_SETUP
+#line 52 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("NEWLINE\n"); return UNDEFINE; }        // 识别换行符号
+	YY_BREAK
+case 17:
+YY_RULE_SETUP
+#line 53 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ return UNDEFINE; } // 识别并忽略空格
+	YY_BREAK
+case 18:
+YY_RULE_SETUP
+#line 54 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+{ printf("Mystery character %s\n", yytext); return UNDEFINE; }    // 未识别的字符串
+	YY_BREAK
+case 19:
+YY_RULE_SETUP
+#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
 ECHO;
 	YY_BREAK
-#line 777 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
+#line 866 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1070,7 +1159,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 26 )
+			if ( yy_current_state >= 45 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1098,11 +1187,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 26 )
+		if ( yy_current_state >= 45 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 25);
+	yy_is_jam = (yy_current_state == 44);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1778,7 +1867,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
 
 
 /*

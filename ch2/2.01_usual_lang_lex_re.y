@@ -6,19 +6,52 @@
 #include <stdio.h>
 enum TokenType
 {
-    INTEGER             = 1001, // 整数，123
-    DECIMAL             = 1002, // 小数，123.554
-    IDENTIFIER          = 1003, // 变量，adfa
-    STRING              = 1004,
+    UNDEFINE                 = 1000,
+    ANNOTATION               = 1001, // 注释
+    INTEGER                  = 1002, // 整数，123
+    DECIMAL                  = 1003, // 小数，123.554
+    IDENTIFIER               = 1004, // 变量，adfa
+    STRING                   = 1005, // 字符串
+    ARITHMETIC_OPT           = 1006, // 四则运算符
+    BITWISE_OPT              = 1007, // 位运算符
+    MOD                      = 1008, // 取模运符 %
+    POW                      = 1009, // 乘方运符 **
+
+    BOOL_OPT                 = 1010, // 布尔运符 && || !
+
+    MULTI_LINE_ANNOTATION    = 1011, // 多行注释 /**/
 };
 %}
 
 %%
-[-+]?[0-9]+                                                 { printf("INTEGER"); return INTEGER; }       // 识别整数
-[a-zA-Z_][a-zA-Z0-9]*                                       { printf("IDENTIFIER"); return IDENTIFIER; } // 识别标识符
-[-+]?(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?    { printf("DECIMAL"); return DECIMAL; }       // 识别小数，支持小数的科学计数法识别
-\"[^"]*\"                                                   { printf("STRING"); return STRING; }         // 识别字符串
-"//"[^\n]*\n                                                { printf("###"); return 999; }               // 识别字符串
+[*/+-]                                                      { printf("ARITHMETIC_OPT\n"); return ARITHMETIC_OPT;} // 四则运算符 +-*/
+"%"                                                         { printf("MOD\n"); return MOD;} // 取模运符 %
+"**"                                                        { printf("POW\n"); return POW;} // 乘方运符 **
+
+
+[~|&^]                                                      { printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 ~|&^
+">>"                                                        { printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 >>
+"<<"                                                        { printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 <<
+
+
+"&&"                                                        { printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 &&
+"||"                                                        { printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 ||
+"!"                                                         { printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 !
+
+
+[-+]?[0-9]+                                                 { printf("INTEGER\n"); return INTEGER; }         // 识别整数
+[a-zA-Z_][a-zA-Z0-9_]*                                      { printf("IDENTIFIER\n"); return IDENTIFIER; }   // 识别标识符
+[-+]?(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?    { printf("DECIMAL\n"); return DECIMAL; }         // 识别小数，支持小数的科学计数法识别
+\"[^"]*\"                                                   { printf("STRING\n"); return STRING; }           // 识别字符串
+
+
+"//"[^\n]*\n                                                { printf("ANNOTATION\n"); return ANNOTATION; }   // 识别单行注释
+"/*".*"*/"                                                  { printf("MULTI_LINE_ANNOTATION\n"); return MULTI_LINE_ANNOTATION; }   // 识别多行注释
+
+
+\n                                                          { printf("NEWLINE\n"); return UNDEFINE; }        // 识别换行符号
+[ \t]                                                       { return UNDEFINE; } // 识别并忽略空格
+.                                                           { printf("Mystery character %s\n", yytext); return UNDEFINE; }    // 未识别的字符串
 %%
 
 /*

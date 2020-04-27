@@ -1766,7 +1766,7 @@ void yyfree (void * ptr )
 int main(int argc, char ** argv)
 {
   int i;
-  if ( argc < 2 ){ /* 读取标准输入 */
+  if ( argc < 2 ){ // 读取标准输入
     yylex();
     printf(HEADLINE);
     printf(STREAMLINE, "STDIN", chars, words, lines);
@@ -1779,15 +1779,17 @@ int main(int argc, char ** argv)
       perror(argv[i]);
       return 1;
     }
-
+    // 每打开一个文件，使用yyrestart()函数把打开的文件描述符指定给词法分析器，
+    // 词法分析器将使用当前指定的文件描述符作为新的输入读取，然后再调用yylex()函数进行词法分析。
     yyrestart(f);
     yylex();
     fclose(f);
-    printf(STREAMLINE, argv[i], chars, words, lines);
+    printf(STREAMLINE, argv[i], chars, words, lines); // 打印每个文件的统计信息
     totchars += chars; chars = 0;
     totwords += words; words = 0;
     totlines += lines; lines = 0;
   }
+  // 打印总共的统计信息
   printf("\nTotal:\n");
   printf("chars   words   lines   \n");
   printf("%-8d%-8d%-8d\n", totchars, totwords, totlines);

@@ -176,6 +176,19 @@ depend:
 .PHONY : 1.06/fast
 
 #=============================================================================
+# Target rules for targets named 2.01_usual_lang_lex_re
+
+# Build rule for target.
+2.01_usual_lang_lex_re: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2.01_usual_lang_lex_re
+.PHONY : 2.01_usual_lang_lex_re
+
+# fast build rule for target.
+2.01_usual_lang_lex_re/fast:
+	$(MAKE) -f ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/build.make ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/build
+.PHONY : 2.01_usual_lang_lex_re/fast
+
+#=============================================================================
 # Target rules for targets named 2.02_use_yyin_to_read_data_from_file
 
 # Build rule for target.
@@ -189,17 +202,17 @@ depend:
 .PHONY : 2.02_use_yyin_to_read_data_from_file/fast
 
 #=============================================================================
-# Target rules for targets named 2.01_usual_lang_lex_re
+# Target rules for targets named 2.03_read_files
 
 # Build rule for target.
-2.01_usual_lang_lex_re: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 2.01_usual_lang_lex_re
-.PHONY : 2.01_usual_lang_lex_re
+2.03_read_files: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2.03_read_files
+.PHONY : 2.03_read_files
 
 # fast build rule for target.
-2.01_usual_lang_lex_re/fast:
-	$(MAKE) -f ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/build.make ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/build
-.PHONY : 2.01_usual_lang_lex_re/fast
+2.03_read_files/fast:
+	$(MAKE) -f ch2/CMakeFiles/2.03_read_files.dir/build.make ch2/CMakeFiles/2.03_read_files.dir/build
+.PHONY : 2.03_read_files/fast
 
 # Help Target
 help:
@@ -214,8 +227,9 @@ help:
 	@echo "... 1.02_BritishEn_to_AmericanEn"
 	@echo "... 1.04_NextToken_with_Flex"
 	@echo "... 1.06"
-	@echo "... 2.02_use_yyin_to_read_data_from_file"
 	@echo "... 2.01_usual_lang_lex_re"
+	@echo "... 2.02_use_yyin_to_read_data_from_file"
+	@echo "... 2.03_read_files"
 .PHONY : help
 
 

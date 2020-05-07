@@ -62,4 +62,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/DependInfo.cmake"
   "ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/DependInfo.cmake"
   "ch2/CMakeFiles/2.03_read_files.dir/DependInfo.cmake"
+  "ch2/CMakeFiles/2.06_include_file_and_start_state.dir/DependInfo.cmake"
   )

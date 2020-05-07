@@ -214,6 +214,19 @@ depend:
 	$(MAKE) -f ch2/CMakeFiles/2.03_read_files.dir/build.make ch2/CMakeFiles/2.03_read_files.dir/build
 .PHONY : 2.03_read_files/fast
 
+#=============================================================================
+# Target rules for targets named 2.06_include_file_and_start_state
+
+# Build rule for target.
+2.06_include_file_and_start_state: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2.06_include_file_and_start_state
+.PHONY : 2.06_include_file_and_start_state
+
+# fast build rule for target.
+2.06_include_file_and_start_state/fast:
+	$(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build
+.PHONY : 2.06_include_file_and_start_state/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -230,6 +243,7 @@ help:
 	@echo "... 2.01_usual_lang_lex_re"
 	@echo "... 2.02_use_yyin_to_read_data_from_file"
 	@echo "... 2.03_read_files"
+	@echo "... 2.06_include_file_and_start_state"
 .PHONY : help
 
 

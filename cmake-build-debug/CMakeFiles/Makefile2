@@ -121,6 +121,7 @@ ch1/1.06/clean: ch1/1.06/CMakeFiles/1.06.dir/clean
 ch2/all: ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/all
 ch2/all: ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/all
 ch2/all: ch2/CMakeFiles/2.03_read_files.dir/all
+ch2/all: ch2/CMakeFiles/2.06_include_file_and_start_state.dir/all
 
 .PHONY : ch2/all
 
@@ -133,6 +134,7 @@ ch2/preinstall:
 ch2/clean: ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/clean
 ch2/clean: ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/clean
 ch2/clean: ch2/CMakeFiles/2.03_read_files.dir/clean
+ch2/clean: ch2/CMakeFiles/2.06_include_file_and_start_state.dir/clean
 
 .PHONY : ch2/clean
 
@@ -351,6 +353,33 @@ ch2/CMakeFiles/2.03_read_files.dir/rule: cmake_check_build_system
 ch2/CMakeFiles/2.03_read_files.dir/clean:
 	$(MAKE) -f ch2/CMakeFiles/2.03_read_files.dir/build.make ch2/CMakeFiles/2.03_read_files.dir/clean
 .PHONY : ch2/CMakeFiles/2.03_read_files.dir/clean
+
+#=============================================================================
+# Target rules for target ch2/CMakeFiles/2.06_include_file_and_start_state.dir
+
+# All Build rule for target.
+ch2/CMakeFiles/2.06_include_file_and_start_state.dir/all:
+	$(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/depend
+	$(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=18,19 "Built target 2.06_include_file_and_start_state"
+.PHONY : ch2/CMakeFiles/2.06_include_file_and_start_state.dir/all
+
+# Build rule for subdir invocation for target.
+ch2/CMakeFiles/2.06_include_file_and_start_state.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ch2/CMakeFiles/2.06_include_file_and_start_state.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles 0
+.PHONY : ch2/CMakeFiles/2.06_include_file_and_start_state.dir/rule
+
+# Convenience name for target.
+2.06_include_file_and_start_state: ch2/CMakeFiles/2.06_include_file_and_start_state.dir/rule
+
+.PHONY : 2.06_include_file_and_start_state
+
+# clean rule for target.
+ch2/CMakeFiles/2.06_include_file_and_start_state.dir/clean:
+	$(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/clean
+.PHONY : ch2/CMakeFiles/2.06_include_file_and_start_state.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

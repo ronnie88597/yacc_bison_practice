@@ -1,6 +1,6 @@
-#line 2 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
+#line 2 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c"
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
+#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -323,6 +323,9 @@ void yyfree ( void *  );
 #define YY_AT_BOL() (YY_CURRENT_BUFFER_LVALUE->yy_at_bol)
 
 /* Begin user sect3 */
+
+#define yywrap() (/*CONSTCOND*/1)
+#define YY_SKIP_YYWRAP
 typedef flex_uint8_t YY_CHAR;
 
 FILE *yyin = NULL, *yyout = NULL;
@@ -352,8 +355,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 4
-#define YY_END_OF_BUFFER 5
+#define YY_NUM_RULES 8
+#define YY_END_OF_BUFFER 9
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -361,27 +364,29 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[9] =
+static const flex_int16_t yy_accept[25] =
     {   0,
-        0,    0,    5,    3,    2,    1,    1,    0
+        0,    0,    0,    0,    9,    7,    6,    4,    5,    4,
+        2,    3,    0,    0,    2,    0,    0,    0,    0,    0,
+        0,    0,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
+        1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    2,    1,    4,    5,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    6,
+        1,    7,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        1,    1,    1,    1,    1,    1,    3,    3,    3,    3,
+        1,    1,    1,    1,    1,    1,    1,    1,    8,    9,
 
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    1,    1,    1,    1,    1,    1,    1,    1,
+       10,    1,    1,    1,   11,    1,    1,   12,    1,   13,
+        1,    1,    1,    1,    1,    1,   14,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -398,29 +403,44 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[4] =
+static const YY_CHAR yy_meta[15] =
     {   0,
-        1,    1,    2
+        1,    2,    3,    2,    1,    4,    3,    1,    1,    1,
+        1,    1,    1,    1
     } ;
 
-static const flex_int16_t yy_base[10] =
+static const flex_int16_t yy_base[30] =
     {   0,
-        0,    0,    5,    6,    6,    0,    0,    6,    2
+       38,    0,    4,   10,   40,   42,   42,   42,   42,    7,
+        0,   42,    8,   26,    0,   29,   22,   19,    7,    5,
+        2,    0,   42,   42,   19,   23,   27,   31,   34
     } ;
 
-static const flex_int16_t yy_def[10] =
+static const flex_int16_t yy_def[30] =
     {   0,
-        8,    1,    8,    8,    8,    9,    9,    0,    8
+       25,   26,   27,   27,   24,   24,   24,   24,   24,   24,
+       28,   24,   24,   24,   28,   24,   24,   24,   24,   24,
+       29,   29,   24,    0,   24,   24,   24,   24,   24
     } ;
 
-static const flex_int16_t yy_nxt[10] =
+static const flex_int16_t yy_nxt[57] =
     {   0,
-        4,    5,    6,    7,    8,    3,    8,    8,    8
+       24,   22,    9,   22,   10,   12,   12,   12,   13,   13,
+       12,   12,   12,   12,   21,   20,   12,   14,   14,    6,
+        6,    6,    6,    8,    8,    8,    8,   11,   11,   11,
+       11,   15,   19,   18,   15,   23,   17,   23,   16,   24,
+        7,    5,   24,   24,   24,   24,   24,   24,   24,   24,
+       24,   24,   24,   24,   24,   24
     } ;
 
-static const flex_int16_t yy_chk[10] =
+static const flex_int16_t yy_chk[57] =
     {   0,
-        1,    1,    1,    9,    3,    8,    8,    8,    8
+        0,   22,    2,   21,    2,    3,    3,    3,   10,   13,
+        3,    4,    4,    4,   20,   19,    4,   10,   13,   25,
+       25,   25,   25,   26,   26,   26,   26,   27,   27,   27,
+       27,   28,   18,   17,   28,   29,   16,   29,   14,    5,
+        1,   24,   24,   24,   24,   24,   24,   24,   24,   24,
+       24,   24,   24,   24,   24,   24
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -437,20 +457,34 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
-/* file: 1.01_word_counter.y */
-/* 一个字数统计（word_counter）程序，程序读入一个文件然后报告这个文件的行数、单词树和字符数。*/
-/* 以下是Flex的第一部分，主要用于声明*/
-/* 以下是Flex的第二部分，%{  和 %}之间的代码会被原样照抄到生成的C文件的开头部分。*/
-#line 8 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
-int chars = 0; // 定义变量，用于计数有多少个字符
-int words = 0; // 定义变量，用于计数有多少个单词
-int lines = 0; // 定义变量，用于计数有多少行
-#line 450 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
-/* 以下是Flex的第三部分，该部分定义一些匹配模式（每个模式必须放在行首）和动作（模式匹配成功是所执行的C代码，使用{}括号括住的一行或多行语句）。 */
-#line 452 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+/*
+// file: 2.06_include_file_and_start_state.y
+// 使用Flex处理嵌套的包含文件（include files）与起始状态
+// 这个程序将处理嵌套包含文件，同时打印出这些文件中每一行的行号。
+// 这个程序需要维护一个包含嵌套输入文件和行号的堆栈，在每次遇到一个`#include `时压栈当前文件和行号等信息，在处理完包含文件后再把它们从堆栈弹出。
+// 此外本程序将使用flex一个很强大的特性——起始状态（start state），它允许我们指定一个特定时刻哪些模式可以被用来匹配。
+// */
+/* 不使用-lfl定义的默认main函数，使用自定义的main函数，你就不需要链接-lfl了。 */
+/* 把`IFILE`定义为起始状态，它将在我们寻找`#include`语句中的文件名时被使用。 */
+
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+struct buffstack {
+  struct buffstack *prev; /* 上一个文件信息 */
+  YY_BUFFER_STATE bufferstate; /* 保存的缓冲区 */
+  int lineno; /* 保存的行号 */
+  char *filename; /* 文件名 */
+  FILE *f; /* 当前文件 */
+} *curbstk = 0;
+
+char *curfilename; /* 当前输入文件的名字 */
+int newfile(char *fn);
+int popfile(void);
+#line 484 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c"
+#line 485 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c"
 
 #define INITIAL 0
+#define IFILE 1
 
 #ifndef YY_NO_UNISTD_H
 /* Special case for "unistd.h", since it is non-ANSI. We include it way
@@ -628,6 +662,9 @@ extern int yylex (void);
 #endif
 
 #define YY_RULE_SETUP \
+	if ( yyleng > 0 ) \
+		YY_CURRENT_BUFFER_LVALUE->yy_at_bol = \
+				(yytext[yyleng - 1] == '\n'); \
 	YY_USER_ACTION
 
 /** The main scanner function which does all the work.
@@ -665,9 +702,9 @@ YY_DECL
 		}
 
 	{
-#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
 
-#line 671 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
+#line 708 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -682,6 +719,7 @@ YY_DECL
 		yy_bp = yy_cp;
 
 		yy_current_state = (yy_start);
+		yy_current_state += YY_AT_BOL();
 yy_match:
 		do
 			{
@@ -694,13 +732,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 9 )
+				if ( yy_current_state >= 25 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 6 );
+		while ( yy_base[yy_current_state] != 42 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -726,31 +764,83 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
-{
-            words++;
-            chars += strlen(yytext); // yytext变量总是指向本次匹配的输入文本字符串
-            } // 当满足正则表达式：[a-zA-Z]+，表示成功识别到了一个单词。words++并且chars增加单词的字符长度
+#line 30 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+{ // 匹配#include语句，直到双引号或者<
+  BEGIN(IFILE); // 宏`BEGIN`用来切换到另外一个起始状态。
+}
 	YY_BREAK
 case 2:
-/* rule 2 can match eol */
 YY_RULE_SETUP
-#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
-{chars++; lines++; } // 当满足正则表达式：\n，表示识别到了换行符。chars++并且lines++
+#line 34 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+{ // 匹配文件名，直到结束双引号、>或者换行符。 当模式紧随在<起始状态名字>之后(<IFILE>)，表示这个模式只在该状态中被激活。
+  { // 当文件名匹配到这个模式时，#include的语句还有剩下的部分没有处理。使用下面简单的循环读完它并忽略它
+    int c;
+    while((c=input()) && c != '\n');
+  }
+  yylineno++;
+  if(!newfile(yytext)){
+    yyterminate(); // Error: no such file, or other failure.
+  }
+  printf("[INFO]开始读取include文件:%10s作为输入.\n", curbstk->filename);
+  BEGIN(INITIAL); // flex本身会定义的`INITIAL`状态
+}
 	YY_BREAK
 case 3:
+/* rule 3 can match eol */
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
-{chars++; } // 当满足正则表达式：.，表示识别到了任意一个单词。chars++
+#line 47 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+{ //  处理IFILE状态中错误输入的情况
+  fprintf(stderr, "行号：%8d 错误的include语法\n", yylineno);
+  yyterminate();
+}
+	YY_BREAK
+case YY_STATE_EOF(INITIAL):
+case YY_STATE_EOF(IFILE):
+#line 52 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+{ // <<EOF>>是Flex定义的特殊模式，它匹配输入文件的结束。
+  printf("[INFO]结束读取include文件:%10s.\n", curbstk->filename);
+  if(!popfile()){ // 当文件结束时弹出文件堆栈，如果是最外层文件就结束
+    yyterminate();
+  }
+}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 59 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+{ // 在每一行开始时，打印行号
+  fprintf(yyout, "%8d %s", yylineno, yytext); // yylineno是Flex提供的记录行号的变量
+}
+	YY_BREAK
+case 5:
+/* rule 5 can match eol */
+YY_RULE_SETUP
+#line 63 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+{ // 每遇到一个\n，需要把行号+1
+  fprintf(yyout, "%8d %s", yylineno++, yytext);
+}
+	YY_BREAK
+case 6:
+/* rule 6 can match eol */
+YY_RULE_SETUP
+#line 67 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+{
+  ECHO;
+  yylineno++;
+}
+	YY_BREAK
+case 7:
+YY_RULE_SETUP
+#line 72 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
+{ // 这是Flex定义的默认的规则，其中ECHO是Flex定义的默认输出宏，它会将字符原样输出到yyout。关于ECHO详见2.05，https://blog.csdn.net/weixin_46222091/article/details/105968391
+  ECHO;
+}
+	YY_BREAK
+case 8:
+YY_RULE_SETUP
+#line 75 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
 ECHO;
 	YY_BREAK
-#line 752 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
-case YY_STATE_EOF(INITIAL):
-	yyterminate();
+#line 844 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -1033,6 +1123,7 @@ static int yy_get_next_buffer (void)
 	char *yy_cp;
     
 	yy_current_state = (yy_start);
+	yy_current_state += YY_AT_BOL();
 
 	for ( yy_cp = (yytext_ptr) + YY_MORE_ADJ; yy_cp < (yy_c_buf_p); ++yy_cp )
 		{
@@ -1045,7 +1136,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 9 )
+			if ( yy_current_state >= 25 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1073,11 +1164,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 9 )
+		if ( yy_current_state >= 25 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 8);
+	yy_is_jam = (yy_current_state == 24);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1192,6 +1283,8 @@ static int yy_get_next_buffer (void)
 	c = *(unsigned char *) (yy_c_buf_p);	/* cast for 8-bit char's */
 	*(yy_c_buf_p) = '\0';	/* preserve yytext */
 	(yy_hold_char) = *++(yy_c_buf_p);
+
+	YY_CURRENT_BUFFER_LVALUE->yy_at_bol = (c == '\n');
 
 	return c;
 }
@@ -1753,21 +1846,71 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 75 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.y"
 
-// 以下是Flex的第四部分，，该部分会被拷贝到生成的词法分析器里面的C代码。它们通常是一些与动作相关的程序代码。
-int main(int argc, char **argv)
-{
-    yylex(); // 该函数是词法分析器的主要函数，调用它将进行词法分析
-    printf("chars=%8d\n",chars); // 打印有多少个字符
-    printf("words=%8d\n",words); // 打印有多少个单词
-    printf("lines=%8d\n",lines); // 打印有多少行
-    return 0;
+int main(int argc, char ** argv){
+  if(argc < 2){
+    fprintf(stderr, "need filename\n");
+    return 1;
+  }
+  if(newfile(argv[1])) yylex();
 }
 
-/*
-注意：
-    Q：上面的例子可以发现，第三条规则会匹配所有的字符，
-    难道它不会也匹配第一个模式所能匹配的单词字母吗？
-    A：如果两个模式都匹配的话，flex会选择在程序里面首先出现的那个模式。
-*/
+int newfile(char *fn){
+  FILE *f = fopen(fn, "r");
+  struct buffstack *bstk = malloc(sizeof(struct buffstack));
+
+  /* 如果文件打开失败时，退出 */
+  if(!f) {
+    perror(fn);
+    return 0;
+  }
+  /* 如果没有足够空间时，退出 */
+  if(!bstk){
+    perror("malloc");
+    exit(1);
+  }
+
+  /* 记住当前状态 */
+  if(curbstk){
+    curbstk->lineno = yylineno;
+    bstk->prev = curbstk;
+  }
+
+  /* 建立当前文件信息 */
+  bstk->bufferstate = yy_create_buffer(f, YY_BUF_SIZE);
+  bstk->f = f;
+  bstk->filename = fn;
+  yy_switch_to_buffer(bstk->bufferstate);
+  curbstk = bstk;
+  yylineno = 1;
+  curfilename = fn;
+  return 1;
+}
+
+int popfile(void){
+  struct buffstack *bstk = curbstk;
+  struct buffstack *prevbstk;
+
+  if(!bstk){
+    return 0;
+  }
+
+  /* 删除当前文件信息 */
+  fclose(bstk->f);
+  yy_delete_buffer(bstk->bufferstate);
+
+  /* 切换回上一个文件 */
+  prevbstk = bstk->prev;
+  free(bstk);
+
+  if(!prevbstk){
+    return 0;
+  }
+
+  yy_switch_to_buffer(prevbstk->bufferstate);
+  curbstk=prevbstk;
+  yylineno = curbstk->lineno;
+  curfilename = curbstk->filename;
+  return 1;
+}

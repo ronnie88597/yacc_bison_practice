@@ -155,6 +155,21 @@ ch2/CMakeFiles/2.03_read_files.dir/rule:
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.03_read_files.dir/build.make ch2/CMakeFiles/2.03_read_files.dir/build
 .PHONY : 2.03_read_files/fast
 
+# Convenience name for target.
+ch2/CMakeFiles/2.06_include_file_and_start_state.dir/rule:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ch2/CMakeFiles/2.06_include_file_and_start_state.dir/rule
+.PHONY : ch2/CMakeFiles/2.06_include_file_and_start_state.dir/rule
+
+# Convenience name for target.
+2.06_include_file_and_start_state: ch2/CMakeFiles/2.06_include_file_and_start_state.dir/rule
+
+.PHONY : 2.06_include_file_and_start_state
+
+# fast build rule for target.
+2.06_include_file_and_start_state/fast:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build
+.PHONY : 2.06_include_file_and_start_state/fast
+
 2.01_usual_lang_lex_re.o: 2.01_usual_lang_lex_re.c.o
 
 .PHONY : 2.01_usual_lang_lex_re.o
@@ -236,6 +251,33 @@ ch2/CMakeFiles/2.03_read_files.dir/rule:
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.03_read_files.dir/build.make ch2/CMakeFiles/2.03_read_files.dir/2.03_read_files.c.s
 .PHONY : 2.03_read_files.c.s
 
+2.06_include_file_and_start_state.o: 2.06_include_file_and_start_state.c.o
+
+.PHONY : 2.06_include_file_and_start_state.o
+
+# target to build an object file
+2.06_include_file_and_start_state.c.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o
+.PHONY : 2.06_include_file_and_start_state.c.o
+
+2.06_include_file_and_start_state.i: 2.06_include_file_and_start_state.c.i
+
+.PHONY : 2.06_include_file_and_start_state.i
+
+# target to preprocess a source file
+2.06_include_file_and_start_state.c.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.i
+.PHONY : 2.06_include_file_and_start_state.c.i
+
+2.06_include_file_and_start_state.s: 2.06_include_file_and_start_state.c.s
+
+.PHONY : 2.06_include_file_and_start_state.s
+
+# target to generate assembly for a file
+2.06_include_file_and_start_state.c.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.s
+.PHONY : 2.06_include_file_and_start_state.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,10 +285,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... 2.01_usual_lang_lex_re"
 	@echo "... edit_cache"
+	@echo "... 2.01_usual_lang_lex_re"
 	@echo "... 2.02_use_yyin_to_read_data_from_file"
 	@echo "... 2.03_read_files"
+	@echo "... 2.06_include_file_and_start_state"
 	@echo "... 2.01_usual_lang_lex_re.o"
 	@echo "... 2.01_usual_lang_lex_re.i"
 	@echo "... 2.01_usual_lang_lex_re.s"
@@ -256,6 +299,9 @@ help:
 	@echo "... 2.03_read_files.o"
 	@echo "... 2.03_read_files.i"
 	@echo "... 2.03_read_files.s"
+	@echo "... 2.06_include_file_and_start_state.o"
+	@echo "... 2.06_include_file_and_start_state.i"
+	@echo "... 2.06_include_file_and_start_state.s"
 .PHONY : help
 
 

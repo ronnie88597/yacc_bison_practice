@@ -10,7 +10,8 @@
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/CMakeFiles/edit_cache.dir
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/CMakeFiles/1.06.dir
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/rebuild_cache.dir
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.01_usual_lang_lex_re.dir
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/edit_cache.dir
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.01_usual_lang_lex_re.dir
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.03_read_files.dir
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.06_include_file_and_start_state.dir

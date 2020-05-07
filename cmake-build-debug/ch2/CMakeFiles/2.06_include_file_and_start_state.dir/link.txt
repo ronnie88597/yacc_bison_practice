@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o  -o 2.06_include_file_and_start_state 

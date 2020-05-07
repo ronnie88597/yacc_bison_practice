@@ -127,7 +127,7 @@ int yylval = 0;
 \"[^"]*\"                                                   { return STRING; }           // 识别字符串
 
 "//"[^\n]*\n                                                { return ANNOTATION; }   // 识别单行注释
-"/*".*"*/"                                                  { return MULTI_LINE_ANNOTATION; }   // 识别多行注释
+"/*"([^*]|\*+[^/*])*"*/"                                                  { return MULTI_LINE_ANNOTATION; }   // 识别多行注释
 
 [ \t]                   { /*忽略空白字符*/ }
 %%

@@ -46,7 +46,7 @@ enum TokenType
 
 
 "//"[^\n]*\n                                                { printf("ANNOTATION\n"); return ANNOTATION; }   // 识别单行注释
-"/*".*"*/"                                                  { printf("MULTI_LINE_ANNOTATION\n"); return MULTI_LINE_ANNOTATION; }   // 识别多行注释
+"/*"([^*]|\*+[^/*])*"*/"                                                  { printf("MULTI_LINE_ANNOTATION\n"); return MULTI_LINE_ANNOTATION; }   // 识别多行注释
 
 
 \n                                                          { printf("NEWLINE\n"); return UNDEFINE; }        // 识别换行符号

@@ -84,7 +84,115 @@
 
 ### 3.03 bison移进/规约冲突和操作符优先级
 
+移进/规约冲突一般是由文法二义性造成的，关于二义性[可以看看这篇文章](https://blog.csdn.net/weixin_46222091/article/details/104447726)，以及[这位中科院老师的讲解](https://www.bilibili.com/video/BV17W41187gL?p=35)。对于这种问题bison提供了一个聪明的方法，它可以在语法规则之外单独描述优先级。这不仅消除了二义性，也使得语法分析器代码变得短小而且易于维护。
 
+#### bison操作符优先级的规则
 
+bison操作符优先级的规则，使用`%left`，`%right`，`%nonassoc`或`%precedence`声明记号并指定其优先级和关联性。它的语法与`%token`语法非常相似，如下：
 
+``` c
+%left symbols…
+%left <type> symbols…
+```
+
+以表达式“ x op y op z”为例，运算符op的关联性决定了运算符嵌套，是通过先将x与y分组还是先将y与z分组来解析。
+
+1.  ％left指定左相关性（将x与y优先分组）
+2.  ％right指定右相关性（将y与z优先分组）
+3.   ％nonassoc未指定关联性，这意味着“ x op y op z”被视为语法错误。
+4.  ％precedence仅赋予符号优先级，并且根本不定义任何关联性。使用此命令仅定义优先级，并保留由于启用了关联性而引起的任何潜在冲突。
+
+运算符的优先级确定它如何与其他运算符嵌套。在单个优先级声明中声明的所有标记都具有相同的优先级，并根据它们的关联性嵌套在一起。当在不同优先级声明中声明的两个标记相关联时，**后一个声明的标记具有更高的优先级**，并且首先分组。
+
+结合下面的一个例子进一步学习bison操作符的优先级规则：
+
+```c
+%{
+    enum Node_T{
+        NT_UNDEF,
+        NT_ADD,
+        NT_SUB,
+        NT_MUL,
+        NT_DIV,
+        NT_ABS,
+        NT_NEG,
+    };
+    
+    struct ast *newast(int nodetype, struct ast *lft, struct ast *rht);
+    struct ast *newnum(double d);
+%}
+
+%union{
+    struct ast *a;
+}
+/* 声明的顺序决定了优先级，越后声明的优先级越高。bison遇到移进/规约冲突时，它将查询优先级表，来解决冲突 */
+%left '+' '-'
+%left '*' '/'
+%nonassoc '|' UMINUS // UMINUS为符号操作符的伪记号。使用%nonassoc来声明'|'和UMINUS，表示这两个操作符没有结合性，并且它们具有最高的优先级。
+    
+%type <a> exp
+
+%%
+...
+exp: exp '+' exp { $$ = newast(NT_ADD, $1, $3); }
+   | exp '-' exp { $$ = newast(NT_SUB, $1, $3); }
+   | exp '*' exp { $$ = newast(NT_MUL, $1, $3); }
+   | exp '/' exp { $$ = newast(NT_DIV, $1, $3); }
+   | '|' exp     { $$ = newast(NT_ABS, $2, NULL); }
+   | '(' exp ')' { $$ = $2; }
+   | '-' exp %prec UMINUS   { $$ = newast(NT_NEG, NULL, $2); } // '-'原本声明时的优先级要小于'*'，使用%pre UMINUS，可以让'-'拥有UMINUS的优先级。从而使得表达出"负号"的效果
+   | NUMBER { $$ = newnum($1); }
+%%
+```
+
+#### 什么时候不应该使用优先级规则
+
+使用优先级规则解决移进/规约冲突时，有的时候会写出让人难以明白的语法规则。例如下面情况：表达式语法或解决在if/then/else语言结构的语法中的"dangling else"冲突，如下：
+
+一个经典的例子：
+$$
+\begin{aligned}
+Statement \rightarrow&\ \text{if}\ Expr\ \text{then} \ Statement\ \text{else}\ Statement\\
+&|\text{if}\ Expr\ \text{then} \ Statement\\
+&|Assignment\\
+&|\ \ ...other statements...
+\end{aligned}
+$$
+从这个语法片段可以看出，else是可选的。不幸的是，下列代码片段：
+
+$\text{if}\ Expr1\ \text{then}\ \text{if}\ Expr2\ \text{then}\ Assignment1\ \text{else}\ Assignment2$
+
+这种语法的二义性，应该通过**修正语法**来解决冲突。`引入新的规则`来确定到底由哪个if来控制特定的else子句。应该将上面的语法规则修改为：
+$$
+\begin{aligned}
+Statement \rightarrow&\ \text{if}\ Expr\ \text{then} \ Statement\\
+&|\text{if}\ Expr\ \text{then} \ WithElse\ \text{else}\ Statement\\
+&|Assignment\\
+WithElse \rightarrow&\ \text{if}\ Expr\ \text{then} \ WithElse\ \text{else}\ WithElse\\
+&|Assignment\\
+\end{aligned}
+$$
+通常出现二义性语法都可以通过`引入新的规则`来消除二义性，这样做会增加语法树的高度。
+
+### 3.04 flex和bison实现简单的C--编译器并生成obj文件
+
+从第一章写到第三章，终于写到这里了，终于可以做一个名正言顺的简单编译器了。。(*^__^*) 嘻嘻……
+
+本节主要是实现简单的C--编译器并生成obj文件，我将主要的中心放在结合flex和bison的强大功能，做词法、语法分析、以及简单的语法制导翻译，最终生成LLVM IR上。至于LLVM IR的优化，指令选择，指令调度，寄存器分配等并不打算自己开发，直接使用LLVM所提供的相关功能。
+
+以下废话要开始了
+
+。。。。。。。。。。。。。**时间紧的朋友可以跳过**
+
+```
+不直接开发其主要原因还是目前对LLVM的掌握尚浅，以及针对特定CPU架构的指令选择，指令调度，寄存器分配等的知识储备不够。后面我还会进一步做关于编译器的几大方面的学习：
+
+1.  结合LLVM的基础设施对AMD架构部分基本指令进行指令选择，指令调度，寄存器分配等进行实践，并且陆续将积累的很多心得和体会分享到博客中；
+2.  结合当前国内外关于编译器优化的文献进行研究，并实践其中部分有意思的编译器优化的最新技术，将心得和体会分享到博客中；
+3.  罗列当前主流编译器其中用到的重要算法，对这些重要算法及其相关数据结构进行剖析，将心得和体会分享到博客中；
+```
+
+重要事情说三遍：**有兴趣的请关注一下我哟。** **有兴趣的请关注一下我哟。** **有兴趣的请关注一下我哟。**
+
+。。。。。。。。。。。。。。好了废话了一大堆，言归正传
 

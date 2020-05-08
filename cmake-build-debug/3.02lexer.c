@@ -364,12 +364,11 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[32] =
+static const flex_int16_t yy_accept[31] =
     {   0,
         0,    0,   14,   12,   11,    9,    6,    7,    3,    1,
-        2,    4,    8,    5,    8,    0,    8,    8,    0,   10,
-        8,    0,    0,    0,    0,    8,    0,    8,    0,    8,
-        0
+        2,    4,    8,    5,    0,    8,    8,    0,   10,    8,
+        0,    0,    0,    0,    8,    0,    8,    0,    8,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -410,40 +409,40 @@ static const YY_CHAR yy_meta[14] =
         2,    1,    1
     } ;
 
-static const flex_int16_t yy_base[36] =
+static const flex_int16_t yy_base[35] =
     {   0,
-        0,    0,   39,   40,   40,   40,   40,   40,   40,   27,
-       26,   26,    5,   40,    0,   32,    6,   22,   30,   40,
-       20,   20,   19,   18,   17,   16,   15,   14,   13,   12,
-       40,   18,   20,   19,   13
+        0,    0,   37,   38,   38,   38,   38,   38,   38,   38,
+       38,   26,    5,   38,   32,    6,   22,   30,   38,   20,
+       20,   19,   18,   17,   16,   15,   14,   13,   12,   38,
+       18,   20,   19,   13
     } ;
 
-static const flex_int16_t yy_def[36] =
+static const flex_int16_t yy_def[35] =
     {   0,
-       31,    1,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   31,   31,   13,   32,   31,   13,   32,   31,
-       17,   33,   34,   35,   31,   31,   31,   31,   31,   31,
-        0,   31,   31,   31,   31
+       30,    1,   30,   30,   30,   30,   30,   30,   30,   30,
+       30,   30,   30,   30,   31,   30,   13,   31,   30,   16,
+       32,   33,   34,   30,   30,   30,   30,   30,   30,    0,
+       30,   30,   30,   30
     } ;
 
-static const flex_int16_t yy_nxt[54] =
+static const flex_int16_t yy_nxt[52] =
     {   0,
         4,    5,    6,    7,    8,    9,   10,   11,    4,   12,
-       13,    4,   14,   17,   29,   18,   21,   22,   19,   19,
-       27,   25,   30,   30,   28,   28,   26,   26,   30,   28,
-       26,   24,   20,   23,   20,   16,   15,   15,   31,    3,
-       31,   31,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   31
+       13,    4,   14,   16,   28,   17,   20,   21,   18,   18,
+       26,   24,   29,   29,   27,   27,   25,   25,   29,   27,
+       25,   23,   19,   22,   19,   15,   30,    3,   30,   30,
+       30,   30,   30,   30,   30,   30,   30,   30,   30,   30,
+       30
     } ;
 
-static const flex_int16_t yy_chk[54] =
+static const flex_int16_t yy_chk[52] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,   13,   35,   13,   17,   17,   32,   32,
-       34,   33,   30,   29,   28,   27,   26,   25,   24,   23,
-       22,   21,   19,   18,   16,   12,   11,   10,    3,   31,
-       31,   31,   31,   31,   31,   31,   31,   31,   31,   31,
-       31,   31,   31
+        1,    1,    1,   13,   34,   13,   16,   16,   31,   31,
+       33,   32,   29,   28,   27,   26,   25,   24,   23,   22,
+       21,   20,   18,   17,   15,   12,    3,   30,   30,   30,
+       30,   30,   30,   30,   30,   30,   30,   30,   30,   30,
+       30
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -464,9 +463,9 @@ char *yytext;
 #line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 #include "fb3.02.h"
 #include "3.02_create_AST_with_bison.tab.h"
-#line 468 "3.02lexer.c"
+#line 467 "3.02lexer.c"
 /* 浮点数指数部分 */
-#line 470 "3.02lexer.c"
+#line 469 "3.02lexer.c"
 
 #define INITIAL 0
 
@@ -685,7 +684,7 @@ YY_DECL
 	{
 #line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 
-#line 689 "3.02lexer.c"
+#line 688 "3.02lexer.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -712,13 +711,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 32 )
+				if ( yy_current_state >= 31 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 40 );
+		while ( yy_base[yy_current_state] != 38 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -791,7 +790,7 @@ YY_RULE_SETUP
 #line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 ECHO;
 	YY_BREAK
-#line 795 "3.02lexer.c"
+#line 794 "3.02lexer.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1088,7 +1087,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 32 )
+			if ( yy_current_state >= 31 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1116,11 +1115,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 32 )
+		if ( yy_current_state >= 31 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 31);
+	yy_is_jam = (yy_current_state == 30);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }

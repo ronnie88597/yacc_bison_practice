@@ -25,7 +25,7 @@ struct ast *newnum(double d) {
     yyerror("out of memory!");
     exit(0);
   }
-  a->nodetype = 'K';
+  a->nodetype = NT_NUM;
   a->number = d;
 
   // 此处将"struct numval"的类型强制转换为"struct ast"类型，是因为能够统一适配eval函数的入参类型；
@@ -39,24 +39,29 @@ double eval(struct ast *a) {
   double v = 0; // result of eval
 
   switch (a->nodetype) {
-    case 'K':
+    case NT_NUM:
       v = ((struct numval *) a)->number;
       break;
-    case '+':
+    case NT_ADD:
       v = eval(a->lft) + eval(a->rht);
       break;
-    case '-':
+    case NT_SUB:
       v = eval(a->lft) - eval(a->rht);
       break;
-    case '*':
+    case NT_MUL:
       v = eval(a->lft) * eval(a->rht);
       break;
-    case '/':
+    case NT_DIV:
       v = eval(a->lft) / eval(a->rht);
       break;
-    case '|':
+    case NT_ABS:
       v = eval(a->lft);
+      v = v < 0 ? v * -1.0f : v;
       break;
+    case NT_NEG: // 处理负数求值
+      v = eval(a->lft) * -1.0f;
+      break;
+
     default:
       printf("internal error:bad nodetype=%c,%d\n",
              a->nodetype, a->nodetype);
@@ -68,17 +73,18 @@ double eval(struct ast *a) {
 /* 递归释放各个树节点 */
 void treefree(struct ast *a) {
   switch (a->nodetype) {
-    case '+':/* 2颗子树 */
-    case '-':
-    case '*':
-    case '/':
+    case NT_ADD:/* 2颗子树 */
+    case NT_SUB:
+    case NT_MUL:
+    case NT_DIV:
       treefree(a->lft);
       treefree(a->rht);
       break;
-    case '|': /* 1颗子树 */
-      treefree(a->rht);
+    case NT_ABS: /* 1颗子树 */
+    case NT_NEG:
+      treefree(a->lft);
       break;
-    case 'K':/* 没有子树 */
+    case NT_NUM:/* 没有子树 */
       free(a);
       a = NULL;
       break;

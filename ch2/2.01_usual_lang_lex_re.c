@@ -361,13 +361,13 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[46] =
+static const flex_int16_t yy_accept[45] =
     {   0,
         0,    0,   20,   18,   17,   16,    9,   18,    2,    4,
         1,    1,   18,    1,   10,   18,   18,   11,    4,    4,
-        0,   13,    7,    3,    0,   10,   12,    0,    0,   12,
-        0,    6,    5,   11,    8,    0,    0,    0,   14,   12,
-        0,   12,    0,   15,    0
+        0,   13,    7,    3,   12,    0,    0,   12,   10,    0,
+        6,    5,   11,    8,    0,    0,    0,   14,   12,    0,
+       12,    0,   15,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -408,46 +408,46 @@ static const YY_CHAR yy_meta[19] =
         1,    2,    1,    1,    2,    2,    1,    1
     } ;
 
-static const flex_int16_t yy_base[50] =
+static const flex_int16_t yy_base[49] =
     {   0,
-        0,    0,   60,   61,   61,   61,   61,   54,   61,   51,
-       49,    9,   44,   12,   14,   42,   40,    0,   61,   35,
-       47,   61,   61,   61,   39,    0,   13,   42,   46,   15,
-       23,   61,   61,    0,   61,   40,   25,   44,   61,   22,
-       27,   16,   29,   61,   61,   40,   20,   42,   44
+        0,    0,   57,   58,   58,   58,   58,   51,   58,   48,
+       46,   58,   41,   11,   13,   39,   37,    0,   58,   32,
+       44,   58,   58,   58,    8,   40,   44,   14,    0,   19,
+       58,   58,    0,   58,   38,   24,   35,   58,   21,   22,
+       15,   28,   58,   58,   39,   19,   41,   43
     } ;
 
-static const flex_int16_t yy_def[50] =
+static const flex_int16_t yy_def[49] =
     {   0,
-       45,    1,   45,   45,   45,   45,   45,   46,   45,   45,
-       45,   45,   45,   45,   45,   45,   45,   47,   45,   45,
-       46,   45,   45,   45,   45,   15,   45,   48,   49,   45,
-       45,   45,   45,   47,   45,   48,   48,   49,   45,   45,
-       45,   45,   48,   45,    0,   45,   45,   45,   45
+       44,    1,   44,   44,   44,   44,   44,   45,   44,   44,
+       44,   44,   44,   44,   44,   44,   44,   46,   44,   44,
+       45,   44,   44,   44,   44,   47,   48,   44,   15,   44,
+       44,   44,   46,   44,   47,   47,   48,   44,   44,   44,
+       44,   47,   44,    0,   44,   44,   44,   44
     } ;
 
-static const flex_int16_t yy_nxt[80] =
+static const flex_int16_t yy_nxt[77] =
     {   0,
         4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
-       14,   15,   16,   17,   18,   18,   19,   20,   25,   28,
-       26,   34,   29,   30,   27,   26,   40,   42,   31,   31,
-       31,   41,   43,   40,   42,   44,   43,   31,   42,   45,
-       21,   21,   36,   36,   38,   38,   39,   37,   39,   37,
-       27,   22,   35,   33,   32,   27,   24,   23,   22,   45,
-        3,   45,   45,   45,   45,   45,   45,   45,   45,   45,
-       45,   45,   45,   45,   45,   45,   45,   45,   45
+       14,   15,   16,   17,   18,   18,   19,   20,   26,   25,
+       33,   27,   28,   30,   29,   39,   41,   40,   30,   30,
+       41,   42,   39,   41,   43,   42,   30,   38,   44,   21,
+       21,   35,   35,   37,   37,   36,   38,   36,   22,   34,
+       32,   31,   25,   24,   23,   22,   44,    3,   44,   44,
+       44,   44,   44,   44,   44,   44,   44,   44,   44,   44,
+       44,   44,   44,   44,   44,   44
     } ;
 
-static const flex_int16_t yy_chk[80] =
+static const flex_int16_t yy_chk[77] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,   12,   14,
-       12,   47,   14,   15,   27,   15,   30,   42,   27,   15,
-       30,   31,   37,   40,   31,   37,   43,   40,   41,   43,
-       46,   46,   48,   48,   49,   49,   38,   36,   29,   28,
-       25,   21,   20,   17,   16,   13,   11,   10,    8,    3,
-       45,   45,   45,   45,   45,   45,   45,   45,   45,   45,
-       45,   45,   45,   45,   45,   45,   45,   45,   45
+        1,    1,    1,    1,    1,    1,    1,    1,   14,   25,
+       46,   14,   15,   25,   15,   28,   41,   30,   15,   28,
+       30,   36,   39,   40,   36,   42,   39,   37,   42,   45,
+       45,   47,   47,   48,   48,   35,   27,   26,   21,   20,
+       17,   16,   13,   11,   10,    8,    3,   44,   44,   44,
+       44,   44,   44,   44,   44,   44,   44,   44,   44,   44,
+       44,   44,   44,   44,   44,   44
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -734,13 +734,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 46 )
+				if ( yy_current_state >= 45 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 61 );
+		while ( yy_base[yy_current_state] != 58 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -1160,7 +1160,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 46 )
+			if ( yy_current_state >= 45 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1188,11 +1188,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 46 )
+		if ( yy_current_state >= 45 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 45);
+	yy_is_jam = (yy_current_state == 44);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1877,4 +1877,12 @@ void yyfree (void * ptr )
 //    1. Flex将匹配尽可能多的的字符串
 //    2. 如果根据1处理后，仍然存在多个模式的话，Flex将选择更早定义的模式来匹配
 //
+*/
+
+/*
+注意：
+  对于识别多行注释：
+  "/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
+  是不对的，虽然能够满足大多的场景。  但有可能注释会很长，而flex的记号有一定的输入缓冲的长度限制，通常是16K。
+  为了能够满足对注释的正确识别，应该使用起始条件（start condition）方法。
 */

@@ -8,18 +8,6 @@
 
 ../ch3/3.02/fb3.02.h
 
-/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/fb3.02.c
-stdio.h
--
-stdlib.h
--
-stdarg.h
--
-fb3.02.h
-/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/fb3.02.h
-
-/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/fb3.02.h
-
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.c
 stdio.h
 -

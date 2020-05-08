@@ -361,31 +361,30 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[202] =
+static const flex_int16_t yy_accept[201] =
     {   0,
         0,    0,   67,   66,   65,    9,   66,   25,    2,    4,
        26,   13,   14,    1,    1,   22,    1,   66,    1,   59,
        23,   24,   17,   19,   21,   60,   11,   12,    4,   60,
        60,   60,   60,   60,   60,   60,   60,   60,   60,   60,
        60,   60,   60,   60,   15,    4,   16,    0,   62,    7,
-        3,    0,   59,   10,   61,    0,    0,   61,    0,    6,
-       18,   20,    5,   60,   60,   60,   60,   60,   60,   60,
-       34,   60,   60,   60,   60,   60,   60,   42,   60,   60,
-       60,   60,   60,   60,   60,   60,   60,   60,   60,    8,
-        0,    0,    0,   63,   61,    0,   61,   60,   60,   60,
+        3,   10,   61,    0,    0,   61,   59,    0,    6,   18,
+       20,    5,   60,   60,   60,   60,   60,   60,   60,   34,
+       60,   60,   60,   60,   60,   60,   42,   60,   60,   60,
+       60,   60,   60,   60,   60,   60,   60,   60,    8,    0,
+        0,    0,   63,   61,    0,   61,   60,   60,   60,   60,
 
-       60,   60,   60,   60,   60,   60,   60,   60,   40,   60,
-       43,   60,   60,   60,   60,   60,   60,   60,   60,   60,
-       60,   60,   60,   60,   60,   60,    0,   64,   27,   60,
-       29,   30,   60,   60,   60,   60,   36,   37,   60,   60,
-       41,   44,   60,   60,   60,   60,   60,   60,   60,   60,
-       60,   60,   60,   56,   60,   60,   28,   31,   60,   60,
-       60,   60,   39,   60,   60,   47,   60,   60,   60,   60,
-       60,   60,   54,   60,   60,   58,   60,   60,   35,   38,
-       60,   46,   48,   49,   50,   51,   52,   60,   60,   60,
-       60,   33,   60,   53,   60,   60,   32,   45,   55,   57,
+       60,   60,   60,   60,   60,   60,   60,   40,   60,   43,
+       60,   60,   60,   60,   60,   60,   60,   60,   60,   60,
+       60,   60,   60,   60,   60,    0,   64,   27,   60,   29,
+       30,   60,   60,   60,   60,   36,   37,   60,   60,   41,
+       44,   60,   60,   60,   60,   60,   60,   60,   60,   60,
+       60,   60,   56,   60,   60,   28,   31,   60,   60,   60,
+       60,   39,   60,   60,   47,   60,   60,   60,   60,   60,
+       60,   54,   60,   60,   58,   60,   60,   35,   38,   60,
+       46,   48,   49,   50,   51,   52,   60,   60,   60,   60,
+       33,   60,   53,   60,   60,   32,   45,   55,   57,    0
 
-        0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -430,128 +429,128 @@ static const YY_CHAR yy_meta[57] =
         2,    2,    2,    1,    1,    1
     } ;
 
-static const flex_int16_t yy_base[206] =
+static const flex_int16_t yy_base[205] =
     {   0,
-        0,    0,  233,  234,  234,  234,  227,  234,  234,  223,
-      234,  234,  234,  218,   41,  234,   42,  211,   49,   46,
-      234,  234,   46,   47,  234,    0,  234,  234,  234,  180,
-      182,   41,   39,   34,   37,  183,   44,  182,  190,   50,
-      171,  180,  178,  183,  234,  164,  234,  213,  234,  234,
-      234,  199,   65,  234,   72,  204,  212,   75,   81,  234,
-      234,  234,  234,    0,  167,  179,  166,  181,  168,  174,
-      160,  161,  158,  158,  161,  158,  155,    0,  154,  158,
-       56,  156,   53,   65,  160,  153,   66,   67,  158,  234,
-      183,   96,  191,  234,   91,  175,  174,  148,  160,  155,
+        0,    0,  228,  229,  229,  229,  222,  229,  229,  218,
+      229,  229,  229,  213,  229,  229,  201,  205,   45,   42,
+      229,  229,   42,   43,  229,    0,  229,  229,  229,  174,
+      176,   37,   27,   31,   29,  177,   41,  176,  184,   40,
+      165,  174,  172,  177,  229,  158,  229,  207,  229,  229,
+      229,  229,   63,  199,  207,   66,   70,   80,  229,  229,
+      229,  229,    0,  162,  174,  161,  176,  163,  169,  155,
+      156,  153,  153,  156,  153,  150,    0,  149,  153,   55,
+      151,   58,   55,  155,  148,   59,   61,  153,  229,  178,
+       91,  186,  229,   86,  170,  169,  143,  155,  150,  138,
 
-      143,   68,  157,  155,  151,  143,  149,  152,    0,  138,
-        0,  144,  141,  130,  132,  134,  141,  127,  125,  125,
-      137,  127,  131,  135,  137,  126,   99,  234,    0,  126,
-        0,    0,  117,  125,  114,  121,    0,    0,  115,  112,
-        0,    0,  112,  112,  109,  121,  111,  115,  120,  119,
-      117,  107,  112,    0,  100,  112,    0,    0,  103,  104,
-      109,  100,    0,   94,   98,    0,  106,  103,  105,   89,
-       98,  100,    0,   91,   94,    0,   83,   83,    0,    0,
-       95,    0,    0,    0,    0,    0,    0,   93,   93,   86,
-       91,    0,   79,    0,   69,   41,    0,    0,    0,    0,
+       60,  152,  150,  146,  138,  144,  147,    0,  133,    0,
+      139,  136,  125,  127,  129,  136,  122,  120,  120,  132,
+      122,  126,  130,  132,  121,   97,  229,    0,  121,    0,
+        0,  112,  120,  109,  116,    0,    0,  110,  107,    0,
+        0,  107,  107,  104,  116,  106,  110,  115,  114,  112,
+      102,  107,    0,   95,  107,    0,    0,   98,   99,  104,
+       95,    0,   89,   93,    0,  101,   98,  100,   84,   93,
+       95,    0,   86,   89,    0,   78,   78,    0,    0,   90,
+        0,    0,    0,    0,    0,    0,   88,   88,   81,   79,
+        0,   65,    0,   46,   41,    0,    0,    0,    0,  229,
 
-      234,  117,   61,  119,  121
+      114,   57,  116,  118
     } ;
 
-static const flex_int16_t yy_def[206] =
+static const flex_int16_t yy_def[205] =
     {   0,
-      201,    1,  201,  201,  201,  201,  202,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  203,  201,  201,  201,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  201,  201,  201,  202,  201,  201,
-      201,  201,  201,  201,  201,  204,  205,  201,  201,  201,
-      201,  201,  201,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  201,
-      204,  204,  205,  201,  201,  201,  201,  203,  203,  203,
+      200,    1,  200,  200,  200,  200,  201,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  202,  200,  200,  200,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  200,  200,  200,  201,  200,  200,
+      200,  200,  200,  203,  204,  200,  200,  200,  200,  200,
+      200,  200,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  200,  203,
+      203,  204,  200,  200,  200,  200,  202,  202,  202,  202,
 
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  204,  201,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
-      203,  203,  203,  203,  203,  203,  203,  203,  203,  203,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  203,  200,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,  202,
+      202,  202,  202,  202,  202,  202,  202,  202,  202,    0,
 
-        0,  201,  201,  201,  201
+      200,  200,  200,  200
     } ;
 
-static const flex_int16_t yy_nxt[291] =
+static const flex_int16_t yy_nxt[286] =
     {   0,
         4,    5,    4,    6,    7,    8,    9,   10,   11,   12,
        13,   14,   15,   16,   17,   18,   19,   20,   21,   22,
        23,    4,   24,   25,   26,   26,   27,   28,   29,   30,
        31,   32,   33,   34,   35,   36,   26,   37,   26,   38,
        26,   26,   26,   26,   39,   40,   41,   42,   43,   44,
-       26,   26,   26,   45,   46,   47,   52,   52,   53,   53,
-       56,   58,   64,   53,   54,   57,   60,   61,   62,   63,
-       67,   59,   70,   72,  200,   73,   75,   68,   78,   76,
-       58,   71,   53,   69,   74,   79,   82,   83,  116,   55,
-       59,  113,   95,   96,  118,   96,   84,   59,   97,   85,
+       26,   26,   26,   45,   46,   47,   54,   56,   63,   57,
+       69,   55,   59,   60,   61,   62,   66,   58,   74,   70,
+       71,   75,   72,   67,  199,   77,   81,   82,  198,   68,
+       53,   73,   78,   94,  117,   56,   83,   57,   58,   84,
+      112,   58,   95,  115,   95,   58,  121,   96,  123,  118,
 
-       59,  199,  114,  122,  124,  117,  125,  127,   95,  119,
-      127,  123,  128,  133,  134,  201,   59,   48,   48,   91,
-       91,   93,   93,  198,  197,  196,  195,  194,  193,  192,
-      191,  190,  189,  188,  187,  186,  185,  184,  183,  182,
-      181,  180,  179,  178,  177,  176,  175,  174,  173,  172,
-      171,  170,  169,  168,  167,  166,  165,  164,  163,  162,
-      161,  160,  159,  158,  157,  156,  155,  154,  153,  152,
-      151,  150,  149,  148,  147,  146,  145,  144,  143,  142,
-      141,  140,  139,  138,  137,  136,  135,  132,  131,  130,
-      129,   97,   97,   94,   92,  126,  121,  120,  115,  112,
+      124,  113,  126,   94,  122,  132,  133,  127,  126,  197,
+      116,   58,  196,  200,   48,   48,   90,   90,   92,   92,
+      195,  194,  193,  192,  191,  190,  189,  188,  187,  186,
+      185,  184,  183,  182,  181,  180,  179,  178,  177,  176,
+      175,  174,  173,  172,  171,  170,  169,  168,  167,  166,
+      165,  164,  163,  162,  161,  160,  159,  158,  157,  156,
+      155,  154,  153,  152,  151,  150,  149,  148,  147,  146,
+      145,  144,  143,  142,  141,  140,  139,  138,  137,  136,
+      135,  134,  131,  130,  129,  128,   96,   96,   93,   91,
+      125,  120,  119,  114,  111,  110,  109,  108,  107,  106,
 
-      111,  110,  109,  108,  107,  106,  105,  104,  103,  102,
-      101,  100,   99,   98,   94,   92,   55,   49,   90,   89,
-       88,   87,   86,   81,   80,   77,   66,   65,   55,   51,
-       50,   49,  201,    3,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201
+      105,  104,  103,  102,  101,  100,   99,   98,   97,   93,
+       91,   49,   89,   88,   87,   86,   85,   80,   79,   76,
+       65,   64,   53,   52,   51,   50,   49,  200,    3,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200
     } ;
 
-static const flex_int16_t yy_chk[291] =
+static const flex_int16_t yy_chk[286] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,   15,   17,   15,   17,
-       19,   20,  203,   20,   17,   19,   23,   23,   24,   24,
-       32,   20,   33,   34,  196,   34,   35,   32,   37,   35,
-       53,   33,   53,   32,   34,   37,   40,   40,   83,   55,
-       53,   81,   58,   59,   84,   59,   40,   55,   59,   40,
+        1,    1,    1,    1,    1,    1,   19,   20,  202,   20,
+       33,   19,   23,   23,   24,   24,   32,   20,   35,   33,
+       34,   35,   34,   32,  195,   37,   40,   40,  194,   32,
+       53,   34,   37,   56,   83,   57,   40,   57,   53,   40,
+       80,   56,   58,   82,   58,   57,   86,   58,   87,   83,
 
-       58,  195,   81,   87,   88,   83,   88,   92,   95,   84,
-      127,   87,   92,  102,  102,  127,   95,  202,  202,  204,
-      204,  205,  205,  193,  191,  190,  189,  188,  181,  178,
-      177,  175,  174,  172,  171,  170,  169,  168,  167,  165,
-      164,  162,  161,  160,  159,  156,  155,  153,  152,  151,
-      150,  149,  148,  147,  146,  145,  144,  143,  140,  139,
-      136,  135,  134,  133,  130,  126,  125,  124,  123,  122,
-      121,  120,  119,  118,  117,  116,  115,  114,  113,  112,
-      110,  108,  107,  106,  105,  104,  103,  101,  100,   99,
-       98,   97,   96,   93,   91,   89,   86,   85,   82,   80,
+       87,   80,   91,   94,   86,  101,  101,   91,  126,  192,
+       82,   94,  190,  126,  201,  201,  203,  203,  204,  204,
+      189,  188,  187,  180,  177,  176,  174,  173,  171,  170,
+      169,  168,  167,  166,  164,  163,  161,  160,  159,  158,
+      155,  154,  152,  151,  150,  149,  148,  147,  146,  145,
+      144,  143,  142,  139,  138,  135,  134,  133,  132,  129,
+      125,  124,  123,  122,  121,  120,  119,  118,  117,  116,
+      115,  114,  113,  112,  111,  109,  107,  106,  105,  104,
+      103,  102,  100,   99,   98,   97,   96,   95,   92,   90,
+       88,   85,   84,   81,   79,   78,   76,   75,   74,   73,
 
-       79,   77,   76,   75,   74,   73,   72,   71,   70,   69,
-       68,   67,   66,   65,   57,   56,   52,   48,   46,   44,
-       43,   42,   41,   39,   38,   36,   31,   30,   18,   14,
-       10,    7,    3,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201,
-      201,  201,  201,  201,  201,  201,  201,  201,  201,  201
+       72,   71,   70,   69,   68,   67,   66,   65,   64,   55,
+       54,   48,   46,   44,   43,   42,   41,   39,   38,   36,
+       31,   30,   18,   17,   14,   10,    7,    3,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200,  200,  200,  200,  200,  200,
+      200,  200,  200,  200,  200
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -574,8 +573,9 @@ char *yytext;
 在词法分析的时候，经常我们需要一个NextToken的函数，这个函数每一次调用返回下一个识别了的Token
 本例子就是结合Flex来实现NextToken函数的基本功能，来识别C语言中的token
 该词法分析器仅支持标准C98的关键字识别，新的标准增加的关键字并不支持
+此外，对于递增操作符++、递减操作符--、正号+、负号-，不应该放在词法分析器中识别，它们属于语法的范畴。应该在语法分析中识别和处理
 */
-#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 enum TokenType
 {
     INTEGER                 = 1001, // 整数，123
@@ -608,19 +608,7 @@ enum TokenType
 };
 int yylval = 0;
 #line 611 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
-/*"+"                     { return OPERATOR; }*/
-/*"-"                     { return OPERATOR; }*/
-/*"*"                     { return OPERATOR; }*/
-/*"/"                     { return OPERATOR; }*/
-/*"%"                     { return OPERATOR; }*/
-/*"->"                    { return OPERATOR; }*/
-/*"&&"                    { return OPERATOR; }*/
-/*"||"                    { return OPERATOR; }*/
-/*"!"                     { return OPERATOR; }*/
-/*"<<"                    { return OPERATOR; }*/
-/*">>"                    { return OPERATOR; }*/
-/*[&|~^]                  { return OPERATOR; }*/
-#line 624 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
+#line 612 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
 
 #define INITIAL 0
 
@@ -837,9 +825,9 @@ YY_DECL
 		}
 
 	{
-#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 43 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 
-#line 843 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
+#line 831 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -866,13 +854,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 202 )
+				if ( yy_current_state >= 201 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 234 );
+		while ( yy_base[yy_current_state] != 229 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -898,338 +886,338 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 56 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 44 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return OPERATOR;} // 四则运算符 +-*/
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 57 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 45 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return OPERATOR;} // 取模运符 %
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 58 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 46 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return OPERATOR;} // 乘方运符 **
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 59 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return OPERATOR;}       // 位运算符 ~|&^
+#line 47 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return OPERATOR;} // 位运算符 ~|&^
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 60 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return OPERATOR;}       // 位运算符 >>
+#line 48 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return OPERATOR;} // 位运算符 >>
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 61 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return OPERATOR;}       // 位运算符 <<
+#line 49 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return OPERATOR;} // 位运算符 <<
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 62 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return OPERATOR;}       // 布尔运符 &&
+#line 50 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return OPERATOR;} // 布尔运符 &&
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 63 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return OPERATOR;}       // 布尔运符 ||
+#line 51 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return OPERATOR;} // 布尔运符 ||
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 64 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return OPERATOR;}       // 布尔运符 !
+#line 52 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return OPERATOR;} // 布尔运符 !
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 65 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return OPERATOR;}       // 成员运算符号
+#line 53 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return OPERATOR;} // 成员运算符号
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 67 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return L_SQUARE_BRACKET; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 68 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 56 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return R_SQUARE_BRACKET; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 70 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 58 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return L_PARENTHESIS; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 71 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 59 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return R_PARENTHESIS; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 73 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 61 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return L_BRACE; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 74 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 62 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return R_BRACE; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 76 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 64 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return LESS_THAN; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 77 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 65 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return LESS_EQUAL_THAN; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 78 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 66 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return GREAT_THAN; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 79 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 67 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return GREAT_EQUAL_THAN; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 81 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 69 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return QUESTION_SIGN; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 82 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 70 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return COMMA; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 83 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 71 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return COLON; }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 84 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 72 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return SEMICOLON; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 85 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 73 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return POUND_SIGN; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 86 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 74 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return QUOTATION; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 89 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 77 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 90 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 78 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 91 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 79 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 92 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 80 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 93 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 81 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 94 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 82 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 95 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 83 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 96 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 84 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 97 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 85 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 98 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 86 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 99 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 87 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 100 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 88 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 101 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 89 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 102 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 90 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 103 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 91 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 104 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 92 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 105 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 93 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 106 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 94 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 107 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 95 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 108 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 96 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 109 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 97 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 110 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 98 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 111 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 99 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 112 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 100 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 113 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 101 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 114 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 102 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 115 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 103 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 116 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 104 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 117 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 105 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 118 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 106 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 119 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 107 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 120 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 108 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return KEYWORD; }
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 123 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return INTEGER; } // 识别整数
+#line 111 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return INTEGER; } // 识别整数。为什么不用"[-+]?[0-9]+"这样的规则去识别一个整数，是因为"-"是一个语义相关的。例如："-2"在表达式"1-2"中应该识别为减号和整数，而在"1--2"中"-2"应该识别为一个负整数
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 124 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 112 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { return IDENTIFIER; } // 识别标识符
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 125 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return DECIMAL; } // 识别小数，支持小数的科学计数法识别
+#line 113 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return DECIMAL; } // 识别小数，支持小数的科学计数法识别。为什么不用"[-+]?(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?"这样的规则去识别一个整数，是因为"-"是一个语义相关的。
 	YY_BREAK
 case 62:
 /* rule 62 can match eol */
 YY_RULE_SETUP
-#line 127 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return STRING; }           // 识别字符串
+#line 115 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return STRING; } // 识别字符串
 	YY_BREAK
 case 63:
 /* rule 63 can match eol */
 YY_RULE_SETUP
-#line 129 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return ANNOTATION; }   // 识别单行注释
+#line 117 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return ANNOTATION; } // 识别单行注释
 	YY_BREAK
 case 64:
 /* rule 64 can match eol */
 YY_RULE_SETUP
-#line 130 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
-{ return MULTI_LINE_ANNOTATION; }   // 识别多行注释
+#line 118 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+{ return MULTI_LINE_ANNOTATION; } // 识别多行注释
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
-#line 132 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 120 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 { /*忽略空白字符*/ }
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 133 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 121 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 ECHO;
 	YY_BREAK
-#line 1233 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
+#line 1221 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1526,7 +1514,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 202 )
+			if ( yy_current_state >= 201 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1554,11 +1542,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 202 )
+		if ( yy_current_state >= 201 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 201);
+	yy_is_jam = (yy_current_state == 200);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -2234,7 +2222,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 133 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 121 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
 
 
 int NextToken()
@@ -2245,5 +2233,14 @@ int NextToken()
     */
     return yylex();
 };
+
+
+/*
+注意：
+  对于识别多行注释：
+  "/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
+  是不对的，虽然能够满足大多的场景。  但有可能注释会很长，而flex的记号有一定的输入缓冲的长度限制，通常是16K。
+  为了能够满足对注释的正确识别，应该使用起始条件（start condition）方法。
+*/
 
 

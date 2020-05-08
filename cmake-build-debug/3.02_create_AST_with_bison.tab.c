@@ -113,7 +113,7 @@ extern int yydebug;
 
 union YYSTYPE
 {
-#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:355  */
+#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:355  */
 
   struct ast *a;
   double d;
@@ -377,16 +377,16 @@ union yyalloc
 /* YYFINAL -- State number of the termination state.  */
 #define YYFINAL  2
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   28
+#define YYLAST   31
 
 /* YYNTOKENS -- Number of terminals.  */
 #define YYNTOKENS  12
 /* YYNNTS -- Number of nonterminals.  */
 #define YYNNTS  5
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  13
+#define YYNRULES  14
 /* YYNSTATES -- Number of states.  */
-#define YYNSTATES  23
+#define YYNSTATES  25
 
 /* YYTRANSLATE[YYX] -- Symbol number corresponding to YYX as returned
    by yylex, with out-of-bounds checking.  */
@@ -432,8 +432,8 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    19,    19,    20,    21,    24,    25,    26,    29,    30,
-      31,    34,    35,    36
+       0,    24,    24,    25,    26,    29,    30,    31,    34,    35,
+      36,    39,    40,    41,    42
 };
 #endif
 
@@ -458,10 +458,10 @@ static const yytype_uint16 yytoknum[] =
 };
 # endif
 
-#define YYPACT_NINF -9
+#define YYPACT_NINF -6
 
 #define yypact_value_is_default(Yystate) \
-  (!!((Yystate) == (-9)))
+  (!!((Yystate) == (-6)))
 
 #define YYTABLE_NINF -1
 
@@ -472,9 +472,9 @@ static const yytype_uint16 yytoknum[] =
      STATE-NUM.  */
 static const yytype_int8 yypact[] =
 {
-      -9,     0,    -9,    -9,    -9,    -2,    -2,    15,    16,    -9,
-       9,     6,    -9,    -2,    -2,    -2,    -2,    -9,    -9,    16,
-      16,    -9,    -9
+      -6,     1,    -6,    -6,    -6,    11,    11,    11,    18,    19,
+      -6,    -6,    10,    -3,    -6,    11,    11,    11,    11,    -6,
+      -6,    19,    19,    -6,    -6
 };
 
   /* YYDEFACT[STATE-NUM] -- Default reduction number in state STATE-NUM.
@@ -482,21 +482,21 @@ static const yytype_int8 yypact[] =
      means the default is an error.  */
 static const yytype_uint8 yydefact[] =
 {
-       2,     0,     1,    11,     4,     0,     0,     0,     5,     8,
-       0,     0,     3,     0,     0,     0,     0,    12,    13,     6,
-       7,     9,    10
+       2,     0,     1,    11,     4,     0,     0,     0,     0,     5,
+       8,    14,     0,     0,     3,     0,     0,     0,     0,    12,
+      13,     6,     7,     9,    10
 };
 
   /* YYPGOTO[NTERM-NUM].  */
 static const yytype_int8 yypgoto[] =
 {
-      -9,    -9,    20,    -8,    12
+      -6,    -6,    22,    15,    -5
 };
 
   /* YYDEFGOTO[NTERM-NUM].  */
 static const yytype_int8 yydefgoto[] =
 {
-      -1,     1,     7,     8,     9
+      -1,     1,     8,     9,    10
 };
 
   /* YYTABLE[YYPACT[STATE-NUM]] -- What to do in state STATE-NUM.  If
@@ -504,39 +504,41 @@ static const yytype_int8 yydefgoto[] =
      number is the opposite.  If YYTABLE_NINF, syntax error.  */
 static const yytype_uint8 yytable[] =
 {
-       2,     3,     0,     3,     4,    19,    20,     5,     6,     5,
-       6,    13,    14,     0,    13,    14,     0,    18,    17,    12,
-      13,    14,     0,    15,    16,    10,    11,    21,    22
+      11,     2,    15,    16,     3,     4,     0,     5,    20,     0,
+       6,     7,    23,    24,     3,    15,    16,     5,     0,    19,
+       6,     7,    14,    15,    16,     0,    17,    18,    12,    13,
+      21,    22
 };
 
 static const yytype_int8 yycheck[] =
 {
-       0,     3,    -1,     3,     4,    13,    14,     9,    10,     9,
-      10,     5,     6,    -1,     5,     6,    -1,    11,     9,     4,
-       5,     6,    -1,     7,     8,     5,     6,    15,    16
+       5,     0,     5,     6,     3,     4,    -1,     6,    11,    -1,
+       9,    10,    17,    18,     3,     5,     6,     6,    -1,     9,
+       9,    10,     4,     5,     6,    -1,     7,     8,     6,     7,
+      15,    16
 };
 
   /* YYSTOS[STATE-NUM] -- The (internal number of the) accessing
      symbol of state STATE-NUM.  */
 static const yytype_uint8 yystos[] =
 {
-       0,    13,     0,     3,     4,     9,    10,    14,    15,    16,
-      14,    14,     4,     5,     6,     7,     8,     9,    11,    15,
-      15,    16,    16
+       0,    13,     0,     3,     4,     6,     9,    10,    14,    15,
+      16,    16,    14,    14,     4,     5,     6,     7,     8,     9,
+      11,    15,    15,    16,    16
 };
 
   /* YYR1[YYN] -- Symbol number of symbol that rule YYN derives.  */
 static const yytype_uint8 yyr1[] =
 {
        0,    12,    13,    13,    13,    14,    14,    14,    15,    15,
-      15,    16,    16,    16
+      15,    16,    16,    16,    16
 };
 
   /* YYR2[YYN] -- Number of symbols on the right hand side of rule YYN.  */
 static const yytype_uint8 yyr2[] =
 {
        0,     2,     0,     3,     2,     1,     3,     3,     1,     3,
-       3,     1,     3,     3
+       3,     1,     3,     3,     2
 };
 
 
@@ -1213,61 +1215,67 @@ yyreduce:
   switch (yyn)
     {
         case 3:
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+#line 25 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
     { printf("= %4.4g\n", eval((yyvsp[-1].a))); treefree((yyvsp[-1].a)); printf("> "); }
-#line 1219 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 1221 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 4:
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
     { printf("> "); }
-#line 1225 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 1227 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 6:
-#line 25 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
-    { (yyval.a) = newast('+', (yyvsp[-2].a), (yyvsp[0].a)); }
-#line 1231 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 30 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+    { (yyval.a) = newast(NT_ADD, (yyvsp[-2].a), (yyvsp[0].a)); }
+#line 1233 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 7:
-#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
-    { (yyval.a) = newast('-', (yyvsp[-2].a), (yyvsp[0].a)); }
-#line 1237 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 31 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+    { (yyval.a) = newast(NT_SUB, (yyvsp[-2].a), (yyvsp[0].a)); }
+#line 1239 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 9:
-#line 30 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
-    { (yyval.a) = newast('*', (yyvsp[-2].a), (yyvsp[0].a)); }
-#line 1243 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 35 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+    { (yyval.a) = newast(NT_MUL, (yyvsp[-2].a), (yyvsp[0].a)); }
+#line 1245 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 10:
-#line 31 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
-    { (yyval.a) = newast('/', (yyvsp[-2].a), (yyvsp[0].a)); }
-#line 1249 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 36 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+    { (yyval.a) = newast(NT_DIV, (yyvsp[-2].a), (yyvsp[0].a)); }
+#line 1251 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 11:
-#line 34 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+#line 39 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
     { (yyval.a) = newnum((yyvsp[0].d)); }
-#line 1255 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 1257 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 12:
-#line 35 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
-    { (yyval.a) = newast('|', (yyvsp[-1].a), NULL); }
-#line 1261 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 40 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+    { (yyval.a) = newast(NT_ABS, (yyvsp[-1].a), NULL); }
+#line 1263 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 13:
-#line 36 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+#line 41 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
     { (yyval.a) = (yyvsp[-1].a); }
-#line 1267 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 1269 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+    break;
+
+  case 14:
+#line 42 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1646  */
+    { (yyval.a) = newast(NT_NEG, (yyvsp[0].a), NULL); }
+#line 1275 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
 
-#line 1271 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
+#line 1279 "3.02_create_AST_with_bison.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -1495,5 +1503,5 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 38 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1906  */
+#line 44 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02_create_AST_with_bison.y" /* yacc.c:1906  */
 

@@ -5,7 +5,7 @@
 		<Option title="Flex_Bison"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\ch1\;CMake Files\ch1\1.06\;CMake Files\ch2\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ch1\;CMake Files\ch1\1.06\;CMake Files\ch2\;CMake Files\ch3\;CMake Files\ch3\3.02\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
@@ -453,6 +453,56 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="3.02_create_AST_with_bison">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02"/>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 3.02_create_AST_with_bison"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3.02_create_AST_with_bison/fast">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02"/>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 3.02_create_AST_with_bison/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c">
 			<Option target="1.01_word_counter"/>
@@ -478,11 +528,20 @@
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c">
 			<Option target="2.06_include_file_and_start_state"/>
 		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/fb3.02.c">
+			<Option target="3.02_create_AST_with_bison"/>
+		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.c">
 			<Option target="1.06"/>
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06.c">
 			<Option target="1.06"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.c">
+			<Option target="3.02_create_AST_with_bison"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02lexer.c">
+			<Option target="3.02_create_AST_with_bison"/>
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -495,6 +554,12 @@
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\ch2\"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ch3\"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ch3\3.02\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

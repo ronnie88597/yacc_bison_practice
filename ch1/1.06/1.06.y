@@ -16,7 +16,7 @@
 "("                     { return L_PARENTHESIS; }
 ")"                     { return R_PARENTHESIS; }
 
-[-+]?[0-9]+             { yylval = atoi(yytext); return NUMBER; } // 识别整数
+[0-9]+             { yylval = atoi(yytext); return NUMBER; } // 识别整数
 \n                      { return EOL; }
 [ \t]                   { /*忽略空白字符*/ }
 .                       { printf("Mystery character %c\n", *yytext); }

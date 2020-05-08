@@ -3,6 +3,7 @@
 在词法分析的时候，经常我们需要一个NextToken的函数，这个函数每一次调用返回下一个识别了的Token
 本例子就是结合Flex来实现NextToken函数的基本功能，来识别C语言中的token
 该词法分析器仅支持标准C98的关键字识别，新的标准增加的关键字并不支持
+此外，对于递增操作符++、递减操作符--、正号+、负号-，不应该放在词法分析器中识别，它们属于语法的范畴。应该在语法分析中识别和处理
 */
 
 %{
@@ -39,30 +40,17 @@ enum TokenType
 int yylval = 0;
 %}
 
-/*"+"                     { return OPERATOR; }*/
-/*"-"                     { return OPERATOR; }*/
-/*"*"                     { return OPERATOR; }*/
-/*"/"                     { return OPERATOR; }*/
-/*"%"                     { return OPERATOR; }*/
-/*"->"                    { return OPERATOR; }*/
-/*"&&"                    { return OPERATOR; }*/
-/*"||"                    { return OPERATOR; }*/
-/*"!"                     { return OPERATOR; }*/
-/*"<<"                    { return OPERATOR; }*/
-/*">>"                    { return OPERATOR; }*/
-/*[&|~^]                  { return OPERATOR; }*/
-
 %%
 [*/+-]                  { return OPERATOR;} // 四则运算符 +-*/
 "%"                     { return OPERATOR;} // 取模运符 %
 "**"                    { return OPERATOR;} // 乘方运符 **
-[~|&^]                  { return OPERATOR;}       // 位运算符 ~|&^
-">>"                    { return OPERATOR;}       // 位运算符 >>
-"<<"                    { return OPERATOR;}       // 位运算符 <<
-"&&"                    { return OPERATOR;}       // 布尔运符 &&
-"||"                    { return OPERATOR;}       // 布尔运符 ||
-"!"                     { return OPERATOR;}       // 布尔运符 !
-"->"                    { return OPERATOR;}       // 成员运算符号
+[~|&^]                  { return OPERATOR;} // 位运算符 ~|&^
+">>"                    { return OPERATOR;} // 位运算符 >>
+"<<"                    { return OPERATOR;} // 位运算符 <<
+"&&"                    { return OPERATOR;} // 布尔运符 &&
+"||"                    { return OPERATOR;} // 布尔运符 ||
+"!"                     { return OPERATOR;} // 布尔运符 !
+"->"                    { return OPERATOR;} // 成员运算符号
 
 "["                     { return L_SQUARE_BRACKET; }
 "]"                     { return R_SQUARE_BRACKET; }
@@ -83,7 +71,7 @@ int yylval = 0;
 ":"                     { return COLON; }
 ";"                     { return SEMICOLON; }
 "#"                     { return POUND_SIGN; }
-'                       { return QUOTATION; }
+"'"                     { return QUOTATION; }
 
 
 "auto"                  { return KEYWORD; }
@@ -120,16 +108,16 @@ int yylval = 0;
 "while"                 { return KEYWORD; }
 
 
-[-+]?[0-9]+                                                 { return INTEGER; } // 识别整数
-[a-zA-Z_][a-zA-Z0-9_]*                                      { return IDENTIFIER; } // 识别标识符
-[-+]?(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?    { return DECIMAL; } // 识别小数，支持小数的科学计数法识别
+[0-9]+                  { return INTEGER; } // 识别整数。为什么不用"[-+]?[0-9]+"这样的规则去识别一个整数，是因为"-"是一个语义相关的。例如："-2"在表达式"1-2"中应该识别为减号和整数，而在"1--2"中"-2"应该识别为一个负整数
+[a-zA-Z_][a-zA-Z0-9_]*                                 { return IDENTIFIER; } // 识别标识符
+(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?    { return DECIMAL; } // 识别小数，支持小数的科学计数法识别。为什么不用"[-+]?(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?"这样的规则去识别一个整数，是因为"-"是一个语义相关的。
 
-\"[^"]*\"                                                   { return STRING; }           // 识别字符串
+\"[^"]*\"                                              { return STRING; } // 识别字符串
 
-"//"[^\n]*\n                                                { return ANNOTATION; }   // 识别单行注释
-"/*"([^*]|\*+[^/*])*"*/"                                                  { return MULTI_LINE_ANNOTATION; }   // 识别多行注释
+"//"[^\n]*\n                                           { return ANNOTATION; } // 识别单行注释
+"/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
 
-[ \t]                   { /*忽略空白字符*/ }
+[ \t]                                                  { /*忽略空白字符*/ }
 %%
 
 int NextToken()
@@ -140,4 +128,13 @@ int NextToken()
     */
     return yylex();
 };
+
+
+/*
+注意：
+  对于识别多行注释：
+  "/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
+  是不对的，虽然能够满足大多的场景。  但有可能注释会很长，而flex的记号有一定的输入缓冲的长度限制，通常是16K。
+  为了能够满足对注释的正确识别，应该使用起始条件（start condition）方法。
+*/
 

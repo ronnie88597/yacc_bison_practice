@@ -39,14 +39,14 @@ enum TokenType
 "!"                                                         { printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 !
 
 
-[-+]?[0-9]+                                                 { printf("INTEGER\n"); return INTEGER; }         // 识别整数
+[0-9]+                                                      { printf("INTEGER\n"); return INTEGER; }         // 识别整数
 [a-zA-Z_][a-zA-Z0-9_]*                                      { printf("IDENTIFIER\n"); return IDENTIFIER; }   // 识别标识符
-[-+]?(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?    { printf("DECIMAL\n"); return DECIMAL; }         // 识别小数，支持小数的科学计数法识别
+(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?         { printf("DECIMAL\n"); return DECIMAL; }         // 识别小数，支持小数的科学计数法识别
 \"[^"]*\"                                                   { printf("STRING\n"); return STRING; }           // 识别字符串
 
 
 "//"[^\n]*\n                                                { printf("ANNOTATION\n"); return ANNOTATION; }   // 识别单行注释
-"/*"([^*]|\*+[^/*])*"*/"                                                  { printf("MULTI_LINE_ANNOTATION\n"); return MULTI_LINE_ANNOTATION; }   // 识别多行注释
+"/*"([^*]|\*+[^/*])*"*/"                                    { printf("MULTI_LINE_ANNOTATION\n"); return MULTI_LINE_ANNOTATION; }   // 识别多行注释
 
 
 \n                                                          { printf("NEWLINE\n"); return UNDEFINE; }        // 识别换行符号
@@ -60,4 +60,12 @@ enum TokenType
 //    1. Flex将匹配尽可能多的的字符串
 //    2. 如果根据1处理后，仍然存在多个模式的话，Flex将选择更早定义的模式来匹配
 //
+*/
+
+/*
+注意：
+  对于识别多行注释：
+  "/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
+  是不对的，虽然能够满足大多的场景。  但有可能注释会很长，而flex的记号有一定的输入缓冲的长度限制，通常是16K。
+  为了能够满足对注释的正确识别，应该使用起始条件（start condition）方法。
 */

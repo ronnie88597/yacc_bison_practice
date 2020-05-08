@@ -227,6 +227,19 @@ depend:
 	$(MAKE) -f ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build.make ch2/CMakeFiles/2.06_include_file_and_start_state.dir/build
 .PHONY : 2.06_include_file_and_start_state/fast
 
+#=============================================================================
+# Target rules for targets named 3.02_create_AST_with_bison
+
+# Build rule for target.
+3.02_create_AST_with_bison: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3.02_create_AST_with_bison
+.PHONY : 3.02_create_AST_with_bison
+
+# fast build rule for target.
+3.02_create_AST_with_bison/fast:
+	$(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build
+.PHONY : 3.02_create_AST_with_bison/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -244,6 +257,7 @@ help:
 	@echo "... 2.02_use_yyin_to_read_data_from_file"
 	@echo "... 2.03_read_files"
 	@echo "... 2.06_include_file_and_start_state"
+	@echo "... 3.02_create_AST_with_bison"
 .PHONY : help
 
 

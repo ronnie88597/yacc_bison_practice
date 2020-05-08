@@ -33,6 +33,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../ch1/1.06/CMakeLists.txt"
   "../ch1/CMakeLists.txt"
   "../ch2/CMakeLists.txt"
+  "../ch3/3.02/CMakeLists.txt"
+  "../ch3/CMakeLists.txt"
   "CMakeFiles/3.16.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeSystem.cmake"
@@ -50,6 +52,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ch1/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ch1/1.06/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ch2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ch3/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ch3/3.02/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -63,4 +67,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/DependInfo.cmake"
   "ch2/CMakeFiles/2.03_read_files.dir/DependInfo.cmake"
   "ch2/CMakeFiles/2.06_include_file_and_start_state.dir/DependInfo.cmake"
+  "ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/DependInfo.cmake"
   )

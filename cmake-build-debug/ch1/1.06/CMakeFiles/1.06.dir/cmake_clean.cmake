@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "1.06"
   "1.06.pdb"
   "CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o"
-  "CMakeFiles/1.06.dir/__/__/1.06.c.o"
+  "CMakeFiles/1.06.dir/__/__/1.06lexer.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

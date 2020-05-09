@@ -444,7 +444,7 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 /*
 // file: 1.03_recognize_calculator_tokens.y
 // 用于将输入的计算表达式识别为token流，然后输入
@@ -669,7 +669,7 @@ YY_DECL
 		}
 
 	{
-#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 
 #line 675 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c"
 
@@ -730,53 +730,53 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 { printf("PLUS\n"); } // 当匹配上了+，将打印PLUS
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 { printf("MINUS\n"); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 { printf("TIMES\n"); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 { printf("DIVIDE\n"); }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 { printf("ABS\n"); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 { printf("NUMBER %s\n", yytext); } // yytext变量总是指向本次匹配的输入文本字符串
 	YY_BREAK
 case 7:
 /* rule 7 can match eol */
 YY_RULE_SETUP
-#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 { printf("NEWLINE\n"); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 {}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 { printf("Mystery character %s\n", yytext); } // yytext变量总是指向本次匹配的输入文本字符串
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 ECHO;
 	YY_BREAK
 #line 783 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c"
@@ -1784,5 +1784,5 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.y"
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.l"
 

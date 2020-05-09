@@ -4,7 +4,7 @@
 */
 
 %{
-# include "1.05_first_calculator_with_bison.tab.h" // 此处需要将语法分析器生成的头文件包含进来，这样Flex和bison就可以联合工作了
+# include "1.06_calculator_with_bison.tab.h" // 此处需要将语法分析器生成的头文件包含进来，这样Flex和bison就可以联合工作了
 %}
 
 %%

@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.c" "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o"
-  "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06.c" "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06.c.o"
+  "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06lexer.c" "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

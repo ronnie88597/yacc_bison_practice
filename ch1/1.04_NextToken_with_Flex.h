@@ -567,7 +567,7 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 /*
 // file: 1.04_NextToken_with_Flex.y
 在词法分析的时候，经常我们需要一个NextToken的函数，这个函数每一次调用返回下一个识别了的Token
@@ -575,7 +575,7 @@ char *yytext;
 该词法分析器仅支持标准C98的关键字识别，新的标准增加的关键字并不支持
 此外，对于递增操作符++、递减操作符--、正号+、负号-，不应该放在词法分析器中识别，它们属于语法的范畴。应该在语法分析中识别和处理
 */
-#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 enum TokenType
 {
     INTEGER                 = 1001, // 整数，123
@@ -825,7 +825,7 @@ YY_DECL
 		}
 
 	{
-#line 43 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 43 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 
 #line 831 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
 
@@ -886,335 +886,335 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 44 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 44 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 四则运算符 +-*/
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 45 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 45 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 取模运符 %
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 46 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 46 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 乘方运符 **
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 47 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 47 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 位运算符 ~|&^
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 48 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 48 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 位运算符 >>
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 49 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 49 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 位运算符 <<
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 50 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 50 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 布尔运符 &&
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 51 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 51 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 布尔运符 ||
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 52 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 52 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 布尔运符 !
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 53 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 53 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return OPERATOR;} // 成员运算符号
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return L_SQUARE_BRACKET; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 56 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 56 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return R_SQUARE_BRACKET; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 58 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 58 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return L_PARENTHESIS; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 59 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 59 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return R_PARENTHESIS; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 61 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 61 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return L_BRACE; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 62 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 62 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return R_BRACE; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 64 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 64 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return LESS_THAN; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 65 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 65 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return LESS_EQUAL_THAN; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 66 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 66 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return GREAT_THAN; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 67 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 67 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return GREAT_EQUAL_THAN; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 69 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 69 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return QUESTION_SIGN; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 70 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 70 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return COMMA; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 71 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 71 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return COLON; }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 72 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 72 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return SEMICOLON; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 73 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 73 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return POUND_SIGN; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 74 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 74 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return QUOTATION; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 77 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 77 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 78 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 78 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 79 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 79 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 80 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 80 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 81 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 81 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 82 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 82 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 83 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 83 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 84 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 84 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 85 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 85 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 86 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 86 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 87 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 87 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 88 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 88 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 89 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 89 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 90 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 90 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 91 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 91 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 92 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 92 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 93 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 93 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 94 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 94 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 95 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 95 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 96 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 96 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 97 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 97 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 98 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 98 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 99 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 99 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 100 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 100 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 101 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 101 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 102 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 102 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 103 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 103 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 104 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 104 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 105 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 105 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 106 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 106 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 107 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 107 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 108 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 108 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return KEYWORD; }
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 111 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 111 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return INTEGER; } // 识别整数。为什么不用"[-+]?[0-9]+"这样的规则去识别一个整数，是因为"-"是一个语义相关的。例如："-2"在表达式"1-2"中应该识别为减号和整数，而在"1--2"中"-2"应该识别为一个负整数
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 112 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 112 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return IDENTIFIER; } // 识别标识符
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 113 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 113 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return DECIMAL; } // 识别小数，支持小数的科学计数法识别。为什么不用"[-+]?(([0-9]*\.?[0-9]+)|([0-9]+\.[0-9]*))(E[+-]?[0-9]+)?"这样的规则去识别一个整数，是因为"-"是一个语义相关的。
 	YY_BREAK
 case 62:
 /* rule 62 can match eol */
 YY_RULE_SETUP
-#line 115 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 115 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return STRING; } // 识别字符串
 	YY_BREAK
 case 63:
 /* rule 63 can match eol */
 YY_RULE_SETUP
-#line 117 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 117 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return ANNOTATION; } // 识别单行注释
 	YY_BREAK
 case 64:
 /* rule 64 can match eol */
 YY_RULE_SETUP
-#line 118 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 118 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { return MULTI_LINE_ANNOTATION; } // 识别多行注释
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
-#line 120 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 120 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 { /*忽略空白字符*/ }
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 121 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 121 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 ECHO;
 	YY_BREAK
 #line 1221 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h"
@@ -2222,7 +2222,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 121 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.y"
+#line 121 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.l"
 
 
 int NextToken()
@@ -2235,12 +2235,12 @@ int NextToken()
 };
 
 
-/*
-注意：
-  对于识别多行注释：
-  "/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
-  是不对的，虽然能够满足大多的场景。  但有可能注释会很长，而flex的记号有一定的输入缓冲的长度限制，通常是16K。
-  为了能够满足对注释的正确识别，应该使用起始条件（start condition）方法。
-*/
+
+//注意：
+//  对于识别多行注释：
+//  "/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
+//  是不对的，虽然能够满足大多的场景。  但有可能注释会很长，而flex的记号有一定的输入缓冲的长度限制，通常是16K。
+//  为了能够满足对注释的正确识别，应该使用起始条件（start condition）方法。
+
 
 

@@ -459,7 +459,7 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 /*
 // file: 1.02_BritishEn_to_AmericanEn.y
 // 将英式英语转为美式英语
@@ -681,7 +681,7 @@ YY_DECL
 		}
 
 	{
-#line 5 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 5 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 
 #line 687 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c"
 
@@ -742,37 +742,37 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 { printf("color");      } // 当匹配到了colour单词，将打印处color
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 7 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 7 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 { printf("flavor");     } // 当匹配到了flavour单词，将打印处flavor
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 8 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 8 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 { printf("smart");      } // 当匹配到了clever单词，将打印处smart
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 { printf("elegant");    } // 当匹配到了smart单词，将打印处elegant
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 { printf("liberal");    } // 当匹配到了conservative单词，将打印处liberal
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 { printf("%s", yytext); } // 当匹配到其他任意字符，将原样输出
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 ECHO;
 	YY_BREAK
 #line 779 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c"
@@ -1780,5 +1780,5 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.y"
+#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.l"
 

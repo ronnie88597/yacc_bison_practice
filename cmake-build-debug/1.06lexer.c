@@ -1,6 +1,6 @@
-#line 2 "1.06.c"
+#line 2 "1.06lexer.c"
 
-#line 4 "1.06.c"
+#line 4 "1.06lexer.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -445,15 +445,15 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 /*
 // file: 1.06.y
 // 使用Flex和Bison手写词法分析器和语法分析器，实现一个简单的计算
 */
-#line 7 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
-# include "1.05_first_calculator_with_bison.tab.h" // 此处需要将语法分析器生成的头文件包含进来，这样Flex和bison就可以联合工作了
-#line 456 "1.06.c"
-#line 457 "1.06.c"
+#line 7 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
+# include "1.06_calculator_with_bison.tab.h" // 此处需要将语法分析器生成的头文件包含进来，这样Flex和bison就可以联合工作了
+#line 456 "1.06lexer.c"
+#line 457 "1.06lexer.c"
 
 #define INITIAL 0
 
@@ -670,9 +670,9 @@ YY_DECL
 		}
 
 	{
-#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 10 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 
-#line 676 "1.06.c"
+#line 676 "1.06lexer.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -731,66 +731,66 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { return ADD; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 12 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { return SUB; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { return MUL; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { return DIV; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { return ABS; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { return L_PARENTHESIS; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { return R_PARENTHESIS; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { yylval = atoi(yytext); return NUMBER; } // 识别整数
 	YY_BREAK
 case 9:
 /* rule 9 can match eol */
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { return EOL; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { /*忽略空白字符*/ }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 { printf("Mystery character %c\n", *yytext); }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 23 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 23 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 ECHO;
 	YY_BREAK
-#line 794 "1.06.c"
+#line 794 "1.06lexer.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1795,7 +1795,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 23 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06.y"
+#line 23 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06lexer.l"
 
 
 

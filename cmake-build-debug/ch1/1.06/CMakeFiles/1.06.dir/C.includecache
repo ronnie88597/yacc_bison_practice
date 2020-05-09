@@ -24,9 +24,9 @@ stdlib.h
 stdio.h
 -
 
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.h
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06_calculator_with_bison.tab.h
 
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06.c
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06lexer.c
 stdio.h
 -
 string.h
@@ -37,8 +37,8 @@ stdlib.h
 -
 inttypes.h
 -
-1.05_first_calculator_with_bison.tab.h
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.h
+1.06_calculator_with_bison.tab.h
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06_calculator_with_bison.tab.h
 unistd.h
 -
 

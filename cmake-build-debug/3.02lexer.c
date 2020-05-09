@@ -457,9 +457,9 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 /* 不使用-lfl定义的默认main函数，使用自定义的main函数，你就不需要链接-lfl了。 */
-#line 5 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 5 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 #include "fb3.02.h"
 #include "3.02_create_AST_with_bison.tab.h"
 #line 466 "3.02lexer.c"
@@ -682,7 +682,7 @@ YY_DECL
 		}
 
 	{
-#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 
 #line 688 "3.02lexer.c"
 
@@ -742,52 +742,52 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
-#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 case 2:
-#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 case 3:
-#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 case 4:
-#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 case 5:
-#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 case 6:
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 case 7:
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 { return yytext[0]; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 { yylval.d = atof(yytext); return NUMBER; }
 	YY_BREAK
 case 9:
 /* rule 9 can match eol */
 YY_RULE_SETUP
-#line 24 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 24 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 { return EOL; }
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 25 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 25 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 { /* 忽略空白字符 */}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 { yyerror("Mystery character %c\n", *yytext); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 ECHO;
 	YY_BREAK
 #line 794 "3.02lexer.c"
@@ -1795,5 +1795,5 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.l"
 

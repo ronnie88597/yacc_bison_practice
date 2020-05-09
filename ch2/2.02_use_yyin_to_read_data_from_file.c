@@ -440,7 +440,7 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.l"
 /*
 // file: 2.02_use_yyin_to_read_data_from_file.y
 // flex词法分析器默认从stdin读取输入
@@ -459,7 +459,7 @@ char *yytext;
 // }
 // 如果你在flex程序使用%option noyywrap，并且定义了自己的main函数，你就不需要链接-lfl了。
 // */
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.l"
 int chars = 0;
 int words = 0;
 int lines = 0;
@@ -681,7 +681,7 @@ YY_DECL
 		}
 
 	{
-#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.y"
+#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.l"
 
 #line 687 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.c"
 
@@ -742,23 +742,23 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.y"
+#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.l"
 { words++; chars += strlen(yytext); }
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.y"
+#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.l"
 { chars++; lines++; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 30 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.y"
+#line 30 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.l"
 { chars++;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.y"
+#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.l"
 ECHO;
 	YY_BREAK
 #line 765 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.c"
@@ -1766,7 +1766,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.y"
+#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.l"
 
 
 int main(int argc, char ** argv)

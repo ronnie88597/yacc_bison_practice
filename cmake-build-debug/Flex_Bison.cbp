@@ -534,7 +534,7 @@
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.c">
 			<Option target="1.06"/>
 		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06.c">
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06lexer.c">
 			<Option target="1.06"/>
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.c">

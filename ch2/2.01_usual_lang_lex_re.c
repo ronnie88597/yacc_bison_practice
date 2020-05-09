@@ -464,11 +464,11 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 /*
 // 【汇总】Flex实现词法分析器时常见的用于定义匹配模式的RE
 */
-#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 #include <stdio.h>
 enum TokenType
 {
@@ -705,7 +705,7 @@ YY_DECL
 		}
 
 	{
-#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 
 #line 711 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
 
@@ -766,101 +766,101 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("ARITHMETIC_OPT\n"); return ARITHMETIC_OPT;} // 四则运算符 +-*/
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("MOD\n"); return MOD;} // 取模运符 %
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("POW\n"); return POW;} // 乘方运符 **
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 ~|&^
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 33 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 33 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 >>
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 34 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 34 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("BITWISE_OPT\n"); return BITWISE_OPT;}       // 位运算符 <<
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 37 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 37 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 &&
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 38 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 38 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 ||
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 39 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 39 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("BOOL_OPT\n"); return BOOL_OPT;}       // 布尔运符 !
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 42 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 42 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("INTEGER\n"); return INTEGER; }         // 识别整数
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 43 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 43 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("IDENTIFIER\n"); return IDENTIFIER; }   // 识别标识符
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 44 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 44 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("DECIMAL\n"); return DECIMAL; }         // 识别小数，支持小数的科学计数法识别
 	YY_BREAK
 case 13:
 /* rule 13 can match eol */
 YY_RULE_SETUP
-#line 45 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 45 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("STRING\n"); return STRING; }           // 识别字符串
 	YY_BREAK
 case 14:
 /* rule 14 can match eol */
 YY_RULE_SETUP
-#line 48 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 48 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("ANNOTATION\n"); return ANNOTATION; }   // 识别单行注释
 	YY_BREAK
 case 15:
 /* rule 15 can match eol */
 YY_RULE_SETUP
-#line 49 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 49 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("MULTI_LINE_ANNOTATION\n"); return MULTI_LINE_ANNOTATION; }   // 识别多行注释
 	YY_BREAK
 case 16:
 /* rule 16 can match eol */
 YY_RULE_SETUP
-#line 52 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 52 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("NEWLINE\n"); return UNDEFINE; }        // 识别换行符号
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 53 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 53 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { } // 忽略空格
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 54 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 54 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 { printf("Mystery character %s\n", yytext); }    // 忽略未定义字符串
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 ECHO;
 	YY_BREAK
 #line 867 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c"
@@ -1868,7 +1868,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.y"
+#line 55 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.l"
 
 
 /*
@@ -1879,10 +1879,10 @@ void yyfree (void * ptr )
 //
 */
 
-/*
-注意：
-  对于识别多行注释：
-  "/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
-  是不对的，虽然能够满足大多的场景。  但有可能注释会很长，而flex的记号有一定的输入缓冲的长度限制，通常是16K。
-  为了能够满足对注释的正确识别，应该使用起始条件（start condition）方法。
-*/
+
+//注意：
+//  对于识别多行注释：
+//  "/*"([^*]|\*+[^/*])*"*/"                               { return MULTI_LINE_ANNOTATION; } // 识别多行注释
+//  是不对的，虽然能够满足大多的场景。  但有可能注释会很长，而flex的记号有一定的输入缓冲的长度限制，通常是16K。
+//  为了能够满足对注释的正确识别，应该使用起始条件（start condition）方法。
+

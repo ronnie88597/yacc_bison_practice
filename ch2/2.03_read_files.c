@@ -440,13 +440,13 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.l"
 /*
 // file: 2.03_read_files.y
 // 使用flex读取多个文件作为输入
 //
 // */
-#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.y"
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.l"
 int chars = 0;
 int words = 0;
 int lines = 0;
@@ -672,7 +672,7 @@ YY_DECL
 		}
 
 	{
-#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.y"
+#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.l"
 
 #line 678 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.c"
 
@@ -733,23 +733,23 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.y"
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.l"
 { words++; chars += strlen(yytext); }
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.y"
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.l"
 { chars++; lines++; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.y"
+#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.l"
 { chars++; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.l"
 ECHO;
 	YY_BREAK
 #line 756 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.c"
@@ -1757,7 +1757,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.l"
 
 
 #define HEADLINE    "file                chars   words   lines   \n"

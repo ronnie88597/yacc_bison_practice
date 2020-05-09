@@ -440,12 +440,12 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 /* file: 1.01_word_counter.y */
 /* 一个字数统计（word_counter）程序，程序读入一个文件然后报告这个文件的行数、单词树和字符数。*/
 /* 以下是Flex的第一部分，主要用于声明选项（%option），以及起始条件start condition（使用%x、%s声明）*/
 /* 以下是Flex的第二部分，%{  和 %}之间的代码会被原样照抄到生成的C文件的开头部分。*/
-#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 int chars = 0; // 定义变量，用于计数有多少个字符
 int words = 0; // 定义变量，用于计数有多少个单词
 int lines = 0; // 定义变量，用于计数有多少行
@@ -668,7 +668,7 @@ YY_DECL
 		}
 
 	{
-#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 
 #line 674 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
 
@@ -729,7 +729,7 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 {
             words++;
             chars += strlen(yytext); // yytext变量总是指向本次匹配的输入文本字符串
@@ -738,17 +738,17 @@ YY_RULE_SETUP
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 {chars++; lines++; } // 当满足正则表达式：\n，表示识别到了换行符。chars++并且lines++
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 {chars++; } // 当满足正则表达式：.，表示识别到了任意一个单词。chars++
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 ECHO;
 	YY_BREAK
 #line 755 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c"
@@ -1756,7 +1756,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 
 // 以下是Flex的第四部分，，该部分会被拷贝到生成的词法分析器里面的C代码。它们通常是一些与动作相关的程序代码。
 int main(int argc, char **argv)

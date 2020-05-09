@@ -3,7 +3,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_BINARY_DIR})
 
 execute_process(COMMAND
-    flex -o 3.02lexer.c ${CMAKE_CURRENT_SOURCE_DIR}/3.02lexer.y)
+    flex -o 3.02lexer.c ${CMAKE_CURRENT_SOURCE_DIR}/3.02lexer.l)
 
 execute_process(COMMAND
     bison -d ${CMAKE_CURRENT_SOURCE_DIR}/3.02_create_AST_with_bison.y)

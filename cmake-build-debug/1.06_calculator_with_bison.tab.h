@@ -30,8 +30,8 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-#ifndef YY_YY_1_05_FIRST_CALCULATOR_WITH_BISON_TAB_H_INCLUDED
-# define YY_YY_1_05_FIRST_CALCULATOR_WITH_BISON_TAB_H_INCLUDED
+#ifndef YY_YY_1_06_CALCULATOR_WITH_BISON_TAB_H_INCLUDED
+# define YY_YY_1_06_CALCULATOR_WITH_BISON_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -51,7 +51,9 @@ extern int yydebug;
     MUL = 261,
     DIV = 262,
     ABS = 263,
-    EOL = 264
+    L_PARENTHESIS = 264,
+    R_PARENTHESIS = 265,
+    EOL = 266
   };
 #endif
 
@@ -67,4 +69,4 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_1_05_FIRST_CALCULATOR_WITH_BISON_TAB_H_INCLUDED  */
+#endif /* !YY_YY_1_06_CALCULATOR_WITH_BISON_TAB_H_INCLUDED  */

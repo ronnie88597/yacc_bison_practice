@@ -62,11 +62,11 @@
 
 
 /* Copy the first part of user declarations.  */
-#line 6 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:339  */
+#line 7 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:339  */
 
 #include <stdio.h>
 
-#line 70 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:339  */
+#line 70 "1.06_calculator_with_bison.tab.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -84,10 +84,13 @@
 # define YYERROR_VERBOSE 0
 #endif
 
-
+/* In a future release of Bison, this section will be replaced
+   by #include "1.06_calculator_with_bison.tab.h".  */
+#ifndef YY_YY_1_06_CALCULATOR_WITH_BISON_TAB_H_INCLUDED
+# define YY_YY_1_06_CALCULATOR_WITH_BISON_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
-# define YYDEBUG 1
+# define YYDEBUG 0
 #endif
 #if YYDEBUG
 extern int yydebug;
@@ -104,7 +107,9 @@ extern int yydebug;
     MUL = 261,
     DIV = 262,
     ABS = 263,
-    EOL = 264
+    L_PARENTHESIS = 264,
+    R_PARENTHESIS = 265,
+    EOL = 266
   };
 #endif
 
@@ -120,11 +125,11 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-
+#endif /* !YY_YY_1_06_CALCULATOR_WITH_BISON_TAB_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
-#line 128 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:358  */
+#line 133 "1.06_calculator_with_bison.tab.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -366,21 +371,21 @@ union yyalloc
 /* YYFINAL -- State number of the termination state.  */
 #define YYFINAL  2
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   16
+#define YYLAST   25
 
 /* YYNTOKENS -- Number of terminals.  */
-#define YYNTOKENS  10
+#define YYNTOKENS  12
 /* YYNNTS -- Number of nonterminals.  */
 #define YYNNTS  5
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  11
+#define YYNRULES  12
 /* YYNSTATES -- Number of states.  */
-#define YYNSTATES  18
+#define YYNSTATES  22
 
 /* YYTRANSLATE[YYX] -- Symbol number corresponding to YYX as returned
    by yylex, with out-of-bounds checking.  */
 #define YYUNDEFTOK  2
-#define YYMAXUTOK   264
+#define YYMAXUTOK   266
 
 #define YYTRANSLATE(YYX)                                                \
   ((unsigned int) (YYX) <= YYMAXUTOK ? yytranslate[YYX] : YYUNDEFTOK)
@@ -415,15 +420,15 @@ static const yytype_uint8 yytranslate[] =
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     1,     2,     3,     4,
-       5,     6,     7,     8,     9
+       5,     6,     7,     8,     9,    10,    11
 };
 
 #if YYDEBUG
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    21,    21,    22,    25,    26,    27,    30,    31,    32,
-      35,    36
+       0,    25,    25,    26,    29,    30,    31,    34,    35,    36,
+      39,    40,    41
 };
 #endif
 
@@ -433,7 +438,8 @@ static const yytype_uint8 yyrline[] =
 static const char *const yytname[] =
 {
   "$end", "error", "$undefined", "NUMBER", "ADD", "SUB", "MUL", "DIV",
-  "ABS", "EOL", "$accept", "calclist", "exp", "factor", "term", YY_NULLPTR
+  "ABS", "L_PARENTHESIS", "R_PARENTHESIS", "EOL", "$accept", "calclist",
+  "exp", "factor", "term", YY_NULLPTR
 };
 #endif
 
@@ -442,14 +448,15 @@ static const char *const yytname[] =
    (internal) symbol number NUM (which must be that of a token).  */
 static const yytype_uint16 yytoknum[] =
 {
-       0,   256,   257,   258,   259,   260,   261,   262,   263,   264
+       0,   256,   257,   258,   259,   260,   261,   262,   263,   264,
+     265,   266
 };
 # endif
 
-#define YYPACT_NINF -5
+#define YYPACT_NINF -4
 
 #define yypact_value_is_default(Yystate) \
-  (!!((Yystate) == (-5)))
+  (!!((Yystate) == (-4)))
 
 #define YYTABLE_NINF -1
 
@@ -460,8 +467,9 @@ static const yytype_uint16 yytoknum[] =
      STATE-NUM.  */
 static const yytype_int8 yypact[] =
 {
-      -5,     2,    -5,    -5,    -2,     7,    -3,    -5,    -5,    -2,
-      -2,    -5,    -2,    -2,    -3,    -3,    -5,    -5
+      -4,     0,    -4,    -4,     7,     7,     1,    12,    -4,     9,
+      -3,     7,     7,    -4,     7,     7,    -4,    -4,    12,    12,
+      -4,    -4
 };
 
   /* YYDEFACT[STATE-NUM] -- Default reduction number in state STATE-NUM.
@@ -469,20 +477,21 @@ static const yytype_int8 yypact[] =
      means the default is an error.  */
 static const yytype_uint8 yydefact[] =
 {
-       2,     0,     1,    10,     0,     0,     4,     7,    11,     0,
-       0,     3,     0,     0,     5,     6,     8,     9
+       2,     0,     1,    10,     0,     0,     0,     6,     9,     0,
+       0,     0,     0,     3,     0,     0,    11,    12,     4,     5,
+       7,     8
 };
 
   /* YYPGOTO[NTERM-NUM].  */
 static const yytype_int8 yypgoto[] =
 {
-      -5,    -5,    -5,     4,    -4
+      -4,    -4,    16,    11,    10
 };
 
   /* YYDEFGOTO[NTERM-NUM].  */
 static const yytype_int8 yydefgoto[] =
 {
-      -1,     1,     5,     6,     7
+      -1,     1,     6,     7,     8
 };
 
   /* YYTABLE[YYPACT[STATE-NUM]] -- What to do in state STATE-NUM.  If
@@ -490,36 +499,39 @@ static const yytype_int8 yydefgoto[] =
      number is the opposite.  If YYTABLE_NINF, syntax error.  */
 static const yytype_uint8 yytable[] =
 {
-       8,     3,     2,    12,    13,     3,     4,     0,    16,    17,
-       4,     9,    10,    14,    15,     0,    11
+       2,    11,    12,     3,     0,    11,    12,    17,     4,     5,
+       3,     0,    13,    11,    12,     4,     5,    16,    14,    15,
+       9,    10,    18,    19,    20,    21
 };
 
 static const yytype_int8 yycheck[] =
 {
-       4,     3,     0,     6,     7,     3,     8,    -1,    12,    13,
-       8,     4,     5,     9,    10,    -1,     9
+       0,     4,     5,     3,    -1,     4,     5,    10,     8,     9,
+       3,    -1,    11,     4,     5,     8,     9,     8,     6,     7,
+       4,     5,    11,    12,    14,    15
 };
 
   /* YYSTOS[STATE-NUM] -- The (internal number of the) accessing
      symbol of state STATE-NUM.  */
 static const yytype_uint8 yystos[] =
 {
-       0,    11,     0,     3,     8,    12,    13,    14,    14,     4,
-       5,     9,     6,     7,    13,    13,    14,    14
+       0,    13,     0,     3,     8,     9,    14,    15,    16,    14,
+      14,     4,     5,    11,     6,     7,     8,    10,    15,    15,
+      16,    16
 };
 
   /* YYR1[YYN] -- Symbol number of symbol that rule YYN derives.  */
 static const yytype_uint8 yyr1[] =
 {
-       0,    10,    11,    11,    12,    12,    12,    13,    13,    13,
-      14,    14
+       0,    12,    13,    13,    14,    14,    14,    15,    15,    15,
+      16,    16,    16
 };
 
   /* YYR2[YYN] -- Number of symbols on the right hand side of rule YYN.  */
 static const yytype_uint8 yyr2[] =
 {
-       0,     2,     0,     3,     1,     3,     3,     1,     3,     3,
-       1,     2
+       0,     2,     0,     3,     3,     3,     1,     3,     3,     1,
+       1,     3,     3
 };
 
 
@@ -1196,43 +1208,49 @@ yyreduce:
   switch (yyn)
     {
         case 3:
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
-    { printf("- %d\n", (yyvsp[-1])); }
-#line 1202 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
+#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:1646  */
+    { printf("= %d\n", (yyvsp[-1])); }
+#line 1214 "1.06_calculator_with_bison.tab.c" /* yacc.c:1646  */
+    break;
+
+  case 4:
+#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:1646  */
+    { (yyval) = (yyvsp[-2]) + (yyvsp[0]); }
+#line 1220 "1.06_calculator_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 5:
-#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
-    { (yyval) = (yyvsp[-2]) + (yyvsp[0]); }
-#line 1208 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
+#line 30 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:1646  */
+    { (yyval) = (yyvsp[-2]) - (yyvsp[0]); }
+#line 1226 "1.06_calculator_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
-  case 6:
-#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
-    { (yyval) = (yyvsp[-2]) - (yyvsp[0]); }
-#line 1214 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
+  case 7:
+#line 34 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:1646  */
+    { (yyval) = (yyvsp[-2]) * (yyvsp[0]); }
+#line 1232 "1.06_calculator_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 8:
-#line 31 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
-    { (yyval) = (yyvsp[-2]) * (yyvsp[0]); }
-#line 1220 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
-    break;
-
-  case 9:
-#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
+#line 35 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:1646  */
     { (yyval) = (yyvsp[-2]) / (yyvsp[0]); }
-#line 1226 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
+#line 1238 "1.06_calculator_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
   case 11:
-#line 36 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1646  */
-    { (yyval) = (yyvsp[0]) >= 0? (yyvsp[0]) : - (yyvsp[0]); }
-#line 1232 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
+#line 40 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:1646  */
+    { (yyval) = (yyvsp[-1]) >= 0? (yyvsp[-1]) : - (yyvsp[-1]); }
+#line 1244 "1.06_calculator_with_bison.tab.c" /* yacc.c:1646  */
+    break;
+
+  case 12:
+#line 41 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:1646  */
+    { (yyval) = (yyvsp[-1]); }
+#line 1250 "1.06_calculator_with_bison.tab.c" /* yacc.c:1646  */
     break;
 
 
-#line 1236 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.c" /* yacc.c:1646  */
+#line 1254 "1.06_calculator_with_bison.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -1460,13 +1478,17 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 38 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.05_first_calculator_with_bison.y" /* yacc.c:1906  */
+#line 43 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/1.06_calculator_with_bison.y" /* yacc.c:1906  */
 
-main(int argc, char **argv)
+int main(int argc, char **argv)
 {
+  // yyparse是语法解析函数，调用yyparse将开始语法解析。
+  // 该函数读取tokens并语法规则匹配，匹配成功后，执行相应的动作，直到文件的读取结束或者发生不可恢复的错误函数将返回。
+  // 此外，你也可以在action中使yyparse直接提前返回。
   yyparse();
+	return 0;
 }
 yyerror(char *s)
 {
-  fprintf(stderr, "error: %s\n", s);
+	fprintf(stderr, "error: %s\n", s);
 }

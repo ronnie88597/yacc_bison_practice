@@ -7,7 +7,8 @@
 %}
 
 /* 此处声明模式的公共部分，用于简化匹配模式的书写。*/
-EXP ([Ee][-+]?[0-9]+) // 浮点数指数部分
+/* 浮点数指数部分 */
+EXP ([Ee][-+]?[0-9]+)
 
 %%
 "+" |
@@ -18,7 +19,7 @@ EXP ([Ee][-+]?[0-9]+) // 浮点数指数部分
 "(" |
 ")" { return yytext[0]; }
 
-[0-9]+("."[0-9]*{EXP}?|"."?[0-9]+{EXP}?)? { yylval.d = atof(yytext); return NUMBER; }
+[0-9]+"."[0-9]*{EXP}?|"."?[0-9]+{EXP}? { yylval.d = atof(yytext); return NUMBER; }
 
 \n          { return EOL; }
 "//".*\n

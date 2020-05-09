@@ -146,16 +146,19 @@ ch2/clean: ch2/CMakeFiles/2.06_include_file_and_start_state.dir/clean
 
 # Recursive "all" directory target.
 ch3/all: ch3/3.02/all
+ch3/all: ch3/3.04/all
 
 .PHONY : ch3/all
 
 # Recursive "preinstall" directory target.
 ch3/preinstall: ch3/3.02/preinstall
+ch3/preinstall: ch3/3.04/preinstall
 
 .PHONY : ch3/preinstall
 
 # Recursive "clean" directory target.
 ch3/clean: ch3/3.02/clean
+ch3/clean: ch3/3.04/clean
 
 .PHONY : ch3/clean
 
@@ -176,6 +179,24 @@ ch3/3.02/preinstall:
 ch3/3.02/clean: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/clean
 
 .PHONY : ch3/3.02/clean
+
+#=============================================================================
+# Directory level rules for directory ch3/3.04
+
+# Recursive "all" directory target.
+ch3/3.04/all:
+
+.PHONY : ch3/3.04/all
+
+# Recursive "preinstall" directory target.
+ch3/3.04/preinstall:
+
+.PHONY : ch3/3.04/preinstall
+
+# Recursive "clean" directory target.
+ch3/3.04/clean:
+
+.PHONY : ch3/3.04/clean
 
 #=============================================================================
 # Target rules for target ch1/CMakeFiles/1.01_word_counter.dir

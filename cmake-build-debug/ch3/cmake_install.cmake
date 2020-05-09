@@ -42,3 +42,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/cmake_install.cmake")
+endif()
+

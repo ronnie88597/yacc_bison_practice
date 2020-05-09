@@ -5,7 +5,7 @@
 		<Option title="Flex_Bison"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\ch1\;CMake Files\ch1\1.06\;CMake Files\ch2\;CMake Files\ch3\;CMake Files\ch3\3.02\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ch1\;CMake Files\ch1\1.06\;CMake Files\ch2\;CMake Files\ch3\;CMake Files\ch3\3.02\;CMake Files\ch3\3.04\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
@@ -560,6 +560,9 @@
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\ch3\3.02\"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.04/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ch3\3.04\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

@@ -364,11 +364,11 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[31] =
+static const flex_int16_t yy_accept[30] =
     {   0,
         0,    0,   14,   12,   11,    9,    6,    7,    3,    1,
-        2,    4,    8,    5,    0,    8,    8,    0,   10,    8,
-        0,    0,    0,    0,    8,    0,    8,    0,    8,    0
+        2,   12,    4,    8,    5,    8,    0,    8,    8,    0,
+        0,   10,    8,    0,    0,    8,    0,    8,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -409,40 +409,38 @@ static const YY_CHAR yy_meta[14] =
         2,    1,    1
     } ;
 
-static const flex_int16_t yy_base[35] =
+static const flex_int16_t yy_base[33] =
     {   0,
-        0,    0,   37,   38,   38,   38,   38,   38,   38,   38,
-       38,   26,    5,   38,   32,    6,   22,   30,   38,   20,
-       20,   19,   18,   17,   16,   15,   14,   13,   12,   38,
-       18,   20,   19,   13
+        0,    0,   35,   36,   36,   36,   36,   36,   36,   36,
+       36,   23,   23,    5,   36,    7,   29,    9,    0,   20,
+       27,   36,    0,   18,   17,   16,   15,   14,   36,   21,
+       22,   13
     } ;
 
-static const flex_int16_t yy_def[35] =
+static const flex_int16_t yy_def[33] =
     {   0,
-       30,    1,   30,   30,   30,   30,   30,   30,   30,   30,
-       30,   30,   30,   30,   31,   30,   13,   31,   30,   16,
-       32,   33,   34,   30,   30,   30,   30,   30,   30,    0,
-       30,   30,   30,   30
+       29,    1,   29,   29,   29,   29,   29,   29,   29,   29,
+       29,   29,   29,   29,   29,   29,   30,   29,   14,   31,
+       30,   29,   18,   32,   29,   29,   29,   29,    0,   29,
+       29,   29
     } ;
 
-static const flex_int16_t yy_nxt[52] =
+static const flex_int16_t yy_nxt[50] =
     {   0,
-        4,    5,    6,    7,    8,    9,   10,   11,    4,   12,
-       13,    4,   14,   16,   28,   17,   20,   21,   18,   18,
-       26,   24,   29,   29,   27,   27,   25,   25,   29,   27,
-       25,   23,   19,   22,   19,   15,   30,    3,   30,   30,
-       30,   30,   30,   30,   30,   30,   30,   30,   30,   30,
-       30
+        4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
+       14,    4,   15,   18,   27,   19,   20,   16,   20,   23,
+       24,   21,   21,   25,   28,   28,   26,   26,   28,   22,
+       26,   22,   17,   16,   29,    3,   29,   29,   29,   29,
+       29,   29,   29,   29,   29,   29,   29,   29,   29
     } ;
 
-static const flex_int16_t yy_chk[52] =
+static const flex_int16_t yy_chk[50] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,   13,   34,   13,   16,   16,   31,   31,
-       33,   32,   29,   28,   27,   26,   25,   24,   23,   22,
-       21,   20,   18,   17,   15,   12,    3,   30,   30,   30,
-       30,   30,   30,   30,   30,   30,   30,   30,   30,   30,
-       30
+        1,    1,    1,   14,   32,   14,   14,   16,   16,   18,
+       18,   30,   30,   31,   28,   27,   26,   25,   24,   21,
+       20,   17,   13,   12,    3,   29,   29,   29,   29,   29,
+       29,   29,   29,   29,   29,   29,   29,   29,   29
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -460,10 +458,12 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+/* 不使用-lfl定义的默认main函数，使用自定义的main函数，你就不需要链接-lfl了。 */
+#line 5 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 #include "fb3.02.h"
 #include "3.02_create_AST_with_bison.tab.h"
-#line 467 "3.02lexer.c"
+#line 466 "3.02lexer.c"
+/* 此处声明模式的公共部分，用于简化匹配模式的书写。*/
 /* 浮点数指数部分 */
 #line 469 "3.02lexer.c"
 
@@ -682,7 +682,7 @@ YY_DECL
 		}
 
 	{
-#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 
 #line 688 "3.02lexer.c"
 
@@ -711,13 +711,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 31 )
+				if ( yy_current_state >= 30 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 38 );
+		while ( yy_base[yy_current_state] != 36 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -742,52 +742,52 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
-#line 13 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
-case 2:
-#line 14 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
-case 3:
 #line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
-case 4:
+case 2:
 #line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
-case 5:
+case 3:
 #line 17 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
-case 6:
+case 4:
 #line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+case 5:
+#line 19 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+case 6:
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 case 7:
 YY_RULE_SETUP
-#line 18 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 { return yytext[0]; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 { yylval.d = atof(yytext); return NUMBER; }
 	YY_BREAK
 case 9:
 /* rule 9 can match eol */
 YY_RULE_SETUP
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 24 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 { return EOL; }
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 23 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 25 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 24 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 { /* 忽略空白字符 */}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 25 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 { yyerror("Mystery character %c\n", *yytext); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 ECHO;
 	YY_BREAK
 #line 794 "3.02lexer.c"
@@ -1087,7 +1087,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 31 )
+			if ( yy_current_state >= 30 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1115,11 +1115,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 31 )
+		if ( yy_current_state >= 30 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 30);
+	yy_is_jam = (yy_current_state == 29);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1795,5 +1795,5 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 26 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
+#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/3.02lexer.y"
 

@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_main.c
+stdbool.h
+-
+stdio.h
+-
+1.04_NextToken_with_Flex.h
 /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h
+
+ch1/1.04_NextToken_with_Flex.h
 stdio.h
 -
 string.h
@@ -19,12 +27,4 @@ inttypes.h
 -
 unistd.h
 -
-
-/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_main.c
-stdbool.h
--
-stdio.h
--
-1.04_NextToken_with_Flex.h
-/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_NextToken_with_Flex.h
 

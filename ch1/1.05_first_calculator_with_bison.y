@@ -36,11 +36,11 @@ term: NUMBER // default $$ = $1
   | ABS term { $$ = $2 >= 0? $2 : - $2; }
   ;
 %%
-main(int argc, char **argv)
+int main(int argc, char **argv)
 {
-  yyparse();
+  return yyparse();
 }
-yyerror(char *s)
+void yyerror(char *s)
 {
   fprintf(stderr, "error: %s\n", s);
 }

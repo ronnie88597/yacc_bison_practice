@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c" "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o"
+  "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.06_include_file_and_start_state.c" "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

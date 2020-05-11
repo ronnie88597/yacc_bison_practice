@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.c" "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o"
+  "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.02_use_yyin_to_read_data_from_file.c" "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

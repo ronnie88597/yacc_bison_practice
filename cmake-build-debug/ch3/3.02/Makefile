@@ -125,59 +125,59 @@ ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/rule:
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build
 .PHONY : 3.02_create_AST_with_bison/fast
 
-__/__/3.02_create_AST_with_bison.tab.o: __/__/3.02_create_AST_with_bison.tab.c.o
+3.02_create_AST_with_bison.tab.o: 3.02_create_AST_with_bison.tab.c.o
 
-.PHONY : __/__/3.02_create_AST_with_bison.tab.o
-
-# target to build an object file
-__/__/3.02_create_AST_with_bison.tab.c.o:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.o
-.PHONY : __/__/3.02_create_AST_with_bison.tab.c.o
-
-__/__/3.02_create_AST_with_bison.tab.i: __/__/3.02_create_AST_with_bison.tab.c.i
-
-.PHONY : __/__/3.02_create_AST_with_bison.tab.i
-
-# target to preprocess a source file
-__/__/3.02_create_AST_with_bison.tab.c.i:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.i
-.PHONY : __/__/3.02_create_AST_with_bison.tab.c.i
-
-__/__/3.02_create_AST_with_bison.tab.s: __/__/3.02_create_AST_with_bison.tab.c.s
-
-.PHONY : __/__/3.02_create_AST_with_bison.tab.s
-
-# target to generate assembly for a file
-__/__/3.02_create_AST_with_bison.tab.c.s:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.s
-.PHONY : __/__/3.02_create_AST_with_bison.tab.c.s
-
-__/__/3.02lexer.o: __/__/3.02lexer.c.o
-
-.PHONY : __/__/3.02lexer.o
+.PHONY : 3.02_create_AST_with_bison.tab.o
 
 # target to build an object file
-__/__/3.02lexer.c.o:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.o
-.PHONY : __/__/3.02lexer.c.o
+3.02_create_AST_with_bison.tab.c.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.o
+.PHONY : 3.02_create_AST_with_bison.tab.c.o
 
-__/__/3.02lexer.i: __/__/3.02lexer.c.i
+3.02_create_AST_with_bison.tab.i: 3.02_create_AST_with_bison.tab.c.i
 
-.PHONY : __/__/3.02lexer.i
+.PHONY : 3.02_create_AST_with_bison.tab.i
 
 # target to preprocess a source file
-__/__/3.02lexer.c.i:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.i
-.PHONY : __/__/3.02lexer.c.i
+3.02_create_AST_with_bison.tab.c.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.i
+.PHONY : 3.02_create_AST_with_bison.tab.c.i
 
-__/__/3.02lexer.s: __/__/3.02lexer.c.s
+3.02_create_AST_with_bison.tab.s: 3.02_create_AST_with_bison.tab.c.s
 
-.PHONY : __/__/3.02lexer.s
+.PHONY : 3.02_create_AST_with_bison.tab.s
 
 # target to generate assembly for a file
-__/__/3.02lexer.c.s:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.s
-.PHONY : __/__/3.02lexer.c.s
+3.02_create_AST_with_bison.tab.c.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.s
+.PHONY : 3.02_create_AST_with_bison.tab.c.s
+
+3.02lexer.o: 3.02lexer.c.o
+
+.PHONY : 3.02lexer.o
+
+# target to build an object file
+3.02lexer.c.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.o
+.PHONY : 3.02lexer.c.o
+
+3.02lexer.i: 3.02lexer.c.i
+
+.PHONY : 3.02lexer.i
+
+# target to preprocess a source file
+3.02lexer.c.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.i
+.PHONY : 3.02lexer.c.i
+
+3.02lexer.s: 3.02lexer.c.s
+
+.PHONY : 3.02lexer.s
+
+# target to generate assembly for a file
+3.02lexer.c.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.s
+.PHONY : 3.02lexer.c.s
 
 fb3.02.o: fb3.02.c.o
 
@@ -215,12 +215,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 3.02_create_AST_with_bison"
-	@echo "... __/__/3.02_create_AST_with_bison.tab.o"
-	@echo "... __/__/3.02_create_AST_with_bison.tab.i"
-	@echo "... __/__/3.02_create_AST_with_bison.tab.s"
-	@echo "... __/__/3.02lexer.o"
-	@echo "... __/__/3.02lexer.i"
-	@echo "... __/__/3.02lexer.s"
+	@echo "... 3.02_create_AST_with_bison.tab.o"
+	@echo "... 3.02_create_AST_with_bison.tab.i"
+	@echo "... 3.02_create_AST_with_bison.tab.s"
+	@echo "... 3.02lexer.o"
+	@echo "... 3.02lexer.i"
+	@echo "... 3.02lexer.s"
 	@echo "... fb3.02.o"
 	@echo "... fb3.02.i"
 	@echo "... fb3.02.s"

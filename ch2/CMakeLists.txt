@@ -1,6 +1,7 @@
+include(${PROJECT_SOURCE_DIR}/cmake/clean_flex_bison_generate_code.cmake)
 
 execute_process(COMMAND
-    flex -o ${CMAKE_CURRENT_SOURCE_DIR}/2.01_usual_lang_lex_re.c
+    flex -o ${CMAKE_CURRENT_BINARY_DIR}/2.01_usual_lang_lex_re.c
     ${CMAKE_CURRENT_SOURCE_DIR}/2.01_usual_lang_lex_re.l)
 
 add_executable(2.01_usual_lang_lex_re
@@ -11,7 +12,7 @@ target_link_libraries(2.01_usual_lang_lex_re PUBLIC
 
 
 execute_process(COMMAND
-    flex -o ${CMAKE_CURRENT_SOURCE_DIR}/2.02_use_yyin_to_read_data_from_file.c
+    flex -o ${CMAKE_CURRENT_BINARY_DIR}/2.02_use_yyin_to_read_data_from_file.c
     ${CMAKE_CURRENT_SOURCE_DIR}/2.02_use_yyin_to_read_data_from_file.l)
 
 add_executable(2.02_use_yyin_to_read_data_from_file
@@ -19,7 +20,7 @@ add_executable(2.02_use_yyin_to_read_data_from_file
 
 
 execute_process(COMMAND
-    flex -o ${CMAKE_CURRENT_SOURCE_DIR}/2.03_read_files.c
+    flex -o ${CMAKE_CURRENT_BINARY_DIR}/2.03_read_files.c
     ${CMAKE_CURRENT_SOURCE_DIR}/2.03_read_files.l)
 
 add_executable(2.03_read_files
@@ -27,7 +28,7 @@ add_executable(2.03_read_files
 
 
 execute_process(COMMAND
-flex -o ${CMAKE_CURRENT_SOURCE_DIR}/2.06_include_file_and_start_state.c
+flex -o ${CMAKE_CURRENT_BINARY_DIR}/2.06_include_file_and_start_state.c
     ${CMAKE_CURRENT_SOURCE_DIR}/2.06_include_file_and_start_state.l)
 
 add_executable(2.06_include_file_and_start_state

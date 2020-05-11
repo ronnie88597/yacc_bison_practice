@@ -8,13 +8,13 @@
 
 ../ch3/3.02/fb3.02.h
 
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.c
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison.tab.c
 stdio.h
 -
 stdlib.h
 -
 fb3.02.h
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/fb3.02.h
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/fb3.02.h
 stddef.h
 -
 libintl.h
@@ -30,9 +30,9 @@ stdlib.h
 stdio.h
 -
 
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.h
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison.tab.h
 
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02lexer.c
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02lexer.c
 stdio.h
 -
 string.h
@@ -44,9 +44,9 @@ stdlib.h
 inttypes.h
 -
 fb3.02.h
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/fb3.02.h
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/fb3.02.h
 3.02_create_AST_with_bison.tab.h
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.h
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison.tab.h
 unistd.h
 -
 

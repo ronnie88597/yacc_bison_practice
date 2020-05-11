@@ -58,17 +58,17 @@ include ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/progress.make
 include ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/flags.make
 
 ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o: ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/flags.make
-ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o: ../ch2/2.02_use_yyin_to_read_data_from_file.c
+ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o: ch2/2.02_use_yyin_to_read_data_from_file.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.c
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.02_use_yyin_to_read_data_from_file.c
 
 ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.c > CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.02_use_yyin_to_read_data_from_file.c > CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.i
 
 ch2/CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.c -o CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.02_use_yyin_to_read_data_from_file.c -o CMakeFiles/2.02_use_yyin_to_read_data_from_file.dir/2.02_use_yyin_to_read_data_from_file.c.s
 
 # Object files for target 2.02_use_yyin_to_read_data_from_file
 2_02_use_yyin_to_read_data_from_file_OBJECTS = \

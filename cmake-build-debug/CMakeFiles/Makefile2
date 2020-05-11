@@ -56,6 +56,7 @@ CMAKE_BINARY_DIR = /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-buil
 all: ch1/all
 all: ch2/all
 all: ch3/all
+all: ch5/all
 
 .PHONY : all
 
@@ -63,6 +64,7 @@ all: ch3/all
 preinstall: ch1/preinstall
 preinstall: ch2/preinstall
 preinstall: ch3/preinstall
+preinstall: ch5/preinstall
 
 .PHONY : preinstall
 
@@ -70,6 +72,7 @@ preinstall: ch3/preinstall
 clean: ch1/clean
 clean: ch2/clean
 clean: ch3/clean
+clean: ch5/clean
 
 .PHONY : clean
 
@@ -184,7 +187,7 @@ ch3/3.02/clean: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/clean
 # Directory level rules for directory ch3/3.04
 
 # Recursive "all" directory target.
-ch3/3.04/all:
+ch3/3.04/all: ch3/3.04/CMakeFiles/3.04.dir/all
 
 .PHONY : ch3/3.04/all
 
@@ -194,9 +197,27 @@ ch3/3.04/preinstall:
 .PHONY : ch3/3.04/preinstall
 
 # Recursive "clean" directory target.
-ch3/3.04/clean:
+ch3/3.04/clean: ch3/3.04/CMakeFiles/3.04.dir/clean
 
 .PHONY : ch3/3.04/clean
+
+#=============================================================================
+# Directory level rules for directory ch5
+
+# Recursive "all" directory target.
+ch5/all:
+
+.PHONY : ch5/all
+
+# Recursive "preinstall" directory target.
+ch5/preinstall:
+
+.PHONY : ch5/preinstall
+
+# Recursive "clean" directory target.
+ch5/clean:
+
+.PHONY : ch5/clean
 
 #=============================================================================
 # Target rules for target ch1/CMakeFiles/1.01_word_counter.dir
@@ -467,6 +488,33 @@ ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/rule: cmake_check_build_syste
 ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/clean:
 	$(MAKE) -f ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/clean
 .PHONY : ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/clean
+
+#=============================================================================
+# Target rules for target ch3/3.04/CMakeFiles/3.04.dir
+
+# All Build rule for target.
+ch3/3.04/CMakeFiles/3.04.dir/all:
+	$(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/depend
+	$(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=24,25,26,27,28 "Built target 3.04"
+.PHONY : ch3/3.04/CMakeFiles/3.04.dir/all
+
+# Build rule for subdir invocation for target.
+ch3/3.04/CMakeFiles/3.04.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 ch3/3.04/CMakeFiles/3.04.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles 0
+.PHONY : ch3/3.04/CMakeFiles/3.04.dir/rule
+
+# Convenience name for target.
+3.04: ch3/3.04/CMakeFiles/3.04.dir/rule
+
+.PHONY : 3.04
+
+# clean rule for target.
+ch3/3.04/CMakeFiles/3.04.dir/clean:
+	$(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/clean
+.PHONY : ch3/3.04/CMakeFiles/3.04.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

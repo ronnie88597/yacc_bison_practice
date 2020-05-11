@@ -125,59 +125,59 @@ ch1/1.06/CMakeFiles/1.06.dir/rule:
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/build
 .PHONY : 1.06/fast
 
-__/__/1.05_first_calculator_with_bison.tab.o: __/__/1.05_first_calculator_with_bison.tab.c.o
+1.06_calculator_with_bison.tab.o: 1.06_calculator_with_bison.tab.c.o
 
-.PHONY : __/__/1.05_first_calculator_with_bison.tab.o
-
-# target to build an object file
-__/__/1.05_first_calculator_with_bison.tab.c.o:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o
-.PHONY : __/__/1.05_first_calculator_with_bison.tab.c.o
-
-__/__/1.05_first_calculator_with_bison.tab.i: __/__/1.05_first_calculator_with_bison.tab.c.i
-
-.PHONY : __/__/1.05_first_calculator_with_bison.tab.i
-
-# target to preprocess a source file
-__/__/1.05_first_calculator_with_bison.tab.c.i:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.i
-.PHONY : __/__/1.05_first_calculator_with_bison.tab.c.i
-
-__/__/1.05_first_calculator_with_bison.tab.s: __/__/1.05_first_calculator_with_bison.tab.c.s
-
-.PHONY : __/__/1.05_first_calculator_with_bison.tab.s
-
-# target to generate assembly for a file
-__/__/1.05_first_calculator_with_bison.tab.c.s:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.s
-.PHONY : __/__/1.05_first_calculator_with_bison.tab.c.s
-
-__/__/1.06lexer.o: __/__/1.06lexer.c.o
-
-.PHONY : __/__/1.06lexer.o
+.PHONY : 1.06_calculator_with_bison.tab.o
 
 # target to build an object file
-__/__/1.06lexer.c.o:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.o
-.PHONY : __/__/1.06lexer.c.o
+1.06_calculator_with_bison.tab.c.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.o
+.PHONY : 1.06_calculator_with_bison.tab.c.o
 
-__/__/1.06lexer.i: __/__/1.06lexer.c.i
+1.06_calculator_with_bison.tab.i: 1.06_calculator_with_bison.tab.c.i
 
-.PHONY : __/__/1.06lexer.i
+.PHONY : 1.06_calculator_with_bison.tab.i
 
 # target to preprocess a source file
-__/__/1.06lexer.c.i:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.i
-.PHONY : __/__/1.06lexer.c.i
+1.06_calculator_with_bison.tab.c.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.i
+.PHONY : 1.06_calculator_with_bison.tab.c.i
 
-__/__/1.06lexer.s: __/__/1.06lexer.c.s
+1.06_calculator_with_bison.tab.s: 1.06_calculator_with_bison.tab.c.s
 
-.PHONY : __/__/1.06lexer.s
+.PHONY : 1.06_calculator_with_bison.tab.s
 
 # target to generate assembly for a file
-__/__/1.06lexer.c.s:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.s
-.PHONY : __/__/1.06lexer.c.s
+1.06_calculator_with_bison.tab.c.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.s
+.PHONY : 1.06_calculator_with_bison.tab.c.s
+
+1.06lexer.o: 1.06lexer.c.o
+
+.PHONY : 1.06lexer.o
+
+# target to build an object file
+1.06lexer.c.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.o
+.PHONY : 1.06lexer.c.o
+
+1.06lexer.i: 1.06lexer.c.i
+
+.PHONY : 1.06lexer.i
+
+# target to preprocess a source file
+1.06lexer.c.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.i
+.PHONY : 1.06lexer.c.i
+
+1.06lexer.s: 1.06lexer.c.s
+
+.PHONY : 1.06lexer.s
+
+# target to generate assembly for a file
+1.06lexer.c.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch1/1.06/CMakeFiles/1.06.dir/build.make ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.s
+.PHONY : 1.06lexer.c.s
 
 # Help Target
 help:
@@ -188,12 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 1.06"
-	@echo "... __/__/1.05_first_calculator_with_bison.tab.o"
-	@echo "... __/__/1.05_first_calculator_with_bison.tab.i"
-	@echo "... __/__/1.05_first_calculator_with_bison.tab.s"
-	@echo "... __/__/1.06lexer.o"
-	@echo "... __/__/1.06lexer.i"
-	@echo "... __/__/1.06lexer.s"
+	@echo "... 1.06_calculator_with_bison.tab.o"
+	@echo "... 1.06_calculator_with_bison.tab.i"
+	@echo "... 1.06_calculator_with_bison.tab.s"
+	@echo "... 1.06lexer.o"
+	@echo "... 1.06lexer.i"
+	@echo "... 1.06lexer.s"
 .PHONY : help
 
 

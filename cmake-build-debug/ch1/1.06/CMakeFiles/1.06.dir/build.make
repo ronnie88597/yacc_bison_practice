@@ -57,42 +57,42 @@ include ch1/1.06/CMakeFiles/1.06.dir/progress.make
 # Include the compile flags for this target's objects.
 include ch1/1.06/CMakeFiles/1.06.dir/flags.make
 
-ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.o: ch1/1.06/CMakeFiles/1.06.dir/flags.make
-ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.o: 1.06lexer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.06.dir/__/__/1.06lexer.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06lexer.c
+ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.o: ch1/1.06/CMakeFiles/1.06.dir/flags.make
+ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.o: ch1/1.06/1.06lexer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.o"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.06.dir/1.06lexer.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06lexer.c
 
-ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1.06.dir/__/__/1.06lexer.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06lexer.c > CMakeFiles/1.06.dir/__/__/1.06lexer.c.i
+ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1.06.dir/1.06lexer.c.i"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06lexer.c > CMakeFiles/1.06.dir/1.06lexer.c.i
 
-ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1.06.dir/__/__/1.06lexer.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06lexer.c -o CMakeFiles/1.06.dir/__/__/1.06lexer.c.s
+ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1.06.dir/1.06lexer.c.s"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06lexer.c -o CMakeFiles/1.06.dir/1.06lexer.c.s
 
-ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o: ch1/1.06/CMakeFiles/1.06.dir/flags.make
-ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o: 1.05_first_calculator_with_bison.tab.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.c
+ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.o: ch1/1.06/CMakeFiles/1.06.dir/flags.make
+ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.o: ch1/1.06/1.06_calculator_with_bison.tab.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.o"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06_calculator_with_bison.tab.c
 
-ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.c > CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.i
+ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.i"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06_calculator_with_bison.tab.c > CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.i
 
-ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.c -o CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.s
+ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.s"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06_calculator_with_bison.tab.c -o CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.s
 
 # Object files for target 1.06
 1_06_OBJECTS = \
-"CMakeFiles/1.06.dir/__/__/1.06lexer.c.o" \
-"CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o"
+"CMakeFiles/1.06.dir/1.06lexer.c.o" \
+"CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.o"
 
 # External object files for target 1.06
 1_06_EXTERNAL_OBJECTS =
 
-ch1/1.06/1.06: ch1/1.06/CMakeFiles/1.06.dir/__/__/1.06lexer.c.o
-ch1/1.06/1.06: ch1/1.06/CMakeFiles/1.06.dir/__/__/1.05_first_calculator_with_bison.tab.c.o
+ch1/1.06/1.06: ch1/1.06/CMakeFiles/1.06.dir/1.06lexer.c.o
+ch1/1.06/1.06: ch1/1.06/CMakeFiles/1.06.dir/1.06_calculator_with_bison.tab.c.o
 ch1/1.06/1.06: ch1/1.06/CMakeFiles/1.06.dir/build.make
 ch1/1.06/1.06: ch1/1.06/CMakeFiles/1.06.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable 1.06"

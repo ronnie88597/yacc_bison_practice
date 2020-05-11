@@ -58,17 +58,17 @@ include ch1/CMakeFiles/1.01_word_counter.dir/progress.make
 include ch1/CMakeFiles/1.01_word_counter.dir/flags.make
 
 ch1/CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.o: ch1/CMakeFiles/1.01_word_counter.dir/flags.make
-ch1/CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.o: ../ch1/1.01_word_counter.c
+ch1/CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.o: ch1/1.01_word_counter.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch1/CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c
 
 ch1/CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c > CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c > CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.i
 
 ch1/CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c -o CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c -o CMakeFiles/1.01_word_counter.dir/1.01_word_counter.c.s
 
 # Object files for target 1.01_word_counter
 1_01_word_counter_OBJECTS = \

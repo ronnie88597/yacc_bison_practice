@@ -58,17 +58,17 @@ include ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/progress.make
 include ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/flags.make
 
 ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.o: ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/flags.make
-ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.o: ../ch1/1.02_BritishEn_to_AmericanEn.c
+ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.o: ch1/1.02_BritishEn_to_AmericanEn.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.02_BritishEn_to_AmericanEn.c
 
 ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c > CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.02_BritishEn_to_AmericanEn.c > CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.i
 
 ch1/CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c -o CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.02_BritishEn_to_AmericanEn.c -o CMakeFiles/1.02_BritishEn_to_AmericanEn.dir/1.02_BritishEn_to_AmericanEn.c.s
 
 # Object files for target 1.02_BritishEn_to_AmericanEn
 1_02_BritishEn_to_AmericanEn_OBJECTS = \

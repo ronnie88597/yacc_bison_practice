@@ -58,17 +58,17 @@ include ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/progress.make
 include ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/flags.make
 
 ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o: ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/flags.make
-ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o: ../ch1/1.03_recognize_calculator_tokens.c
+ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o: ch1/1.03_recognize_calculator_tokens.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.03_recognize_calculator_tokens.c
 
 ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c > CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.03_recognize_calculator_tokens.c > CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.i
 
 ch1/CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c -o CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.03_recognize_calculator_tokens.c -o CMakeFiles/1.03_recognize_calculator_tokens.dir/1.03_recognize_calculator_tokens.c.s
 
 # Object files for target 1.03_recognize_calculator_tokens
 1_03_recognize_calculator_tokens_OBJECTS = \

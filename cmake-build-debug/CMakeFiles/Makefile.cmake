@@ -36,9 +36,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../ch3/3.02/CMakeLists.txt"
   "../ch3/3.04/CMakeLists.txt"
   "../ch3/CMakeLists.txt"
+  "../ch5/CMakeLists.txt"
   "CMakeFiles/3.16.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeSystem.cmake"
+  "../cmake/clean_flex_bison_generate_code.cmake"
   )
 
 # The corresponding makefile is:
@@ -56,6 +58,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ch3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ch3/3.02/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ch3/3.04/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ch5/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -70,4 +73,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "ch2/CMakeFiles/2.03_read_files.dir/DependInfo.cmake"
   "ch2/CMakeFiles/2.06_include_file_and_start_state.dir/DependInfo.cmake"
   "ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/DependInfo.cmake"
+  "ch3/3.04/CMakeFiles/3.04.dir/DependInfo.cmake"
   )

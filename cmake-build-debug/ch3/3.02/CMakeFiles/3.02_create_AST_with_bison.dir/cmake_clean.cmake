@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "3.02_create_AST_with_bison"
   "3.02_create_AST_with_bison.pdb"
-  "CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.o"
-  "CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.o"
+  "CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.o"
+  "CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.o"
   "CMakeFiles/3.02_create_AST_with_bison.dir/fb3.02.c.o"
 )
 

@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-buil
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,14 +110,150 @@ depend:
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+ch3/3.04/CMakeFiles/3.04.dir/rule:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ch3/3.04/CMakeFiles/3.04.dir/rule
+.PHONY : ch3/3.04/CMakeFiles/3.04.dir/rule
+
+# Convenience name for target.
+3.04: ch3/3.04/CMakeFiles/3.04.dir/rule
+
+.PHONY : 3.04
+
+# fast build rule for target.
+3.04/fast:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/build
+.PHONY : 3.04/fast
+
+driver.o: driver.cpp.o
+
+.PHONY : driver.o
+
+# target to build an object file
+driver.cpp.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/driver.cpp.o
+.PHONY : driver.cpp.o
+
+driver.i: driver.cpp.i
+
+.PHONY : driver.i
+
+# target to preprocess a source file
+driver.cpp.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/driver.cpp.i
+.PHONY : driver.cpp.i
+
+driver.s: driver.cpp.s
+
+.PHONY : driver.s
+
+# target to generate assembly for a file
+driver.cpp.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/driver.cpp.s
+.PHONY : driver.cpp.s
+
+lexer.o: lexer.cpp.o
+
+.PHONY : lexer.o
+
+# target to build an object file
+lexer.cpp.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/lexer.cpp.o
+.PHONY : lexer.cpp.o
+
+lexer.i: lexer.cpp.i
+
+.PHONY : lexer.i
+
+# target to preprocess a source file
+lexer.cpp.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/lexer.cpp.i
+.PHONY : lexer.cpp.i
+
+lexer.s: lexer.cpp.s
+
+.PHONY : lexer.s
+
+# target to generate assembly for a file
+lexer.cpp.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/lexer.cpp.s
+.PHONY : lexer.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+parser.o: parser.cpp.o
+
+.PHONY : parser.o
+
+# target to build an object file
+parser.cpp.o:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/parser.cpp.o
+.PHONY : parser.cpp.o
+
+parser.i: parser.cpp.i
+
+.PHONY : parser.i
+
+# target to preprocess a source file
+parser.cpp.i:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/parser.cpp.i
+.PHONY : parser.cpp.i
+
+parser.s: parser.cpp.s
+
+.PHONY : parser.s
+
+# target to generate assembly for a file
+parser.cpp.s:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.04/CMakeFiles/3.04.dir/build.make ch3/3.04/CMakeFiles/3.04.dir/parser.cpp.s
+.PHONY : parser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... 3.04"
+	@echo "... driver.o"
+	@echo "... driver.i"
+	@echo "... driver.s"
+	@echo "... lexer.o"
+	@echo "... lexer.i"
+	@echo "... lexer.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... parser.o"
+	@echo "... parser.i"
+	@echo "... parser.s"
 .PHONY : help
 
 

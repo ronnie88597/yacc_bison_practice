@@ -49,7 +49,7 @@ int main(int argc, char **argv)
   yyparse();
 	return 0;
 }
-yyerror(char *s)
+int yyerror(char *s)
 {
-	fprintf(stderr, "error: %s\n", s);
+	return fprintf(stderr, "error: %s\n", s);
 }

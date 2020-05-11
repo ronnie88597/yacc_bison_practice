@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/fb3.04.dir/fb3.04func.c.o CMakeFiles/fb3.04.dir/__/__/fb3.04lexer.c.o CMakeFiles/fb3.04.dir/__/__/fb3.04parser.tab.c.o  -o fb3.04  -lm 

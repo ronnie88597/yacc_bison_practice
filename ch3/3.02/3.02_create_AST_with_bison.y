@@ -8,7 +8,7 @@
 
 /* %union关键字声明了语法规则中所有语法值可能会用到的数据类型的一个集合 */
 %union {
-  struct ast *a;
+  struct ASTNode *a;
   double d;
 }
 

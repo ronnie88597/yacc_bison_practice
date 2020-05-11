@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1 
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.c
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.02_use_yyin_to_read_data_from_file.c
 stdio.h
 -
 string.h

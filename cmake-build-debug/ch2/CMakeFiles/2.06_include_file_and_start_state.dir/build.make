@@ -58,17 +58,17 @@ include ch2/CMakeFiles/2.06_include_file_and_start_state.dir/progress.make
 include ch2/CMakeFiles/2.06_include_file_and_start_state.dir/flags.make
 
 ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o: ch2/CMakeFiles/2.06_include_file_and_start_state.dir/flags.make
-ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o: ../ch2/2.06_include_file_and_start_state.c
+ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o: ch2/2.06_include_file_and_start_state.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.06_include_file_and_start_state.c
 
 ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c > CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.06_include_file_and_start_state.c > CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.i
 
 ch2/CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c -o CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.06_include_file_and_start_state.c -o CMakeFiles/2.06_include_file_and_start_state.dir/2.06_include_file_and_start_state.c.s
 
 # Object files for target 2.06_include_file_and_start_state
 2_06_include_file_and_start_state_OBJECTS = \

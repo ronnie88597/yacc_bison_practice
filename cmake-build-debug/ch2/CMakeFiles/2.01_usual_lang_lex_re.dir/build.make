@@ -58,17 +58,17 @@ include ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/progress.make
 include ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/flags.make
 
 ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.o: ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/flags.make
-ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.o: ../ch2/2.01_usual_lang_lex_re.c
+ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.o: ch2/2.01_usual_lang_lex_re.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.01_usual_lang_lex_re.c
 
 ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c > CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.01_usual_lang_lex_re.c > CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.i
 
 ch2/CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c -o CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.01_usual_lang_lex_re.c -o CMakeFiles/2.01_usual_lang_lex_re.dir/2.01_usual_lang_lex_re.c.s
 
 # Object files for target 2.01_usual_lang_lex_re
 2_01_usual_lang_lex_re_OBJECTS = \

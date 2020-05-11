@@ -58,17 +58,17 @@ include ch2/CMakeFiles/2.03_read_files.dir/progress.make
 include ch2/CMakeFiles/2.03_read_files.dir/flags.make
 
 ch2/CMakeFiles/2.03_read_files.dir/2.03_read_files.c.o: ch2/CMakeFiles/2.03_read_files.dir/flags.make
-ch2/CMakeFiles/2.03_read_files.dir/2.03_read_files.c.o: ../ch2/2.03_read_files.c
+ch2/CMakeFiles/2.03_read_files.dir/2.03_read_files.c.o: ch2/2.03_read_files.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ch2/CMakeFiles/2.03_read_files.dir/2.03_read_files.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2.03_read_files.dir/2.03_read_files.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.c
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2.03_read_files.dir/2.03_read_files.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.03_read_files.c
 
 ch2/CMakeFiles/2.03_read_files.dir/2.03_read_files.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/2.03_read_files.dir/2.03_read_files.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.c > CMakeFiles/2.03_read_files.dir/2.03_read_files.c.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.03_read_files.c > CMakeFiles/2.03_read_files.dir/2.03_read_files.c.i
 
 ch2/CMakeFiles/2.03_read_files.dir/2.03_read_files.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/2.03_read_files.dir/2.03_read_files.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.c -o CMakeFiles/2.03_read_files.dir/2.03_read_files.c.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.03_read_files.c -o CMakeFiles/2.03_read_files.dir/2.03_read_files.c.s
 
 # Object files for target 2.03_read_files
 2_03_read_files_OBJECTS = \

@@ -5,7 +5,7 @@
 		<Option title="Flex_Bison"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\ch1\;CMake Files\ch1\1.06\;CMake Files\ch2\;CMake Files\ch3\;CMake Files\ch3\3.02\;CMake Files\ch3\3.04\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ch1\;CMake Files\ch1\1.06\;CMake Files\cmake\;CMake Files\ch2\;CMake Files\ch3\;CMake Files\ch3\3.02\;CMake Files\ch3\3.04\;CMake Files\ch5\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -67,6 +68,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -90,6 +92,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -113,6 +116,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -136,6 +140,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -159,6 +164,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -182,6 +188,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -205,6 +212,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -228,6 +236,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -252,6 +261,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1"/>
 					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -461,7 +471,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02"/>
-					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -486,7 +496,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02"/>
-					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug"/>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -503,45 +513,113 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="3.04">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/3.04" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.04"/>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/Makefile&quot;  VERBOSE=1 3.04"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3.04/fast">
+				<Option output="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/3.04" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.04"/>
+					<Add directory="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/Makefile&quot;  VERBOSE=1 3.04/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.c">
-			<Option target="1.01_word_counter"/>
-		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.02_BritishEn_to_AmericanEn.c">
-			<Option target="1.02_BritishEn_to_AmericanEn"/>
-		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.03_recognize_calculator_tokens.c">
-			<Option target="1.03_recognize_calculator_tokens"/>
-		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.04_main.c">
 			<Option target="1.04_NextToken_with_Flex"/>
-		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c">
-			<Option target="2.01_usual_lang_lex_re"/>
-		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.02_use_yyin_to_read_data_from_file.c">
-			<Option target="2.02_use_yyin_to_read_data_from_file"/>
-		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.03_read_files.c">
-			<Option target="2.03_read_files"/>
-		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.06_include_file_and_start_state.c">
-			<Option target="2.06_include_file_and_start_state"/>
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/fb3.02.c">
 			<Option target="3.02_create_AST_with_bison"/>
 		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.05_first_calculator_with_bison.tab.c">
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.04/driver.cpp">
+			<Option target="3.04"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.04/driver.h">
+			<Option target="3.04"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.04/main.cpp">
+			<Option target="3.04"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c">
+			<Option target="1.01_word_counter"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.02_BritishEn_to_AmericanEn.c">
+			<Option target="1.02_BritishEn_to_AmericanEn"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.03_recognize_calculator_tokens.c">
+			<Option target="1.03_recognize_calculator_tokens"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06_calculator_with_bison.tab.c">
 			<Option target="1.06"/>
 		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/1.06lexer.c">
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.06/1.06lexer.c">
 			<Option target="1.06"/>
 		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.c">
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.01_usual_lang_lex_re.c">
+			<Option target="2.01_usual_lang_lex_re"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.02_use_yyin_to_read_data_from_file.c">
+			<Option target="2.02_use_yyin_to_read_data_from_file"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.03_read_files.c">
+			<Option target="2.03_read_files"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.06_include_file_and_start_state.c">
+			<Option target="2.06_include_file_and_start_state"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison.tab.c">
 			<Option target="3.02_create_AST_with_bison"/>
 		</Unit>
-		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02lexer.c">
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02lexer.c">
 			<Option target="3.02_create_AST_with_bison"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/lexer.cpp">
+			<Option target="3.04"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/parser.cpp">
+			<Option target="3.04"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.04/parser.hpp">
+			<Option target="3.04"/>
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -551,6 +629,9 @@
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.06/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\ch1\1.06\"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/cmake/clean_flex_bison_generate_code.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\ch2\"/>
@@ -563,6 +644,9 @@
 		</Unit>
 		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.04/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\ch3\3.04\"/>
+		</Unit>
+		<Unit filename="/home/cmp/work_dir/source_code/yacc_bison_practice/ch5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ch5\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

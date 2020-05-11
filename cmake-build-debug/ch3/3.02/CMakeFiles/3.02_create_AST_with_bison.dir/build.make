@@ -70,44 +70,44 @@ ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/fb3.02.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/3.02_create_AST_with_bison.dir/fb3.02.c.s"
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.02/fb3.02.c -o CMakeFiles/3.02_create_AST_with_bison.dir/fb3.02.c.s
 
-ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.o: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/flags.make
-ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.o: 3.02lexer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02lexer.c
+ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.o: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/flags.make
+ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.o: ch3/3.02/3.02lexer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.o"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02lexer.c
 
-ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02lexer.c > CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.i
+ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.i"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02lexer.c > CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.i
 
-ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02lexer.c -o CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.s
+ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.s"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02lexer.c -o CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.s
 
-ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.o: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/flags.make
-ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.o: 3.02_create_AST_with_bison.tab.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.c
+ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.o: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/flags.make
+ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.o: ch3/3.02/3.02_create_AST_with_bison.tab.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.o"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison.tab.c
 
-ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.c > CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.i
+ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.i"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison.tab.c > CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.i
 
-ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/3.02_create_AST_with_bison.tab.c -o CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.s
+ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.s"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/3.02_create_AST_with_bison.tab.c -o CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.s
 
 # Object files for target 3.02_create_AST_with_bison
 3_02_create_AST_with_bison_OBJECTS = \
 "CMakeFiles/3.02_create_AST_with_bison.dir/fb3.02.c.o" \
-"CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.o" \
-"CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.o"
+"CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.o" \
+"CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.o"
 
 # External object files for target 3.02_create_AST_with_bison
 3_02_create_AST_with_bison_EXTERNAL_OBJECTS =
 
 ch3/3.02/3.02_create_AST_with_bison: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/fb3.02.c.o
-ch3/3.02/3.02_create_AST_with_bison: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02lexer.c.o
-ch3/3.02/3.02_create_AST_with_bison: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/__/__/3.02_create_AST_with_bison.tab.c.o
+ch3/3.02/3.02_create_AST_with_bison: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02lexer.c.o
+ch3/3.02/3.02_create_AST_with_bison: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/3.02_create_AST_with_bison.tab.c.o
 ch3/3.02/3.02_create_AST_with_bison: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/build.make
 ch3/3.02/3.02_create_AST_with_bison: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable 3.02_create_AST_with_bison"

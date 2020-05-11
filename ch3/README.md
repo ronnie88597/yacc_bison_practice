@@ -116,12 +116,12 @@ bison操作符优先级的规则，使用`%left`，`%right`，`%nonassoc`或`%pr
         NT_NEG,
     };
     
-    struct ast *newast(int nodetype, struct ast *lft, struct ast *rht);
-    struct ast *newnum(double d);
+    struct ASTNode *newast(int NodeType, struct ASTNode *Lft, struct ASTNode *Rht);
+    struct ASTNode *newnum(double d);
 %}
 
 %union{
-    struct ast *a;
+    struct ASTNode *a;
 }
 /* 声明的顺序决定了优先级，越后声明的优先级越高。bison遇到移进/规约冲突时，它将查询优先级表，来解决冲突 */
 %left '+' '-'

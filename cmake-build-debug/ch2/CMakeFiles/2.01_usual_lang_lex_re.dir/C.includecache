@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cmp/work_dir/source_code/yacc_bison_practice/ch2/2.01_usual_lang_lex_re.c
+/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch2/2.01_usual_lang_lex_re.c
 stdio.h
 -
 string.h

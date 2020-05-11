@@ -1,1 +1,0 @@
-/usr/bin/cc -g  -rdynamic CMakeFiles/1.04_NextToken_with_Flex.dir/1.04_main.o  -o 1.04_NextToken_with_Flex  -lfl 

@@ -443,15 +443,22 @@ char *yytext;
 #line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 /* file: 1.01_word_counter.y */
 /* 一个字数统计（word_counter）程序，程序读入一个文件然后报告这个文件的行数、单词树和字符数。*/
-/* 以下是Flex的第一部分，主要用于声明选项（%option），以及起始条件start condition（使用%x、%s声明）*/
-/* 以下是Flex的第二部分，%{  和 %}之间的代码会被原样照抄到生成的C文件的开头部分。*/
-#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+/* 以下是Flex的第一部分为定义部分，包含选项、文字块、起始条件和转换等。 */
+/* 文字块存在与%{和%}之间，它们将被原样拷贝到生成文件中。 */
+/* 以空白字符开头的行会被原样拷贝到C文件中。通常用于"\/**\/"之间的多行注释，在每行前面需要有空白字符。 */
+/* 例如：用于声明选项（%option），以及起始条件start condition（使用%x、%s声明） */
+/* %{ 和 %}之间的代码被认为是文字块，会被原样拷贝到生成的文件的开头部分。*/
+#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 int chars = 0; // 定义变量，用于计数有多少个字符
 int words = 0; // 定义变量，用于计数有多少个单词
 int lines = 0; // 定义变量，用于计数有多少行
-#line 453 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c"
-/* 以下是Flex的第三部分，该部分定义一些匹配模式（每个模式必须放在行首）和动作（模式匹配成功是所执行的C代码，使用{}括号括住的一行或多行语句）。 */
-#line 455 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c"
+#line 456 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c"
+/* 以下%%和%%之间是Flex的第二部分为规则部分，该部分定义一些匹配模式（每个模式必须放在行首）和动作（模式匹配成功是所执行的C代码，使用{}括号括住的一行或多行语句）。
+   注意：
+       在该部分也有%{和%}定义的C代码语句，它们会被原封不动地拷贝到yylex()中。
+       在规则部分开头出现的C代码也会出现在yylex的开头，它可以包含词法分析器使用的变量，以及每次yylex()调用时所需运行的代码。
+       在其他部分出现的C代码必须仅仅包含注释，因为你无法预知它出现在词法分析器的什么位置。*/
+#line 462 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c"
 
 #define INITIAL 0
 
@@ -668,9 +675,9 @@ YY_DECL
 		}
 
 	{
-#line 15 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 
-#line 674 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c"
+#line 681 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -729,7 +736,7 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 23 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 {
             words++;
             chars += strlen(yytext); // yytext变量总是指向本次匹配的输入文本字符串
@@ -738,20 +745,20 @@ YY_RULE_SETUP
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 20 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 {chars++; lines++; } // 当满足正则表达式：\n，表示识别到了换行符。chars++并且lines++
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 21 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 28 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 {chars++; } // 当满足正则表达式：.，表示识别到了任意一个单词。chars++
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 ECHO;
 	YY_BREAK
-#line 755 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c"
+#line 762 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch1/1.01_word_counter.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1756,9 +1763,11 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 22 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
+#line 29 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch1/1.01_word_counter.l"
 
-// 以下是Flex的第四部分，，该部分会被拷贝到生成的词法分析器里面的C代码。它们通常是一些与动作相关的程序代码。
+/* 以下是Flex的第三部分为用户子例程部分，该部分会被拷贝到生成的词法分析器里面的C代码。
+   它们通常是一些与动作相关的程序代码。
+   */
 int main(int argc, char **argv)
 {
     yylex(); // 该函数是词法分析器的主要函数，调用它将进行词法分析

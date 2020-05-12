@@ -1,14 +1,14 @@
 # CH2 内容概览
 
-### 2.01_usual_lang_lex_re.y
+### 2.01
 
 Flex实现词法分析器时常见的用于定义匹配模式的RE汇总
 
-### 2.02_use_yyin_to_read_data_from_file.y
+### 2.02
 
 flex词法分析器默认从stdin读取输入
 
-### 2.03_read_files.y
+### 2.03
 
 使用flex读取多个文件作为输入
 
@@ -176,7 +176,7 @@ flex提供了两个动作代码中比较有用的宏，input()和unput()。每�
 // 这是Flex的第四部分
 ```
 
-BEGIN动作也可以在规则部分的以缩进开头，例如：
+BEGIN动作也可以在规则开头部分的以缩进开头，例如：
 
 ```c
 %x SPECIAL
@@ -192,4 +192,258 @@ int enter_special;
 %%
 ```
 
-**注意**：INITIAL起始条件指没有任何起始条件规则激活的时候。BEGIN(INITIAL)等效于 BEGIN(0)
+**注意**：词法分析器从起始条件0开始，也被称为INITIAL起始条件。BEGIN(INITIAL)等效于 BEGIN(0)
+
+### 2.07 Flex如何处理上下文相关性
+
+flex提供了多种方式来做到模式的左上下文相关和有上下文相关，也就是与记号的上文和下文相关。
+
+#### 左上下文相关
+
+有三种方法可以做到左上下文相关：
+
+1.  **特殊的行首模式字符**
+
+    在模式开头的字符'^'可以让flex只在行首匹配该模式。'^'本身并不匹配任何字符，它只用于指定上下文。
+
+2.  **起始条件**
+
+    ```c
+    %s MYSTATE
+    %%
+    first { BEGIN(MYSTATE); }
+    ...
+    <MYSTATE>second { BEGIN(INITIAL); }
+    %%
+    ```
+
+    在这个例子中second记号只在first记号出现之后才被匹配。而且这两个记号之间也允许存在其他插入的记号。关于[点击查看起始条件更多的信息](https://blog.csdn.net/weixin_46222091/article/details/105975522)
+
+3.  **显示代码**
+
+    你也可以通过设定标志的方法来伪造左上下文相关性，这个标志可以用来从一个记号传递上下文信息到另外一个单词。
+
+    ```c
+    %{
+    int flag = 0;
+    %}
+    %%
+    a { flag = 1; }
+    b { flag = 2; }
+    zzz {
+    	switch(flag){
+    	case 1: a_zzz_token();break;
+    	case 2: b_zzz_token();break;
+    	default: plain_zzz_token();break;
+    	}
+    	flag = 0;
+    }
+    %%
+    ```
+
+
+
+#### 右上下文相关
+
+同样也有三种方法来使记号的识别依赖于该记号的右边文字：
+
+1.  **特殊的行尾模式字符**
+
+    在模式末尾的字符'\$'使得该模式尽在行尾得到匹配。和'^'字符一样'\$'字符不匹配任何字符，它仅仅指定上下文。'\$'等价于/\n。
+
+2.  **斜线操作符**
+
+    模式中的字符'/'让你可以包含显示尾部上下文。距离来说，模式abc/de可以匹配记号abc，但仅仅在后面紧跟着de的情况下。/自身不匹配任何字符。flex在决定多个模式中哪个具有最长匹配时会计算尾部上下文字符的个数，但是这些字符不会出现在yytext里，也不会被计算在yyleng中。举个实际的例子：
+
+    ```c
+    /* 词法分析器 */
+    %option noyywrap
+    
+    %{
+    #include<stdio.h>
+    %}
+    
+    %%
+    abc/de { printf("右上下文相关，匹配到了abc\n"); }
+    de     { printf("匹配到了de\n"); }
+    %%
+    
+    int main(){
+      yylex();
+      return 0;
+    }
+    ```
+
+    编译后运行的结果：
+
+    ```
+    cmp@t3600:~/work_dir/source_code/yacc_bison_practice/cmake-build-debug$ ./test 
+    abcd
+    abcd
+    abcde
+    右上下文相关，匹配到了abc. yytext=abc, yyleng=3
+    匹配到了de
+    ```
+
+    从上面的结果中可以看出，直接输出abc，并不会匹配到自定义模式中。当输入abcde时，首先匹配到了abc/de模式，识别到了abc字符，此时并不会消耗字符de。接下来会继续匹配到第二个模式，识别到了de字符。
+
+3.  **yyless()**
+
+    yyless()染个flex推回到刚刚读到的记号。yyless()的参数表明需要保留的字符个数，例如，将上面例子中的两个模式换成下面的一个模式
+
+    ```c
+    abcde { yyless(3);printf("右上下文相关，匹配到了abc\n"); }
+    ```
+
+    编译后运行的结果如下：
+
+    ```
+    cmp@t3600:~/work_dir/source_code/yacc_bison_practice/cmake-build-debug$ ./test 
+    abc
+    abc
+    abcde
+    右上下文相关，匹配到了abc. yytext=abc, yyleng=3
+    de
+    ```
+
+    与斜线操作类似，当输入abcde时，首先匹配到了abc/de模式，识别到了abc字符，此时并不会消耗字符de。
+
+
+
+### 2.08 Flex如何为部分通用匹配模式定义一个名字
+
+为部分通用匹配模式定义一个名字可以帮助我们分解复杂的表达式，并有助于表达出你的设计意图。
+
+定义采用的格式：
+
+```c
+NAME RE_Expr
+```
+
+名字可以包含字母、数字、连字符和下划线，但不能以数字开头。
+
+在规则部分，模式可能会包含通过花括号{}括起的基于名字的替换，例如{NAME}。这个名字所代表的表达式将被代入到模式中，**并且该表达式会被认为已经用圆括号括起来了**，例如：
+
+```c
+DIG [0-9]
+...
+%%
+{DIG}+ { process_integer(); }
+{DIG}+\.{DIG}* |
+\.{DIG}+ { process_real(); }
+%%
+```
+
+
+
+### 2.09 Flex单个程序中的多重词法分析器
+
+你可能希望在同一个程序中使用两个部分或者完全不同的记号语法。一个交互式调试解释器可能需要一个词法分析器用于编程语言，还需要另外一个词法分析器用于调试命令。
+
+有两种基本的方法来使一个程序处理两个词法分析器：合并的词法分析器或者把两个完整的词法分析器放到程序中
+
+1.  **合并的词法分析器**
+
+    你可以使用起始状态合并两个词法分析器。每个词法分析器的模式都被加上特定起始状态作为前缀。当词法分析器开始工作时，你需要写一小段代码来让 它进入合适的初始状态，这样就可以选择特定的词法分析器了，例如下面这一段代码（它将会被拷贝到yylex()的开头）：
+
+    ```c
+    %s INITA INITB INITC
+    
+    %%
+    %{
+    	extern first_tok, fist_lex;
+    	if(first_lex){ // 在调用词法分析器之前，会设置first_lex作为它的起始状态
+    		BEGIN(first_lex);
+    		first_lex = 0;
+    	}
+    	if(first_tok){
+    		int holdtok = fist_tok;
+    		first_tok = 0;
+    		return holdtok;
+    	}
+    %}
+    %%
+    ```
+
+    这种合并的词法分析器与合并的语法分析器结合使用时，你通常需要通过代码来产生初始记号，以便于告知语法分析器那种语法正在使用。这种方法的有点是目标代码比较小。缺点就是其因为共享而引入的复杂性，你需要非常小心使用起始状态；你不能够一次激活两种词法分析器；对于不同词法分析器使用不同的输入源的情况处理会比较麻烦。
+
+2.  **同一个程序中的多个完整的词法分析器**
+
+    另外一种方法是在你的程序中包含两个词法分析器。这种技巧要求改变lex默认使用的函数和变量名，这样两个词法分析器才可以分别生成，然后编译到同一个程序中。
+
+    flex提供了命令行选项和程序选项来改变生成的词法分析器所使用的名字的前缀。例如，下面这些选项可以让flex使用前缀"foo"而不是"yy"，并且生成的词法分析器源文件会是foolex.c。
+
+    ```c
+    %option prefix="foo"
+    %option outfile="foolex.c"
+    ```
+
+    你也可以通过命令行选项来实现这一点：
+
+    ```shell
+    flex --outfile=foolex.c --prefix=foo foo.l
+    ```
+
+    任何一种方法生成的词法分析器又具有入口函数foolex()，它从标准文件fooin读取输入。不过稍微有点儿迷惑人的是，flex需要在词法分析器的最前面生成一大堆#define宏，它们会把标准的"yy"格式的名字重定义为选定的前缀格式。这使得你可以继续使用标准名字来编写你的词法分析器，而外部可见的名字则会使用选定的前缀。例如：
+
+    ```c
+    #define yyin fooin
+    #define yyleng fooleng
+    #define yylex foolex
+    #define yyout fooout
+    #define yytext footext
+    #define yylineno foolineno
+    ```
+
+    
+
+### 2.10 Flex 的选项通常的用法释疑
+
+flex提供了几百个选项。大多数选在词法分析器文件的开头部分可以写成：
+
+```c
+%option name
+```
+
+或者在命令行中以--name形式。
+
+如果你需要关闭一个选项只需要在该选项前面家no，例如：%option noyywrap或者--noyywrap。在大多数情况下，把选项放在%option的方式更为推荐，因为如果选项错误的话，词法分析器通常无法正常工作。关于Flex的所有选项，[点击查看更多](http://dinosaur.compilertools.net/flex/flex_17.html#SEC17)。
+
+
+
+### 2.11 在Bison中使用可重入的Flex词法分析器
+
+在Flex中打开可重入词法分析器的功能，需要在词法分析器的开头添加：
+
+```
+%option reentrant
+```
+
+在使用时，需要使用类似以下的代码：
+
+```c
+yyscan_t scanner;
+
+if(yylex_init(&scanner)) { printf("no scanning today\n"); abort(); }
+
+while(yylex(scanner)){
+	... do something ...;
+}
+yylex_destroy(scanner);
+```
+
+在可重入词法分析器中，所有与当前词法分析相关的状态信息都被保存在yyscan_t变量中，它实际上是一个指针，指向了包含所有状态的结构。你通过yylex_init()来创建词法分析器，把yyscan_t的地址作为参数传入，而yylex_init()在成功时返回0，或者在它无法分配结构空间时返回1。然后你就可以把yyscan_t代入任何一次yylex()的调用中，最后通过yylex_destroy来删除yyscan_t。每次调用yylex_init都会创建一个独立的词法分析器，多个词法分析器可以同时生效，但需要确保每次调用yylex()时传入相应的yyscan_t结构。
+
+使用flex和bison配合实现可重入的词法分析器和语法分析器时，与单独的可重入词法分析器有所不同。可重入语法分析器通常通过调用yylex来获取记号，它会传入一个指向记号值的指针，但不会包括flex所需的yyscan_t参数。flex提供了
+
+```c
+%option reentrant bison-bridge
+```
+
+通过在词法分析器中使用该选项，它可以把yylex的定义改为：
+
+```c
+int yylex (YYSTYPE * yylval_param, yyscan_t yyscanner);
+```
+
+并且会根据参数值来自动设置yylval的值。**另外一个与普通词法分析器不同的地方在与yylval将变成一个指向联合类型的指针而不是联合类型，所以以前yylval.member的使用需要更改为yylval->member。**

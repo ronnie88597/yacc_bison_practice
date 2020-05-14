@@ -1,4 +1,4 @@
-# Install script for directory: /home/cmp/work_dir/source_code/yacc_bison_practice/ch3
+# Install script for directory: /home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,15 +35,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.02/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/cmake_install.cmake")
 endif()
 

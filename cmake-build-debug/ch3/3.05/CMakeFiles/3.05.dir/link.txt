@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/3.05.dir/cppcalc.tab.cc.o CMakeFiles/3.05.dir/cppcalc.c.o  -o 3.05 

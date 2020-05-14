@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/3.05_bak.dir/main.cpp.o CMakeFiles/3.05_bak.dir/driver.cpp.o CMakeFiles/3.05_bak.dir/parser.cpp.o CMakeFiles/3.05_bak.dir/lexer.cpp.o  -o 3.05_bak  -lm 

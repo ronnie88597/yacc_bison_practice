@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/3.04.dir/main.cpp.o CMakeFiles/3.04.dir/driver.cpp.o CMakeFiles/3.04.dir/parser.cpp.o CMakeFiles/3.04.dir/lexer.cpp.o  -o 3.04  -lm 

@@ -1,5 +1,5 @@
 /home/cmp/Downloads/clion-2019.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/cmp/work_dir/source_code/yacc_bison_practice
-/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.04/parser.y: warning: 14 shift/reduce conflicts [-Wconflicts-sr]
+/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y: warning: 2 shift/reduce conflicts [-Wconflicts-sr]
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug

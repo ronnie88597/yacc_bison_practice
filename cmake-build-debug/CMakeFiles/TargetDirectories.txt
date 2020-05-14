@@ -23,5 +23,3 @@
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/CMakeFiles/rebuild_cache.dir
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/CMakeFiles/edit_cache.dir
 /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/CMakeFiles/3.05_bak.dir
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch5/CMakeFiles/rebuild_cache.dir
-/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch5/CMakeFiles/edit_cache.dir

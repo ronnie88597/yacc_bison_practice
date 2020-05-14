@@ -16,7 +16,6 @@ project(Flex_Bison)
 add_subdirectory(ch1)
 add_subdirectory(ch2)
 add_subdirectory(ch3)
-add_subdirectory(ch5)
 
 
 #include(${PROJECT_SOURCE_DIR}/cmake/clean_flex_bison_generate_code.cmake)

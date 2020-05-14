@@ -36,7 +36,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../ch3/3.02/CMakeLists.txt"
   "../ch3/3.05/CMakeLists.txt"
   "../ch3/CMakeLists.txt"
-  "../ch5/CMakeLists.txt"
   "CMakeFiles/3.16.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeSystem.cmake"
@@ -58,7 +57,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ch3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ch3/3.02/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ch3/3.05/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "ch5/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

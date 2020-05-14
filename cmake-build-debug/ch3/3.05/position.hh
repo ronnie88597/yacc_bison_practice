@@ -50,7 +50,7 @@
 #  endif
 # endif
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // location.cc:296
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // location.cc:296
 namespace Marker {
 #line 56 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/position.hh" // location.cc:296
   /// Abstract a position.
@@ -174,7 +174,7 @@ namespace Marker {
     return ostr << pos.line << '.' << pos.column;
   }
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // location.cc:296
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // location.cc:296
 } // Marker
 #line 180 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/position.hh" // location.cc:296
 #endif // !YY_YY_HOME_CMP_WORK_DIR_SOURCE_CODE_YACC_BISON_PRACTICE_CMAKE_BUILD_DEBUG_CH3_3_05_POSITION_HH_INCLUDED

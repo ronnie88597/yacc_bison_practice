@@ -40,7 +40,7 @@
 
 # include <vector>
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // stack.hh:132
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // stack.hh:132
 namespace Marker {
 #line 46 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/stack.hh" // stack.hh:132
   template <class T, class S = std::vector<T> >
@@ -150,7 +150,7 @@ namespace Marker {
     unsigned int range_;
   };
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // stack.hh:132
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // stack.hh:132
 } // Marker
 #line 156 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/stack.hh" // stack.hh:132
 

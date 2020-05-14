@@ -57,45 +57,75 @@ include ch3/3.05/CMakeFiles/3.05.dir/progress.make
 # Include the compile flags for this target's objects.
 include ch3/3.05/CMakeFiles/3.05.dir/flags.make
 
-ch3/3.05/CMakeFiles/3.05.dir/cppcalc.tab.cc.o: ch3/3.05/CMakeFiles/3.05.dir/flags.make
-ch3/3.05/CMakeFiles/3.05.dir/cppcalc.tab.cc.o: ch3/3.05/cppcalc.tab.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ch3/3.05/CMakeFiles/3.05.dir/cppcalc.tab.cc.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3.05.dir/cppcalc.tab.cc.o -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/cppcalc.tab.cc
+ch3/3.05/CMakeFiles/3.05.dir/main.cpp.o: ch3/3.05/CMakeFiles/3.05.dir/flags.make
+ch3/3.05/CMakeFiles/3.05.dir/main.cpp.o: ../ch3/3.05/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ch3/3.05/CMakeFiles/3.05.dir/main.cpp.o"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3.05.dir/main.cpp.o -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/main.cpp
 
-ch3/3.05/CMakeFiles/3.05.dir/cppcalc.tab.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/3.05.dir/cppcalc.tab.cc.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/cppcalc.tab.cc > CMakeFiles/3.05.dir/cppcalc.tab.cc.i
+ch3/3.05/CMakeFiles/3.05.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/3.05.dir/main.cpp.i"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/main.cpp > CMakeFiles/3.05.dir/main.cpp.i
 
-ch3/3.05/CMakeFiles/3.05.dir/cppcalc.tab.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/3.05.dir/cppcalc.tab.cc.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/cppcalc.tab.cc -o CMakeFiles/3.05.dir/cppcalc.tab.cc.s
+ch3/3.05/CMakeFiles/3.05.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/3.05.dir/main.cpp.s"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/main.cpp -o CMakeFiles/3.05.dir/main.cpp.s
 
-ch3/3.05/CMakeFiles/3.05.dir/cppcalc.c.o: ch3/3.05/CMakeFiles/3.05.dir/flags.make
-ch3/3.05/CMakeFiles/3.05.dir/cppcalc.c.o: ch3/3.05/cppcalc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object ch3/3.05/CMakeFiles/3.05.dir/cppcalc.c.o"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/3.05.dir/cppcalc.c.o   -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/cppcalc.c
+ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.o: ch3/3.05/CMakeFiles/3.05.dir/flags.make
+ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.o: ../ch3/3.05/driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.o"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3.05.dir/driver.cpp.o -c /home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/driver.cpp
 
-ch3/3.05/CMakeFiles/3.05.dir/cppcalc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/3.05.dir/cppcalc.c.i"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/cppcalc.c > CMakeFiles/3.05.dir/cppcalc.c.i
+ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/3.05.dir/driver.cpp.i"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/driver.cpp > CMakeFiles/3.05.dir/driver.cpp.i
 
-ch3/3.05/CMakeFiles/3.05.dir/cppcalc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/3.05.dir/cppcalc.c.s"
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/cppcalc.c -o CMakeFiles/3.05.dir/cppcalc.c.s
+ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/3.05.dir/driver.cpp.s"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/driver.cpp -o CMakeFiles/3.05.dir/driver.cpp.s
+
+ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.o: ch3/3.05/CMakeFiles/3.05.dir/flags.make
+ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.o: ch3/3.05/parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.o"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3.05.dir/parser.cpp.o -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp
+
+ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/3.05.dir/parser.cpp.i"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp > CMakeFiles/3.05.dir/parser.cpp.i
+
+ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/3.05.dir/parser.cpp.s"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp -o CMakeFiles/3.05.dir/parser.cpp.s
+
+ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.o: ch3/3.05/CMakeFiles/3.05.dir/flags.make
+ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.o: ch3/3.05/lexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.o"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3.05.dir/lexer.cpp.o -c /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp
+
+ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/3.05.dir/lexer.cpp.i"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp > CMakeFiles/3.05.dir/lexer.cpp.i
+
+ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/3.05.dir/lexer.cpp.s"
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp -o CMakeFiles/3.05.dir/lexer.cpp.s
 
 # Object files for target 3.05
 3_05_OBJECTS = \
-"CMakeFiles/3.05.dir/cppcalc.tab.cc.o" \
-"CMakeFiles/3.05.dir/cppcalc.c.o"
+"CMakeFiles/3.05.dir/main.cpp.o" \
+"CMakeFiles/3.05.dir/driver.cpp.o" \
+"CMakeFiles/3.05.dir/parser.cpp.o" \
+"CMakeFiles/3.05.dir/lexer.cpp.o"
 
 # External object files for target 3.05
 3_05_EXTERNAL_OBJECTS =
 
-ch3/3.05/3.05: ch3/3.05/CMakeFiles/3.05.dir/cppcalc.tab.cc.o
-ch3/3.05/3.05: ch3/3.05/CMakeFiles/3.05.dir/cppcalc.c.o
+ch3/3.05/3.05: ch3/3.05/CMakeFiles/3.05.dir/main.cpp.o
+ch3/3.05/3.05: ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.o
+ch3/3.05/3.05: ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.o
+ch3/3.05/3.05: ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.o
 ch3/3.05/3.05: ch3/3.05/CMakeFiles/3.05.dir/build.make
 ch3/3.05/3.05: ch3/3.05/CMakeFiles/3.05.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable 3.05"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable 3.05"
 	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/3.05.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

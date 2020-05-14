@@ -1,3 +1,5 @@
+/* file: lexer.h*/
+
 %{
   #include <iostream>
   #include <cerrno>

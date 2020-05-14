@@ -40,7 +40,7 @@
 #ifndef YY_YY_HOME_CMP_WORK_DIR_SOURCE_CODE_YACC_BISON_PRACTICE_CMAKE_BUILD_DEBUG_CH3_3_05_PARSER_HPP_INCLUDED
 # define YY_YY_HOME_CMP_WORK_DIR_SOURCE_CODE_YACC_BISON_PRACTICE_CMAKE_BUILD_DEBUG_CH3_3_05_PARSER_HPP_INCLUDED
 // //                    "%code requires" blocks.
-#line 11 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:377
+#line 16 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:377
 
   /*requires中的内容会放在YYLTYPE与YYSTPYPE定义前*/
   #include <iostream>
@@ -130,7 +130,7 @@
 # define YYDEBUG 0
 #endif
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:377
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:377
 namespace Marker {
 #line 136 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.hpp" // lalr1.cc:377
 
@@ -705,7 +705,7 @@ namespace Marker {
     enum
     {
       yyeof_ = 0,
-      yylast_ = 26,     ///< Last index in yytable_.
+      yylast_ = 34,     ///< Last index in yytable_.
       yynnts_ = 5,  ///< Number of nonterminal symbols.
       yyfinal_ = 2, ///< Termination state number.
       yyterror_ = 1,
@@ -1075,7 +1075,7 @@ namespace Marker {
   }
 
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:377
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:377
 } // Marker
 #line 1081 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.hpp" // lalr1.cc:377
 

@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-ch3/3.05/CMakeFiles/3.05_bak.dir/rule:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ch3/3.05/CMakeFiles/3.05_bak.dir/rule
-.PHONY : ch3/3.05/CMakeFiles/3.05_bak.dir/rule
+ch3/3.05/CMakeFiles/3.05.dir/rule:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ch3/3.05/CMakeFiles/3.05.dir/rule
+.PHONY : ch3/3.05/CMakeFiles/3.05.dir/rule
 
 # Convenience name for target.
-3.05_bak: ch3/3.05/CMakeFiles/3.05_bak.dir/rule
+3.05: ch3/3.05/CMakeFiles/3.05.dir/rule
 
-.PHONY : 3.05_bak
+.PHONY : 3.05
 
 # fast build rule for target.
-3.05_bak/fast:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/build
-.PHONY : 3.05_bak/fast
+3.05/fast:
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/build
+.PHONY : 3.05/fast
 
 driver.o: driver.cpp.o
 
@@ -131,7 +131,7 @@ driver.o: driver.cpp.o
 
 # target to build an object file
 driver.cpp.o:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/driver.cpp.o
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.o
 .PHONY : driver.cpp.o
 
 driver.i: driver.cpp.i
@@ -140,7 +140,7 @@ driver.i: driver.cpp.i
 
 # target to preprocess a source file
 driver.cpp.i:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/driver.cpp.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.i
 .PHONY : driver.cpp.i
 
 driver.s: driver.cpp.s
@@ -149,7 +149,7 @@ driver.s: driver.cpp.s
 
 # target to generate assembly for a file
 driver.cpp.s:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/driver.cpp.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/driver.cpp.s
 .PHONY : driver.cpp.s
 
 lexer.o: lexer.cpp.o
@@ -158,7 +158,7 @@ lexer.o: lexer.cpp.o
 
 # target to build an object file
 lexer.cpp.o:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/lexer.cpp.o
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.o
 .PHONY : lexer.cpp.o
 
 lexer.i: lexer.cpp.i
@@ -167,7 +167,7 @@ lexer.i: lexer.cpp.i
 
 # target to preprocess a source file
 lexer.cpp.i:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/lexer.cpp.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.i
 .PHONY : lexer.cpp.i
 
 lexer.s: lexer.cpp.s
@@ -176,7 +176,7 @@ lexer.s: lexer.cpp.s
 
 # target to generate assembly for a file
 lexer.cpp.s:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/lexer.cpp.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/lexer.cpp.s
 .PHONY : lexer.cpp.s
 
 main.o: main.cpp.o
@@ -185,7 +185,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/main.cpp.o
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -194,7 +194,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/main.cpp.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -203,7 +203,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/main.cpp.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 parser.o: parser.cpp.o
@@ -212,7 +212,7 @@ parser.o: parser.cpp.o
 
 # target to build an object file
 parser.cpp.o:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/parser.cpp.o
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.o
 .PHONY : parser.cpp.o
 
 parser.i: parser.cpp.i
@@ -221,7 +221,7 @@ parser.i: parser.cpp.i
 
 # target to preprocess a source file
 parser.cpp.i:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/parser.cpp.i
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.i
 .PHONY : parser.cpp.i
 
 parser.s: parser.cpp.s
@@ -230,7 +230,7 @@ parser.s: parser.cpp.s
 
 # target to generate assembly for a file
 parser.cpp.s:
-	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/parser.cpp.s
+	cd /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug && $(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/parser.cpp.s
 .PHONY : parser.cpp.s
 
 # Help Target
@@ -241,7 +241,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... 3.05_bak"
+	@echo "... 3.05"
 	@echo "... driver.o"
 	@echo "... driver.i"
 	@echo "... driver.s"

@@ -502,8 +502,8 @@ static const flex_int16_t yy_chk[53] =
 
 static const flex_int16_t yy_rule_linenum[14] =
     {   0,
-       54,   58,   59,   66,   71,   72,   73,   74,   75,   76,
-       77,   78,   80
+       56,   60,   61,   68,   73,   74,   75,   76,   77,   78,
+       79,   80,   82
     } ;
 
 /* The intent behind this definition is that it'll catch
@@ -514,7 +514,8 @@ static const flex_int16_t yy_rule_linenum[14] =
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 #line 1 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
-#line 2 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+/* file: lexer.h*/
+#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
   #include <iostream>
   #include <cerrno>
   #include <climits>
@@ -533,14 +534,14 @@ static const flex_int16_t yy_rule_linenum[14] =
 
   using namespace Marker;
   #define yyterminate() Parser::make_END(loc);
-#line 537 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp"
+#line 538 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp"
 /* 声明使用C++版本FLEXER，c++是大小写不敏感的 */
 /* 支持调试 */
 /* 使用Scanner::yylex() */
 /* 一些与编译常量使用该前缀否则为yy */
 /*正则式的各种简写，使程序有层次感而显得明晰 */
 /**/
-#line 544 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp"
+#line 545 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp"
 
 #define INITIAL 0
 
@@ -732,16 +733,16 @@ YY_DECL
 
 	{
 /* %% [7.0] user's declarations go here */
-#line 46 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 48 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 
 
-#line 49 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 51 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
   // C++ 兼容的词法分析器的规则，step函数把位置的起始值设置为与结束值相等，这样位置就指向了上一个极少的结束位置。
   loc.step();
 
 
 
-#line 745 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp"
+#line 746 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -822,16 +823,16 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 54 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 56 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 {
             return Parser::make_NUMBER(std::strtof(yytext,(&yytext+yyleng)),loc); // strtof函数将字符串转换为浮点数
           }
 	YY_BREAK
 case 2:
-#line 59 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 61 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 case 3:
 YY_RULE_SETUP
-#line 59 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 61 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 {
             /* 跳过注释和空白符号 */
             // step函数把位置的起始值设置为与结束值相等，这样位置就指向了上一个极少的结束位置。
@@ -842,7 +843,7 @@ YY_RULE_SETUP
 case 4:
 /* rule 4 can match eol */
 YY_RULE_SETUP
-#line 66 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 68 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 {
             loc.lines(yyleng); // 使用lines函数来更新位置信息中的行号
             loc.step();
@@ -851,51 +852,51 @@ YY_RULE_SETUP
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 71 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 73 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return Parser::make_ADD(loc); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 72 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 74 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return Parser::make_SUB(loc); }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 73 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 75 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return Parser::make_MUL(loc); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 74 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 76 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return Parser::make_DIV(loc); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 75 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 77 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return Parser::make_LPAREN(yytext,loc); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 76 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 78 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return Parser::make_RPAREN(yytext,loc); }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 77 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 79 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return Parser::make_ABS(loc); }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 78 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 80 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return Parser::make_IDENTIFIER(yytext,loc); }
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
-#line 79 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 81 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 { return yyterminate(); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 80 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 82 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 {
              printf("Mystery character %c\n", *yytext);
              loc.step();
@@ -903,10 +904,10 @@ YY_RULE_SETUP
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 84 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 86 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 ECHO;
 	YY_BREAK
-#line 910 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp"
+#line 911 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/lexer.cpp"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -2022,6 +2023,6 @@ void yyfree (void * ptr )
 
 /* %ok-for-header */
 
-#line 84 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
+#line 86 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/lexer.l"
 
 //这里可以放一些C或者C++代码

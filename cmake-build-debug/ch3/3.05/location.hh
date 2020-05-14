@@ -40,7 +40,7 @@
 
 # include "position.hh"
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // location.cc:296
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // location.cc:296
 namespace Marker {
 #line 46 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/location.hh" // location.cc:296
   /// Abstract a location.
@@ -186,7 +186,7 @@ namespace Marker {
     return ostr;
   }
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // location.cc:296
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // location.cc:296
 } // Marker
 #line 192 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/location.hh" // location.cc:296
 #endif // !YY_YY_HOME_CMP_WORK_DIR_SOURCE_CODE_YACC_BISON_PRACTICE_CMAKE_BUILD_DEBUG_CH3_3_05_LOCATION_HH_INCLUDED

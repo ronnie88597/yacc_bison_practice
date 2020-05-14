@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/3.05.dir/cppcalc.tab.cc.o CMakeFiles/3.05.dir/cppcalc.c.o  -o 3.05 
+/usr/bin/c++  -g   CMakeFiles/3.05.dir/main.cpp.o CMakeFiles/3.05.dir/driver.cpp.o CMakeFiles/3.05.dir/parser.cpp.o CMakeFiles/3.05.dir/lexer.cpp.o  -o 3.05  -lm 

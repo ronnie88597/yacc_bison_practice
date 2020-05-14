@@ -30,7 +30,7 @@
 // This special exception was added by the Free Software Foundation in
 // version 2.2 of Bison.
 // //                    "%code top" blocks.
-#line 27 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:397
+#line 32 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:397
 
   /*尽可能放在parser.cpp靠近头部的地方，与requires相似*/
   #include <iostream>
@@ -148,7 +148,7 @@
 #define YYERROR         goto yyerrorlab
 #define YYRECOVERING()  (!!yyerrstatus_)
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:479
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:479
 namespace Marker {
 #line 154 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:479
 
@@ -566,49 +566,49 @@ namespace Marker {
           switch (yyn)
             {
   case 2:
-#line 82 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+#line 87 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
     { /* 使用%empty显示的声明该规则是一个空规则 */ }
 #line 572 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 3:
-#line 83 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+#line 88 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
     { cout << "=" << yystack_[1].value.as< float > () << "\n>"; }
 #line 578 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 4:
-#line 86 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+#line 91 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
     { yylhs.value.as< float > () = yystack_[0].value.as< float > (); }
 #line 584 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 5:
-#line 87 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
-    { yylhs.value.as< float > () = yystack_[2].value.as< float > () + yystack_[0].value.as< float > (); cout<<yystack_[2].value.as< float > ()<<"ADD"<<yystack_[0].value.as< float > ()<<endl; }
+#line 92 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+    { yylhs.value.as< float > () = yystack_[2].value.as< float > () + yystack_[0].value.as< float > (); }
 #line 590 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 6:
-#line 88 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
-    { yylhs.value.as< float > () = yystack_[2].value.as< float > () - yystack_[0].value.as< float > (); cout<<yystack_[2].value.as< float > ()<<"SUB"<<yystack_[0].value.as< float > ()<<endl; }
+#line 93 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+    { yylhs.value.as< float > () = yystack_[2].value.as< float > () - yystack_[0].value.as< float > (); }
 #line 596 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 7:
-#line 91 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+#line 96 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
     { yylhs.value.as< float > () = yystack_[0].value.as< float > (); }
 #line 602 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 8:
-#line 92 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+#line 97 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
     { yylhs.value.as< float > () = yystack_[2].value.as< float > () * yystack_[0].value.as< float > (); }
 #line 608 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 9:
-#line 93 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+#line 98 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
     {
         if(yystack_[0].value.as< float > () == 0){
           error(yystack_[0].location, "zero divide");
@@ -620,26 +620,26 @@ namespace Marker {
     break;
 
   case 10:
-#line 102 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+#line 107 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
     { yylhs.value.as< float > () = yystack_[0].value.as< float > (); }
 #line 626 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 11:
-#line 103 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+#line 108 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
     { yylhs.value.as< float > () = yystack_[1].value.as< float > () >= 0 ? yystack_[1].value.as< float > () : -1 * yystack_[1].value.as< float > (); }
 #line 632 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 12:
-#line 104 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
-    { yylhs.value.as< float > () = yystack_[1].value.as< float > (); cout<<"LPAREN "<<yystack_[1].value.as< float > ()<<" RPAREN"<<endl; }
+#line 109 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+    { yylhs.value.as< float > () = yystack_[1].value.as< float > (); }
 #line 638 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
   case 13:
-#line 105 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
-    { yylhs.value.as< float > () = -1 * yystack_[0].value.as< float > (); cout<<"SUB exp %prec NEG"<<endl; }
+#line 110 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:859
+    { yylhs.value.as< float > () = -1 * yystack_[0].value.as< float > (); }
 #line 644 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:859
     break;
 
@@ -899,16 +899,16 @@ namespace Marker {
   }
 
 
-  const signed char  Parser ::yypact_ninf_ = -10;
+  const signed char  Parser ::yypact_ninf_ = -6;
 
   const signed char  Parser ::yytable_ninf_ = -1;
 
   const signed char
    Parser ::yypact_[] =
   {
-     -10,     0,   -10,   -10,    -2,    -2,    -2,    -5,    -1,   -10,
-     -10,    -9,    14,   -10,    -2,    -2,    -2,    -2,   -10,   -10,
-      -1,    -1,   -10,   -10
+      -6,     0,    -6,    -6,    -2,    -2,    -2,    13,    15,    -6,
+      -6,    -5,     5,    -6,    -2,    -2,    -2,    -2,    -6,    -6,
+      15,    15,    -6,    -6
   };
 
   const unsigned char
@@ -922,7 +922,7 @@ namespace Marker {
   const signed char
    Parser ::yypgoto_[] =
   {
-     -10,   -10,    18,    11,     3
+      -6,    -6,    19,    16,    17
   };
 
   const signed char
@@ -934,24 +934,26 @@ namespace Marker {
   const unsigned char
    Parser ::yytable_[] =
   {
-       2,    13,    14,     3,    15,     3,    18,     4,    11,     4,
-      16,     0,    17,     5,     0,     5,     6,    19,     6,    22,
-      23,    14,    10,    15,    12,    20,    21
+       2,     0,    14,     3,    15,     3,     0,     4,    19,     4,
+      18,     0,    14,     5,    15,     5,     6,     0,     6,    13,
+      14,     0,    15,    10,    11,    12,    16,     0,    17,     0,
+      20,    21,     0,    22,    23
   };
 
   const signed char
    Parser ::yycheck_[] =
   {
-       0,     6,     7,     5,     9,     5,    15,     9,     5,     9,
-      11,    -1,    13,    15,    -1,    15,    18,     3,    18,    16,
-      17,     7,     4,     9,     6,    14,    15
+       0,    -1,     7,     5,     9,     5,    -1,     9,     3,     9,
+      15,    -1,     7,    15,     9,    15,    18,    -1,    18,     6,
+       7,    -1,     9,     4,     5,     6,    11,    -1,    13,    -1,
+      14,    15,    -1,    16,    17
   };
 
   const unsigned char
    Parser ::yystos_[] =
   {
        0,    20,     0,     5,     9,    15,    18,    21,    22,    23,
-      21,    23,    21,     6,     7,     9,    11,    13,    15,     3,
+      21,    21,    21,     6,     7,     9,    11,    13,    15,     3,
       22,    22,    23,    23
   };
 
@@ -985,8 +987,8 @@ namespace Marker {
   const unsigned char
    Parser ::yyrline_[] =
   {
-       0,    82,    82,    83,    86,    87,    88,    91,    92,    93,
-     102,   103,   104,   105
+       0,    87,    87,    88,    91,    92,    93,    96,    97,    98,
+     107,   108,   109,   110
   };
 
   // Print the state stack on the debug stream.
@@ -1019,10 +1021,10 @@ namespace Marker {
 #endif // YYDEBUG
 
 
-#line 4 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:1167
+#line 9 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:1167
 } // Marker
-#line 1025 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:1167
-#line 108 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:1168
+#line 1027 "/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/ch3/3.05/parser.cpp" // lalr1.cc:1167
+#line 113 "/home/cmp/work_dir/source_code/yacc_bison_practice/ch3/3.05/parser.y" // lalr1.cc:1168
 
 /*Parser实现错误处理接口*/
 void Marker::Parser::error(const Marker::location& location,const std::string& message){

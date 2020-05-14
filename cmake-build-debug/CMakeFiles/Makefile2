@@ -184,7 +184,7 @@ ch3/3.02/clean: ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/clean
 # Directory level rules for directory ch3/3.05
 
 # Recursive "all" directory target.
-ch3/3.05/all: ch3/3.05/CMakeFiles/3.05_bak.dir/all
+ch3/3.05/all: ch3/3.05/CMakeFiles/3.05.dir/all
 
 .PHONY : ch3/3.05/all
 
@@ -194,7 +194,7 @@ ch3/3.05/preinstall:
 .PHONY : ch3/3.05/preinstall
 
 # Recursive "clean" directory target.
-ch3/3.05/clean: ch3/3.05/CMakeFiles/3.05_bak.dir/clean
+ch3/3.05/clean: ch3/3.05/CMakeFiles/3.05.dir/clean
 
 .PHONY : ch3/3.05/clean
 
@@ -469,31 +469,31 @@ ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/clean:
 .PHONY : ch3/3.02/CMakeFiles/3.02_create_AST_with_bison.dir/clean
 
 #=============================================================================
-# Target rules for target ch3/3.05/CMakeFiles/3.05_bak.dir
+# Target rules for target ch3/3.05/CMakeFiles/3.05.dir
 
 # All Build rule for target.
-ch3/3.05/CMakeFiles/3.05_bak.dir/all:
-	$(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/depend
-	$(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=24,25,26,27,28 "Built target 3.05_bak"
-.PHONY : ch3/3.05/CMakeFiles/3.05_bak.dir/all
+ch3/3.05/CMakeFiles/3.05.dir/all:
+	$(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/depend
+	$(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles --progress-num=24,25,26,27,28 "Built target 3.05"
+.PHONY : ch3/3.05/CMakeFiles/3.05.dir/all
 
 # Build rule for subdir invocation for target.
-ch3/3.05/CMakeFiles/3.05_bak.dir/rule: cmake_check_build_system
+ch3/3.05/CMakeFiles/3.05.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 ch3/3.05/CMakeFiles/3.05_bak.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ch3/3.05/CMakeFiles/3.05.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmp/work_dir/source_code/yacc_bison_practice/cmake-build-debug/CMakeFiles 0
-.PHONY : ch3/3.05/CMakeFiles/3.05_bak.dir/rule
+.PHONY : ch3/3.05/CMakeFiles/3.05.dir/rule
 
 # Convenience name for target.
-3.05_bak: ch3/3.05/CMakeFiles/3.05_bak.dir/rule
+3.05: ch3/3.05/CMakeFiles/3.05.dir/rule
 
-.PHONY : 3.05_bak
+.PHONY : 3.05
 
 # clean rule for target.
-ch3/3.05/CMakeFiles/3.05_bak.dir/clean:
-	$(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/clean
-.PHONY : ch3/3.05/CMakeFiles/3.05_bak.dir/clean
+ch3/3.05/CMakeFiles/3.05.dir/clean:
+	$(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/clean
+.PHONY : ch3/3.05/CMakeFiles/3.05.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

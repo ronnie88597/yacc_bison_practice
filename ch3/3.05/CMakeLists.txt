@@ -12,11 +12,11 @@ execute_process(COMMAND
     bison -o ${CMAKE_CURRENT_BINARY_DIR}/parser.cpp ${CMAKE_CURRENT_SOURCE_DIR}/parser.y)
 
 
-add_executable(3.05_bak
+add_executable(3.05
     ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/driver.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/parser.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/lexer.cpp)
 
-target_link_libraries(3.05_bak PUBLIC
+target_link_libraries(3.05 PUBLIC
     -lm)

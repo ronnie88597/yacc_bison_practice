@@ -241,17 +241,17 @@ depend:
 .PHONY : 3.02_create_AST_with_bison/fast
 
 #=============================================================================
-# Target rules for targets named 3.05_bak
+# Target rules for targets named 3.05
 
 # Build rule for target.
-3.05_bak: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 3.05_bak
-.PHONY : 3.05_bak
+3.05: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3.05
+.PHONY : 3.05
 
 # fast build rule for target.
-3.05_bak/fast:
-	$(MAKE) -f ch3/3.05/CMakeFiles/3.05_bak.dir/build.make ch3/3.05/CMakeFiles/3.05_bak.dir/build
-.PHONY : 3.05_bak/fast
+3.05/fast:
+	$(MAKE) -f ch3/3.05/CMakeFiles/3.05.dir/build.make ch3/3.05/CMakeFiles/3.05.dir/build
+.PHONY : 3.05/fast
 
 # Help Target
 help:
@@ -271,7 +271,7 @@ help:
 	@echo "... 2.03_read_files"
 	@echo "... 2.06_include_file_and_start_state"
 	@echo "... 3.02_create_AST_with_bison"
-	@echo "... 3.05_bak"
+	@echo "... 3.05"
 .PHONY : help
 
 

@@ -1,4 +1,9 @@
+/* file: parser.y */
+
+/* 使用指令％skeleton "lalr1.cc"选择C++解析器的骨架 */
 %skeleton "lalr1.cc"
+
+/* 指定bison的版本 */
 %require "3.0.4"
 
 %define api.namespace {Marker} //声明命名空间与下面声明的类名结合使用 Marker::Parser::  在scanner.l中有体现
@@ -84,8 +89,8 @@ calclist: %empty           { /* 使用%empty显示的声明该规则是一个空
         ;
 
 exp: factor         { $$ = $1; }
-   | exp ADD factor { $$ = $1 + $3; cout<<$1<<"ADD"<<$3<<endl; }
-   | exp SUB factor { $$ = $1 - $3; cout<<$1<<"SUB"<<$3<<endl; }
+   | exp ADD factor { $$ = $1 + $3; }
+   | exp SUB factor { $$ = $1 - $3; }
    ;
 
 factor: term            { $$ = $1; }
@@ -100,9 +105,9 @@ factor: term            { $$ = $1; }
       ;
 
 term: NUMBER               { $$ = $1; }
-    | ABS term ABS         { $$ = $2 >= 0 ? $2 : -1 * $2; }
-    | LPAREN exp RPAREN    { $$ = $2; cout<<"LPAREN "<<$2<<" RPAREN"<<endl; }
-    | SUB exp %prec NEG    { $$ = -1 * $2; cout<<"SUB exp %prec NEG"<<endl; }
+    | ABS exp ABS         { $$ = $2 >= 0 ? $2 : -1 * $2; }
+    | LPAREN exp RPAREN    { $$ = $2; }
+    | SUB exp %prec NEG    { $$ = -1 * $2; }
     ;
 
 %%
